@@ -1,0 +1,156 @@
+BODY {
+
+
+
+	font-family: Tahoma;
+
+	font-size: 12px;
+
+	margin-left: 0px;
+
+	margin-top: 0px;
+
+	margin-right: 0px;
+
+	margin-bottom: 0px;
+
+
+
+}
+
+H1 {
+
+	font-size: 15px;
+
+	font-weight: bold;
+
+}
+
+H2 {
+
+	font-size: 14px;
+
+	font-weight: bold;
+	
+	
+
+}
+
+H3 {
+
+	font-size: 13px;
+
+	font-weight: bold;
+
+}
+
+
+
+img {
+
+	border:none;
+
+}
+
+
+
+table.grid{border-collapse: collapse; border: 0 solid; width: 100%; } 
+/*.grid td, .grid th{padding: 2px 4px 2px 4px;}*/ 
+table.grid td.grid{border-top: 1px solid white;border-left: 1px dotted white;border-right: 1px dotted white;font-size: 12px;} 
+table.grid th.grid{background: #ebeff2;text-align: center;height:30px;vertical-align: middle; font-weight: bold;font-size: 11px;}
+table.grid tr.sh{background: #ebeff2; } 
+
+
+
+
+table.form{
+}
+table.form th{
+
+}
+table.form td{
+}
+table.form td, table.form th{
+font-size:12px;
+vertical-align:top;
+}
+
+table.form2{
+}
+table.form2 th{
+text-align:left;
+}
+table.form2 td{
+}
+table.form2 td, table.form2 th{
+font-size:12px;
+vertical-align:top;
+}
+
+
+
+ul.menu{
+	margin:0;
+	padding:0;
+	/*border:solid 1px blue;*/
+}
+ul.menu ul{
+	margin:0;
+	padding:0;
+	/*border:solid 1px blue;*/
+}
+ul.menu li{
+	display:block;
+	list-style: none;
+	margin-left:0px;
+	margin-left:15px;
+	padding:0;
+	/*border:solid 1px red;*/
+}
+
+ul.menu li a{
+	font-size:11px;
+	color: #000;
+	text-decoration: none;
+}
+ul.menu li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+span.error{
+color:red;
+font-size:10px;
+display:block;
+}
+
+
+/*#modal{
+position:fixed;top:0;left:0;
+}*/
+
+
+/*Modal frame*/
+#modal_wrap { position: fixed;   z-index: 10000;  top:0; left:0; width:100%; height:100%; display:none; font-size: 12px;}
+#modal_wrap .png { width:100%; height:100%; text-align: center; background: url(/img/modal/modal_bg.png);}
+#modal_wrap .png .marg { width: 100%; padding-top:100px; }
+#modal_wrap .png .marg .in { position: relative; z-index: 20; width: 507px; margin:auto; }
+#modal_wrap .png .marg .middle { position: relative; z-index: 20; text-align:left; background:white;color:#666666;padding-left:10px;padding-right:10px;}
+
+#modal_wrap .png .marg .in .close { position: absolute; z-index: 1000; top:0px;right:30px;  cursor: pointer; }
+
+#modal_wrap .png .marg .in .top { width: 507px; height: 15px; background: url(/img/modal/modal_t.png) no-repeat; }
+#modal_wrap .png .marg .in .bottom { width: 507px; height: 15px; background: url(/img/modal/modal_b.png) no-repeat; }
+
+
+
+* html #modal_wrap { 
+	position: absolute;
+	top:expression(self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop)+'px');
+	height:expression(document.body.parentElement.clientHeight+'px');
+}
+* html #modal_wrap .png { _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/modal/modal_bg.png', sizingMethod='scale'); }
+* html #modal_wrap .png .marg .in .top { _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/modal/modal_t.png', sizingMethod='crop'); }
+* html #modal_wrap .png .marg .in .bottom { _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/modal/modal_b.png', sizingMethod='crop'); }
+
+

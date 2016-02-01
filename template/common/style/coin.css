@@ -1,0 +1,17 @@
+a.coin-text-edit{display:block;position:absolute;width:32px;height:32px;background:url(img/edit_32.gif);z-index:100}
+a.coin-edit{font-size:10px;color:grey}
+a.coin-place-edit{display:block;z-index:2;position:absolute;width:32px;height:32px;background:url(img/exp_32.gif);margin-left:33px}
+a.coin-banner-edit{display:block;z-index:2;position:absolute;width:32px;height:32px;background:url(img/edit_32.gif);}
+div.coin-no-cookie{display:none;position:fixed;_position:absolute;top:0;left:0;background:#FFCCCC;color:#FF0000;font-weight:bold;padding:5px 0;width:100%}
+
+#ceo-bar div {width:99%}
+#ceo-bar div label{display:block}
+#ceo-bar div input{width:100%;font-size:8pt}
+
+#ceo-text-bar div {width:99%}
+#ceo-text-bar div label{display:block}
+#ceo-text-bar div input{width:100%;font-size:8pt}
+#ceo-text-bar div textarea{width:100%;font-size:8pt;height:100px}
+
+#ceo-blk{background:#fff;border-radius:0 0 0px 5px;position:fixed;top:0px;right:0;z-index:200;box-shadow:0 4px 4px #ddd;padding:10px;}
+#ceo-blk a{color:#aaa;font-size:12px}

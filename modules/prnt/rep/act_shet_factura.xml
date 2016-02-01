@@ -1,0 +1,1192 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Леонов Александр  Александрович</LastAuthor>
+  <Created>2012-06-15T04:56:15Z</Created>
+  <LastSaved>2012-06-15T04:56:20Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <Colors>
+   <Color>
+    <Index>10</Index>
+    <RGB>#808000</RGB>
+   </Color>
+   <Color>
+    <Index>11</Index>
+    <RGB>#000080</RGB>
+   </Color>
+   <Color>
+    <Index>14</Index>
+    <RGB>#808080</RGB>
+   </Color>
+   <Color>
+    <Index>15</Index>
+    <RGB>#C0C0C0</RGB>
+   </Color>
+   <Color>
+    <Index>16</Index>
+    <RGB>#8080FF</RGB>
+   </Color>
+   <Color>
+    <Index>17</Index>
+    <RGB>#802060</RGB>
+   </Color>
+   <Color>
+    <Index>18</Index>
+    <RGB>#FFFFC0</RGB>
+   </Color>
+   <Color>
+    <Index>19</Index>
+    <RGB>#A0E0E0</RGB>
+   </Color>
+   <Color>
+    <Index>20</Index>
+    <RGB>#600080</RGB>
+   </Color>
+   <Color>
+    <Index>22</Index>
+    <RGB>#0080C0</RGB>
+   </Color>
+   <Color>
+    <Index>23</Index>
+    <RGB>#C0C0FF</RGB>
+   </Color>
+   <Color>
+    <Index>24</Index>
+    <RGB>#00CFFF</RGB>
+   </Color>
+   <Color>
+    <Index>25</Index>
+    <RGB>#69FFFF</RGB>
+   </Color>
+   <Color>
+    <Index>26</Index>
+    <RGB>#E0FFE0</RGB>
+   </Color>
+   <Color>
+    <Index>27</Index>
+    <RGB>#DD9CB3</RGB>
+   </Color>
+   <Color>
+    <Index>28</Index>
+    <RGB>#B38FEE</RGB>
+   </Color>
+   <Color>
+    <Index>29</Index>
+    <RGB>#2A6FF9</RGB>
+   </Color>
+   <Color>
+    <Index>30</Index>
+    <RGB>#3FB8CD</RGB>
+   </Color>
+   <Color>
+    <Index>31</Index>
+    <RGB>#488436</RGB>
+   </Color>
+   <Color>
+    <Index>32</Index>
+    <RGB>#958C41</RGB>
+   </Color>
+   <Color>
+    <Index>33</Index>
+    <RGB>#8E5E42</RGB>
+   </Color>
+   <Color>
+    <Index>34</Index>
+    <RGB>#A0627A</RGB>
+   </Color>
+   <Color>
+    <Index>35</Index>
+    <RGB>#624FAC</RGB>
+   </Color>
+   <Color>
+    <Index>36</Index>
+    <RGB>#1D2FBE</RGB>
+   </Color>
+   <Color>
+    <Index>37</Index>
+    <RGB>#286676</RGB>
+   </Color>
+   <Color>
+    <Index>38</Index>
+    <RGB>#004500</RGB>
+   </Color>
+   <Color>
+    <Index>39</Index>
+    <RGB>#453E01</RGB>
+   </Color>
+   <Color>
+    <Index>40</Index>
+    <RGB>#6A2813</RGB>
+   </Color>
+   <Color>
+    <Index>41</Index>
+    <RGB>#85396A</RGB>
+   </Color>
+   <Color>
+    <Index>42</Index>
+    <RGB>#4A3285</RGB>
+   </Color>
+   <Color>
+    <Index>43</Index>
+    <RGB>#C0DCC0</RGB>
+   </Color>
+   <Color>
+    <Index>44</Index>
+    <RGB>#A6CAF0</RGB>
+   </Color>
+   <Color>
+    <Index>45</Index>
+    <RGB>#800000</RGB>
+   </Color>
+   <Color>
+    <Index>46</Index>
+    <RGB>#008000</RGB>
+   </Color>
+   <Color>
+    <Index>47</Index>
+    <RGB>#000080</RGB>
+   </Color>
+   <Color>
+    <Index>48</Index>
+    <RGB>#808000</RGB>
+   </Color>
+   <Color>
+    <Index>49</Index>
+    <RGB>#800080</RGB>
+   </Color>
+   <Color>
+    <Index>50</Index>
+    <RGB>#008080</RGB>
+   </Color>
+   <Color>
+    <Index>51</Index>
+    <RGB>#808080</RGB>
+   </Color>
+   <Color>
+    <Index>52</Index>
+    <RGB>#FFFBF0</RGB>
+   </Color>
+   <Color>
+    <Index>53</Index>
+    <RGB>#A0A0A4</RGB>
+   </Color>
+   <Color>
+    <Index>54</Index>
+    <RGB>#313900</RGB>
+   </Color>
+   <Color>
+    <Index>55</Index>
+    <RGB>#D9853E</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <HideWorkbookTabs/>
+  <WindowHeight>4755</WindowHeight>
+  <WindowWidth>9300</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>0</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s15">
+   <Alignment ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="22"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s39">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s41">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s42">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s43">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s44">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s45">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s46">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s47">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s48">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s49">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s50">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s51">
+   <Alignment ss:Horizontal="CenterAcrossSelection" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s52">
+   <Alignment ss:Horizontal="CenterAcrossSelection" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s53">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s54">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s55">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s56">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s57">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s58">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s59">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s60">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s61">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="22"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="14"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="CenterAcrossSelection" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s88">
+   <Alignment ss:Horizontal="Justify" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="CenterAcrossSelection" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="6"/>
+  </Style>
+  <Style ss:ID="s90">
+   <Alignment ss:Horizontal="CenterAcrossSelection" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s104">
+   <Alignment ss:Horizontal="Justify" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s106">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s108">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s109">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s110">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s111">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s113">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Dash" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s115">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s117">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s119">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="62" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s15" ss:DefaultColumnWidth="46.5"
+   ss:DefaultRowHeight="11.25">
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="5.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="21.75"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="194.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="47.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="51.75"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="64.5"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="42.75"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="59.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="84.75"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="71.25"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="100.5"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="149.25"/>
+   {:documents}
+   <Row ss:AutoFitHeight="0" ss:Height="9.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="59.25">
+    <Cell ss:Index="10" ss:MergeAcross="3" ss:StyleID="s106"><Data ss:Type="String">Приложение №1&#10;к Правилам ведения журналов учета полученных и выставленных счетов-фактур,&#10; книг покупок и книг продаж при расчетах по налогу на добавленную стоимость,&#10; утвержденным постановлением Правительства Российской Федерации от 2 декабря 2000 г. N 91</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="33">
+    <Cell ss:Index="3" ss:StyleID="s16"><Data ss:Type="String">Счет-фактура {!doc_number} от {!doc_date}.</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Продавец: {!full_firm_name} {!firm_name1}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Адрес: {!firm_address}</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:Index="12" ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">ИНН/КПП продавца  {!firm_inn}/{!firm_kpp}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Грузоотправитель и его адрес: {!firm_name}, {!firm_address}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Грузополучатель и его адрес: {!doc_receiver}, {!receiver_address}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">К платежно-расчетному документу {?doc_pp_number}{!doc_pp_type} № {!doc_pp_number} от {!doc_pp_date}{?/doc_pp_number}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Покупатель {!doc_buyer}</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Адрес: {!buyer_address}</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:Index="12" ss:StyleID="s20"/>
+    <Cell ss:StyleID="s20"/>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:StyleID="s19"><Data ss:Type="String">Идентификационный номер покупателя(ИНН) {!buyer_inn}/{!buyer_kpp}</Data></Cell>
+    <Cell ss:Index="11" ss:StyleID="s19"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="13" ss:StyleID="s21"><Data ss:Type="String">Валюта: руб.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="96" ss:StyleID="s22">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s117"><Data ss:Type="String">Наименование товара (описание выполненных работ, оказанных услуг), имущественного права</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Единица&#10;изме-&#10;рения</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Коли-&#10;чество</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Цена (тариф) за единицу измерения</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Стоимость товаров (работ, услуг), имуществен-&#10;ных прав,&#10;всего без налога</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">В том&#10;числе&#10;акциз</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Налоговая ставка</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Сумма налога</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Стоимость товаров&#10;(работ, услуг), имуществен-&#10;ных прав,&#10;всего с учетом налога</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Страна&#10;происхож-&#10;дения</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Номер&#10;грузовой&#10;таможенной&#10;декларации</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25" ss:StyleID="s27">
+    <Cell ss:StyleID="s28" ss:Index="2" ss:MergeAcross="1"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">5</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">6</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">7</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">8</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">9</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">10</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">11</Data></Cell>
+   </Row>
+   {?goods}
+	{:goods}
+   <Row ss:Height="14.25" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s119"><Data ss:Type="String">{!name}</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">{!measure}</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">{!amount}</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">{!price_bez_nds}</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">{!sum_bez_nds}</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">-----</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">{!nds}%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">{!nds_sum}</Data></Cell>
+    <Cell ss:StyleID="s36"><Data ss:Type="String">{!sum}</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">-----</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">-----</Data></Cell>
+   </Row>
+   {:/goods}
+{?/goods}
+   <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s115"><Data ss:Type="String">Всего к оплате</Data></Cell>
+    <Cell ss:StyleID="s39"/>
+    <Cell ss:StyleID="s39"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s41"/>
+    <Cell ss:StyleID="s41"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">&#45;&#45;&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">{!total}</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s44"/>
+   </Row>
+   <Row ss:Height="12.75" ss:StyleID="s18">
+    <Cell ss:Index="3" ss:StyleID="s45"/>
+   </Row>
+   <Row ss:Height="12.75" ss:StyleID="s18"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:MergeAcross="1"><Data ss:Type="String">Руководитель организации</Data></Cell>
+    <Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s19"><Data ss:Type="String">/{!doc_director}/</Data></Cell>
+    <Cell ss:Index="9" ss:StyleID="s19"><Data ss:Type="String">Главный бухгалтер</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s19"><Data ss:Type="String">/{!doc_accountant}/</Data></Cell>
+    <Cell ss:StyleID="s46"/>
+   </Row>
+   <Row ss:Height="12.75" ss:StyleID="s18"/>
+   <Row ss:Index="23" ss:Height="12.75" ss:StyleID="s18">
+    <Cell ss:Index="2" ss:MergeAcross="1"><Data ss:Type="String">Индивидуальный предприниматель</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.75" ss:StyleID="s18">
+    <Cell ss:Index="10" ss:StyleID="s47"><Data ss:Type="String">(реквизиты свидетельства о государственной &#10;регистрации индивидуального предпринимателя)</Data></Cell>
+   </Row>
+   <Row ss:Index="27" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:MergeAcross="8" ss:StyleID="s18"><Data ss:Type="String">ПРИМЕЧАНИЕ. Первый экземпляр - покупателю, второй экземпляр - продавцу</Data></Cell>
+   </Row>
+   <Row ss:Index="31">
+    <Cell ss:MergeAcross="12" ss:StyleID="s113"/>
+   </Row>
+   <Row ss:Index="35" ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s48"><Data ss:Type="String">{!firm_name}</Data></Cell>
+    <Cell ss:StyleID="s49"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s48"><Data ss:Type="String">Адрес: {!firm_address}</Data></Cell>
+    <Cell ss:StyleID="s49"/>
+   </Row>
+   <Row ss:Index="38" ss:AutoFitHeight="0" ss:Height="16.5" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:StyleID="s51"><Data ss:Type="String">Образец заполнения платежного поручения</Data></Cell>
+    <Cell ss:StyleID="s52"/>
+    <Cell ss:StyleID="s52"/>
+    <Cell ss:StyleID="s52"/>
+    <Cell ss:StyleID="s52"/>
+    <Cell ss:StyleID="s52"/>
+    <Cell ss:StyleID="s52"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s53"><Data ss:Type="String">ИНН {!firm_inn}</Data></Cell>
+    <Cell ss:StyleID="s53"><Data ss:Type="String">КПП {!firm_kpp}</Data></Cell>
+    <Cell ss:StyleID="s55"/>
+    <Cell ss:StyleID="s54"/>
+    <Cell ss:StyleID="s56"/>
+    <Cell ss:StyleID="s57"/>
+    <Cell ss:StyleID="s55"/>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row ss:Height="15" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:StyleID="s59"><Data ss:Type="String">Получатель</Data></Cell>
+    <Cell ss:StyleID="s55"/>
+    <Cell ss:StyleID="s55"/>
+    <Cell ss:StyleID="s60"/>
+    <Cell ss:Index="7" ss:StyleID="s61"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="10" ss:StyleID="s63"/>
+   </Row>
+   <Row ss:Height="15" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:MergeAcross="3" ss:StyleID="s108"><Data ss:Type="String">{!firm_name}</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Сч. №</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">{!firm_account}</Data></Cell>
+    <Cell ss:Index="10" ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:StyleID="s67"><Data ss:Type="String">Банк получателя</Data></Cell>
+    <Cell ss:StyleID="s55"/>
+    <Cell ss:Index="5" ss:StyleID="s68"/>
+    <Cell ss:Index="7" ss:StyleID="s69"><Data ss:Type="String">БИК</Data></Cell>
+    <Cell ss:StyleID="s53"><Data ss:Type="String">{!firm_bank_bik}</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5" ss:StyleID="s50">
+    <Cell ss:Index="2" ss:MergeAcross="3" ss:StyleID="s108"><Data ss:Type="String">{!firm_bank}</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Сч. №</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">{!firm_bank_account}</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:Index="46" ss:Height="27.75">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Акт № {!doc_number} от {!doc_date} г.</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25"/>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s48"><Data ss:Type="String">Заказчик: {!doc_receiver}</Data></Cell>
+    <Cell ss:StyleID="s49"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:Index="3" ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s76">
+    <Cell ss:Index="2" ss:StyleID="s77"><Data ss:Type="String">№</Data></Cell>
+    <Cell ss:MergeAcross="5" ss:StyleID="s109"><Data ss:Type="String">Наименование работы (услуги)</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Ед. изм.</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s109"><Data ss:Type="String">Количество</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Цена</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Сумма</Data></Cell>
+   </Row>
+   {?goods}
+{:goods}
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s80"><Data ss:Type="Number">{!n}</Data></Cell>
+    <Cell ss:MergeAcross="5" ss:StyleID="s110"><Data ss:Type="String">{!name}</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">{!measure}</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s111"><Data ss:Type="Number">{!amount}</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">{!price_bez_nds}</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">{!sum_bez_nds}</Data></Cell>
+   </Row>
+   {:/goods}
+{?/goods}
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="3" ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Итого:</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">{!total}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="3" ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Без налога (НДС):</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">-              </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="3" ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Всего к оплате:</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">{!total}</Data></Cell>
+   </Row>
+   <Row ss:Index="56" ss:AutoFitHeight="0" ss:Height="34.5">
+    <Cell ss:Index="2" ss:MergeAcross="10" ss:StyleID="s103"><Data ss:Type="String">Всего оказано услуг на сумму: {!total_propis}, в т.ч.: НДС -Ноль рублей 00 копеек.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12"/>
+   <Row ss:AutoFitHeight="0" ss:Height="39.75">
+    <Cell ss:Index="2" ss:MergeAcross="10" ss:StyleID="s104"><Data ss:Type="String">Вышеперечисленные услуги выполнены полностью и в срок. Заказчик претензий по объему, качеству и срокам оказания услуг не имеет.</Data></Cell>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.9375">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">Исполнитель:                                                     </Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:Index="10" ss:StyleID="s50"><Data ss:Type="String">Заказчик:</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:Index="2" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"/>
+    <Cell ss:Index="11" ss:StyleID="s89"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.75">
+    <Cell ss:Index="2" ss:StyleID="s52"><Data ss:Type="String">М.П.</Data></Cell>
+    <Cell ss:StyleID="s90"/>
+    <Cell ss:Index="10" ss:StyleID="s52"><Data ss:Type="String">М.П.</Data></Cell>
+    <Cell ss:StyleID="s90"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25"/>
+   {:/documents}
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>46</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>52</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

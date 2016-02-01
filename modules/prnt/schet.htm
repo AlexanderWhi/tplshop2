@@ -1,0 +1,239 @@
+<style>
+h1 {font-size:18px}
+table{border-collapse:collapse;font-size:12px}
+/*table td{vertical-align:top;border:solid 1px black}*/
+.bt{border-top:solid 1px black}
+.bl{border-left:solid 1px black}
+.bb{border-bottom:solid 1px black}
+.br{border-right:solid 1px black}
+
+.b{border:solid 1px black}
+
+table.b td{vertical-align:top;border:solid 1px black}
+table.ab td{vertical-align:bottom}
+table img{border:0}
+table .c{text-align:center}
+</style>
+
+
+<div style="width:612px">
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="612">
+
+<tr>
+<td colspan="12" width="218" valign="bottom">
+<p>Наименование   предприятия:</p>
+</td>
+<td colspan="5" width="108" valign="bottom">
+<p><?=$firm_name1?></p>
+</td>
+
+</tr>
+</table>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" width="612">
+<tr>
+
+<tr>
+<td colspan="6" width="117" valign="top">
+<p>Адрес:</p>
+</td>
+<td colspan="13" width="231" valign="bottom">
+<p><?=$firm_address?></p>
+</td>
+
+</tr>
+</table>
+<br>
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="607" class="b">
+<tbody>
+<tr>
+<td colspan="4" rowspan="2" width="401" valign="top">
+<p><?=$firm_name1?></p>
+</td>
+<td width="39">
+<p>БИК</p>
+</td>
+<td width="167">
+<p><?=$firm_bank_bik?></p>
+</td>
+
+</tr>
+<tr>
+<td rowspan="2" width="39" valign="top">
+<p>Сч.</p>
+</td>
+<td rowspan="2" width="167" valign="top">
+<p>№   <?=$firm_corr_account?></p>
+</td>
+
+</tr>
+<tr>
+<td colspan="4" width="401" valign="bottom">
+<p>банк   получателя <?=$firm_bank?></p>
+</td>
+
+</tr>
+<tr>
+<td width="59">
+<p>ИНН</p>
+</td>
+<td width="151">
+<p><?=$firm_inn?></p>
+</td>
+<td width="55">
+<p>КПП</p>
+</td>
+<td width="136">
+<p><?=$firm_kpp?></p>
+</td>
+<td rowspan="4" width="39" valign="top">
+<p>Сч.</p>
+</td>
+<td rowspan="4" width="167" valign="top">
+<p>№   <?=$firm_account?></p>
+</td>
+
+</tr>
+<tr>
+<td colspan="4" rowspan="2" width="401" valign="top">
+<p><?=$firm_name1?><br>
+Получатель</p>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<h1>Счёт на оплату №<?=$order_num?> от <?=$doc_date?>г.</h1>
+<hr>
+<table border="0" cellspacing="0" cellpadding="0" width="612">
+
+<tr>
+<td colspan="6" width="117">
+Поставщик:<br>
+</td>
+<td colspan="39" width="495" valign="top">
+<?=$firm_name1?> <?=$firm_address?><br>
+</td>
+
+</tr>
+
+<tr>
+<td colspan="6" width="117">
+Грузоотправитель:<br>
+</td>
+<td colspan="39" width="495" valign="top">
+<p><?=$firm_name1?> <?=$firm_address?></p>
+</td>
+
+</tr>
+
+<tr>
+<td colspan="6" width="117">
+Покупатель:<br>
+</td>
+<td colspan="39" width="495" valign="top"><?=$doc_buyer?> <?=$buyer_address?></td>
+
+</tr>
+
+<tr>
+<td colspan="6" width="117">
+Грузополучатель:<br>
+</td>
+<td colspan="39" width="495" valign="top"><?=$doc_buyer?> <?=$buyer_address?></td>
+
+</tr>
+
+</table>
+
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0" width="612" class="b">
+<tr>
+<td colspan="3" width="29">
+<p>№</p>
+</td>
+<td colspan="3" width="88">
+<p>Артикул</p>
+</td>
+<td colspan="20" width="295">
+<p>Товары (работы, услуги)</p>
+</td>
+<td colspan="4" width="43">
+<p>Кол-во</p>
+</td>
+<td colspan="3" width="37">
+<p>Ед.</p>
+</td>
+<td colspan="6" width="53">
+<p>Цена</p>
+</td>
+<td colspan="6" width="69">
+<p>Сумма</p>
+</td>
+
+</tr>
+<tr>
+<td colspan="3" width="29" valign="top">
+<p>1</p>
+</td>
+<td colspan="3" width="88" valign="top">
+<p>&nbsp;</p>
+</td>
+<td colspan="20" width="295" valign="top">
+<p>Оплата   заказа № <?=$order_num?></p>
+</td>
+<td colspan="4" width="43" valign="top">
+<p>1</p>
+</td>
+<td colspan="3" width="37" valign="top">
+<p>шт</p>
+</td>
+<td colspan="6" width="53" valign="top">
+<p><?=$total_amount?></p>
+</td>
+<td colspan="6" width="69" valign="top">
+<p><?=$total_amount?></p>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+<div style="text-align:right">
+Итого: <?=$total_amount?><br>
+НДС не предусмотрен<br>
+Всего к оплате: <?=$total_amount?><br>
+
+</div>
+<div>
+Всего наименований 1, на сумму <?=$total_propis?>. 
+</div>
+<hr>
+
+<table width="612" class="ab">
+<tr><td>Руководитель</td><td>&nbsp;</td><td class="bb c">директор</td><td>&nbsp;</td><td class="bb c"><img src="<?=$dir?>/img/image001.png" style="margin-bottom:-29px"> </td><td>&nbsp;</td><td class="bb c">Цылева С.С.</td></tr>
+<tr><td></td><td>&nbsp;</td><td class="c">должность</td><td>&nbsp;</td><td class="c">подпись</td><td>&nbsp;</td><td class="c">расшифровка подписи</td></tr>
+
+
+<tr><td colspan="3">Главный (старший) бухгалтер</td><td>&nbsp;</td><td class="bb c"><img src="<?=$dir?>/img/image001.png" style="margin-bottom:-29px"> </td><td>&nbsp;</td><td class="bb c">Цылева С.С.</td></tr>
+<tr><td></td><td>&nbsp;</td><td></td><td>&nbsp;</td><td class="c">подпись</td><td>&nbsp;</td><td class="c">расшифровка подписи</td></tr>
+
+<tr><td>Ответственный</td><td>&nbsp;</td><td class="bb c"></td><td>&nbsp;</td><td class="bb"> </td><td>&nbsp;</td><td class="bb"></td></tr>
+<tr><td></td><td>&nbsp;</td><td class="c">должность</td><td>&nbsp;</td><td class="c">подпись</td><td>&nbsp;</td><td class="c">расшифровка подписи</td></tr>
+
+
+</table>
+
+<img src="<?=$dir?>/img/image004.png">
+</div>

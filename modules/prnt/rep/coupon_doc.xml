@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2"/>
+<o:DocumentProperties>
+<o:Author>zorin.nikolay
+</o:Author>
+<o:LastAuthor>Леонов Александр  Александрович
+</o:LastAuthor>
+<o:Revision>2</o:Revision>
+<o:TotalTime>1</o:TotalTime>
+<o:LastPrinted>2012-07-23T08:12:00Z</o:LastPrinted>
+<o:Created>2012-07-27T05:37:00Z</o:Created>
+<o:LastSaved>2012-07-27T05:37:00Z</o:LastSaved>
+<o:Pages>1</o:Pages>
+<o:Words>0</o:Words>
+<o:Characters>5</o:Characters>
+<o:Company>NJ</o:Company>
+<o:Lines>1</o:Lines>
+<o:Paragraphs>1</o:Paragraphs>
+<o:CharactersWithSpaces>5</o:CharactersWithSpaces>
+<o:Version>12</o:Version>
+</o:DocumentProperties>
+<w:fonts>
+<w:defaultFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman" w:cs="Times New Roman"/>
+<w:font w:name="Times New Roman">
+<w:panose-1 w:val="02020603050405020304"/>
+<w:charset w:val="CC"/>
+<w:family w:val="Roman"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="20002A87" w:usb-1="80000000" w:usb-2="00000008" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Courier New">
+<w:panose-1 w:val="02070309020205020404"/>
+<w:charset w:val="CC"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="20002A87" w:usb-1="80000000" w:usb-2="00000008" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Symbol">
+<w:panose-1 w:val="05050102010706020507"/>
+<w:charset w:val="02"/>
+<w:family w:val="Roman"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="00000000" w:usb-1="10000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="80000000" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Wingdings">
+<w:panose-1 w:val="05000000000000000000"/>
+<w:charset w:val="02"/>
+<w:family w:val="auto"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="00000000" w:usb-1="10000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="80000000" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Cambria Math">
+<w:panose-1 w:val="02040503050406030204"/>
+<w:charset w:val="CC"/>
+<w:family w:val="Roman"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="A00002EF" w:usb-1="420020EB" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000009F" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Tahoma">
+<w:panose-1 w:val="020B0604030504040204"/>
+<w:charset w:val="CC"/>
+<w:family w:val="Swiss"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="61002A87" w:usb-1="80000000" w:usb-2="00000008" w:usb-3="00000000" w:csb-0="000101FF" w:csb-1="00000000"/>
+</w:font>
+</w:fonts>
+<w:lists>
+<w:listDef w:listDefId="0">
+<w:lsid w:val="694C474A"/>
+<w:plt w:val="Multilevel"/>
+<w:tmpl w:val="2CC00E18"/>
+<w:lvl w:ilvl="0">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="720"/>
+</w:tabs>
+<w:ind w:left="720" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="1" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="o"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="1440"/>
+</w:tabs>
+<w:ind w:left="1440" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="2" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="2160"/>
+</w:tabs>
+<w:ind w:left="2160" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="3" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="2880"/>
+</w:tabs>
+<w:ind w:left="2880" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="4" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="3600"/>
+</w:tabs>
+<w:ind w:left="3600" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="5" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="4320"/>
+</w:tabs>
+<w:ind w:left="4320" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="6" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="5040"/>
+</w:tabs>
+<w:ind w:left="5040" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="7" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="5760"/>
+</w:tabs>
+<w:ind w:left="5760" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+<w:lvl w:ilvl="8" w:tentative="on">
+<w:start w:val="1"/>
+<w:nfc w:val="23"/>
+<w:lvlText w:val="*"/>
+<w:lvlJc w:val="left"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="list" w:pos="6480"/>
+</w:tabs>
+<w:ind w:left="6480" w:hanging="360"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default"/>
+<w:sz w:val="20"/>
+</w:rPr>
+</w:lvl>
+</w:listDef>
+<w:list w:ilfo="1">
+<w:ilst w:val="0"/>
+</w:list>
+</w:lists>
+<w:styles>
+<w:versionOfBuiltInStylenames w:val="7"/>
+<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+<w:lsdException w:name="Normal"/>
+<w:lsdException w:name="heading 1"/>
+<w:lsdException w:name="heading 2"/>
+<w:lsdException w:name="heading 3"/>
+<w:lsdException w:name="heading 4"/>
+<w:lsdException w:name="heading 5"/>
+<w:lsdException w:name="heading 6"/>
+<w:lsdException w:name="heading 7"/>
+<w:lsdException w:name="heading 8"/>
+<w:lsdException w:name="heading 9"/>
+<w:lsdException w:name="caption"/>
+<w:lsdException w:name="Title"/>
+<w:lsdException w:name="Subtitle"/>
+<w:lsdException w:name="Strong"/>
+<w:lsdException w:name="Emphasis"/>
+<w:lsdException w:name="Placeholder Text"/>
+<w:lsdException w:name="No Spacing"/>
+<w:lsdException w:name="Light Shading"/>
+<w:lsdException w:name="Light List"/>
+<w:lsdException w:name="Light Grid"/>
+<w:lsdException w:name="Medium Shading 1"/>
+<w:lsdException w:name="Medium Shading 2"/>
+<w:lsdException w:name="Medium List 1"/>
+<w:lsdException w:name="Medium List 2"/>
+<w:lsdException w:name="Medium Grid 1"/>
+<w:lsdException w:name="Medium Grid 2"/>
+<w:lsdException w:name="Medium Grid 3"/>
+<w:lsdException w:name="Dark List"/>
+<w:lsdException w:name="Colorful Shading"/>
+<w:lsdException w:name="Colorful List"/>
+<w:lsdException w:name="Colorful Grid"/>
+<w:lsdException w:name="Light Shading Accent 1"/>
+<w:lsdException w:name="Light List Accent 1"/>
+<w:lsdException w:name="Light Grid Accent 1"/>
+<w:lsdException w:name="Medium Shading 1 Accent 1"/>
+<w:lsdException w:name="Medium Shading 2 Accent 1"/>
+<w:lsdException w:name="Medium List 1 Accent 1"/>
+<w:lsdException w:name="Revision"/>
+<w:lsdException w:name="List Paragraph"/>
+<w:lsdException w:name="Quote"/>
+<w:lsdException w:name="Intense Quote"/>
+<w:lsdException w:name="Medium List 2 Accent 1"/>
+<w:lsdException w:name="Medium Grid 1 Accent 1"/>
+<w:lsdException w:name="Medium Grid 2 Accent 1"/>
+<w:lsdException w:name="Medium Grid 3 Accent 1"/>
+<w:lsdException w:name="Dark List Accent 1"/>
+<w:lsdException w:name="Colorful Shading Accent 1"/>
+<w:lsdException w:name="Colorful List Accent 1"/>
+<w:lsdException w:name="Colorful Grid Accent 1"/>
+<w:lsdException w:name="Light Shading Accent 2"/>
+<w:lsdException w:name="Light List Accent 2"/>
+<w:lsdException w:name="Light Grid Accent 2"/>
+<w:lsdException w:name="Medium Shading 1 Accent 2"/>
+<w:lsdException w:name="Medium Shading 2 Accent 2"/>
+<w:lsdException w:name="Medium List 1 Accent 2"/>
+<w:lsdException w:name="Medium List 2 Accent 2"/>
+<w:lsdException w:name="Medium Grid 1 Accent 2"/>
+<w:lsdException w:name="Medium Grid 2 Accent 2"/>
+<w:lsdException w:name="Medium Grid 3 Accent 2"/>
+<w:lsdException w:name="Dark List Accent 2"/>
+<w:lsdException w:name="Colorful Shading Accent 2"/>
+<w:lsdException w:name="Colorful List Accent 2"/>
+<w:lsdException w:name="Colorful Grid Accent 2"/>
+<w:lsdException w:name="Light Shading Accent 3"/>
+<w:lsdException w:name="Light List Accent 3"/>
+<w:lsdException w:name="Light Grid Accent 3"/>
+<w:lsdException w:name="Medium Shading 1 Accent 3"/>
+<w:lsdException w:name="Medium Shading 2 Accent 3"/>
+<w:lsdException w:name="Medium List 1 Accent 3"/>
+<w:lsdException w:name="Medium List 2 Accent 3"/>
+<w:lsdException w:name="Medium Grid 1 Accent 3"/>
+<w:lsdException w:name="Medium Grid 2 Accent 3"/>
+<w:lsdException w:name="Medium Grid 3 Accent 3"/>
+<w:lsdException w:name="Dark List Accent 3"/>
+<w:lsdException w:name="Colorful Shading Accent 3"/>
+<w:lsdException w:name="Colorful List Accent 3"/>
+<w:lsdException w:name="Colorful Grid Accent 3"/>
+<w:lsdException w:name="Light Shading Accent 4"/>
+<w:lsdException w:name="Light List Accent 4"/>
+<w:lsdException w:name="Light Grid Accent 4"/>
+<w:lsdException w:name="Medium Shading 1 Accent 4"/>
+<w:lsdException w:name="Medium Shading 2 Accent 4"/>
+<w:lsdException w:name="Medium List 1 Accent 4"/>
+<w:lsdException w:name="Medium List 2 Accent 4"/>
+<w:lsdException w:name="Medium Grid 1 Accent 4"/>
+<w:lsdException w:name="Medium Grid 2 Accent 4"/>
+<w:lsdException w:name="Medium Grid 3 Accent 4"/>
+<w:lsdException w:name="Dark List Accent 4"/>
+<w:lsdException w:name="Colorful Shading Accent 4"/>
+<w:lsdException w:name="Colorful List Accent 4"/>
+<w:lsdException w:name="Colorful Grid Accent 4"/>
+<w:lsdException w:name="Light Shading Accent 5"/>
+<w:lsdException w:name="Light List Accent 5"/>
+<w:lsdException w:name="Light Grid Accent 5"/>
+<w:lsdException w:name="Medium Shading 1 Accent 5"/>
+<w:lsdException w:name="Medium Shading 2 Accent 5"/>
+<w:lsdException w:name="Medium List 1 Accent 5"/>
+<w:lsdException w:name="Medium List 2 Accent 5"/>
+<w:lsdException w:name="Medium Grid 1 Accent 5"/>
+<w:lsdException w:name="Medium Grid 2 Accent 5"/>
+<w:lsdException w:name="Medium Grid 3 Accent 5"/>
+<w:lsdException w:name="Dark List Accent 5"/>
+<w:lsdException w:name="Colorful Shading Accent 5"/>
+<w:lsdException w:name="Colorful List Accent 5"/>
+<w:lsdException w:name="Colorful Grid Accent 5"/>
+<w:lsdException w:name="Light Shading Accent 6"/>
+<w:lsdException w:name="Light List Accent 6"/>
+<w:lsdException w:name="Light Grid Accent 6"/>
+<w:lsdException w:name="Medium Shading 1 Accent 6"/>
+<w:lsdException w:name="Medium Shading 2 Accent 6"/>
+<w:lsdException w:name="Medium List 1 Accent 6"/>
+<w:lsdException w:name="Medium List 2 Accent 6"/>
+<w:lsdException w:name="Medium Grid 1 Accent 6"/>
+<w:lsdException w:name="Medium Grid 2 Accent 6"/>
+<w:lsdException w:name="Medium Grid 3 Accent 6"/>
+<w:lsdException w:name="Dark List Accent 6"/>
+<w:lsdException w:name="Colorful Shading Accent 6"/>
+<w:lsdException w:name="Colorful List Accent 6"/>
+<w:lsdException w:name="Colorful Grid Accent 6"/>
+<w:lsdException w:name="Subtle Emphasis"/>
+<w:lsdException w:name="Intense Emphasis"/>
+<w:lsdException w:name="Subtle Reference"/>
+<w:lsdException w:name="Intense Reference"/>
+<w:lsdException w:name="Book Title"/>
+<w:lsdException w:name="Bibliography"/>
+<w:lsdException w:name="TOC Heading"/>
+</w:latentStyles>
+<w:style w:type="paragraph" w:default="on" w:styleId="a">
+<w:name w:val="Normal"/>
+<wx:uiName wx:val="Обычный"/>
+<w:rPr>
+<wx:font wx:val="Times New Roman"/>
+<w:sz w:val="24"/>
+<w:sz-cs w:val="24"/>
+<w:lang w:val="RU" w:fareast="RU" w:bidi="AR-SA"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="1">
+<w:name w:val="heading 1"/>
+<wx:uiName wx:val="Заголовок 1"/>
+<w:basedOn w:val="a"/>
+<w:rsid w:val="002311E2"/>
+<w:pPr>
+<w:spacing w:before="100" w:before-autospacing="on" w:after="100" w:after-autospacing="on"/>
+<w:outlineLvl w:val="0"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Times New Roman"/>
+<w:b/>
+<w:b-cs/>
+<w:kern w:val="36"/>
+<w:sz w:val="48"/>
+<w:sz-cs w:val="48"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:default="on" w:styleId="a0">
+<w:name w:val="Default Paragraph Font"/>
+<wx:uiName wx:val="Основной шрифт абзаца"/>
+</w:style>
+<w:style w:type="table" w:default="on" w:styleId="a1">
+<w:name w:val="Normal Table"/>
+<wx:uiName wx:val="Обычная таблица"/>
+<w:rPr>
+<wx:font wx:val="Times New Roman"/>
+<w:lang w:val="RU" w:fareast="RU" w:bidi="AR-SA"/>
+</w:rPr>
+<w:tblPr>
+<w:tblInd w:w="0" w:type="dxa"/>
+<w:tblCellMar>
+<w:top w:w="0" w:type="dxa"/>
+<w:left w:w="108" w:type="dxa"/>
+<w:bottom w:w="0" w:type="dxa"/>
+<w:right w:w="108" w:type="dxa"/>
+</w:tblCellMar>
+</w:tblPr>
+</w:style>
+<w:style w:type="list" w:default="on" w:styleId="a2">
+<w:name w:val="No List"/>
+<wx:uiName wx:val="Нет списка"/>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a3">
+<w:name w:val="Normal (Web)"/>
+<wx:uiName wx:val="Обычный (веб)"/>
+<w:basedOn w:val="a"/>
+<w:rsid w:val="002311E2"/>
+<w:pPr>
+<w:spacing w:before="100" w:before-autospacing="on" w:after="100" w:after-autospacing="on"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Times New Roman"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a4">
+<w:name w:val="Balloon Text"/>
+<wx:uiName wx:val="Текст выноски"/>
+<w:basedOn w:val="a"/>
+<w:rsid w:val="00CF0457"/>
+<w:rPr>
+<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma"/>
+<wx:font wx:val="Tahoma"/>
+<w:sz w:val="16"/>
+<w:sz-cs w:val="16"/>
+</w:rPr>
+</w:style>
+</w:styles>
+<w:divs>
+<w:div w:id="3437756">
+<w:bodyDiv w:val="on"/>
+<w:marLeft w:val="0"/>
+<w:marRight w:val="0"/>
+<w:marTop w:val="0"/>
+<w:marBottom w:val="0"/>
+<w:divBdr>
+<w:top w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:left w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:bottom w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:right w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+</w:divBdr>
+</w:div>
+<w:div w:id="64838557">
+<w:bodyDiv w:val="on"/>
+<w:marLeft w:val="0"/>
+<w:marRight w:val="0"/>
+<w:marTop w:val="0"/>
+<w:marBottom w:val="0"/>
+<w:divBdr>
+<w:top w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:left w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:bottom w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:right w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+</w:divBdr>
+</w:div>
+</w:divs>
+<w:shapeDefaults>
+<o:shapedefaults v:ext="edit" spidmax="2050"/>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1"/>
+</o:shapelayout>
+</w:shapeDefaults>
+<w:docPr>
+<w:view w:val="print"/>
+<w:zoom w:percent="100"/>
+<w:doNotEmbedSystemFonts/>
+<w:proofState w:spelling="clean" w:grammar="clean"/>
+<w:stylePaneFormatFilter w:val="3F01"/>
+<w:defaultTabStop w:val="708"/>
+<w:punctuationKerning/>
+<w:characterSpacingControl w:val="DontCompress"/>
+<w:optimizeForBrowser/>
+<w:validateAgainstSchema/>
+<w:saveInvalidXML w:val="off"/>
+<w:ignoreMixedContent w:val="off"/>
+<w:alwaysShowPlaceholderText w:val="off"/>
+<w:compat>
+<w:breakWrappedTables/>
+<w:snapToGridInCell/>
+<w:wrapTextWithPunct/>
+<w:useAsianBreakRules/>
+<w:dontGrowAutofit/>
+</w:compat>
+<wsp:rsids>
+<wsp:rsidRoot wsp:val="002311E2"/>
+<wsp:rsid wsp:val="00001FA0"/>
+<wsp:rsid wsp:val="000233E5"/>
+<wsp:rsid wsp:val="00027547"/>
+<wsp:rsid wsp:val="0006200F"/>
+<wsp:rsid wsp:val="000736A2"/>
+<wsp:rsid wsp:val="0007544D"/>
+<wsp:rsid wsp:val="00082B35"/>
+<wsp:rsid wsp:val="00084A6C"/>
+<wsp:rsid wsp:val="000871AE"/>
+<wsp:rsid wsp:val="000948DC"/>
+<wsp:rsid wsp:val="000977BE"/>
+<wsp:rsid wsp:val="000B6EF1"/>
+<wsp:rsid wsp:val="000D4F75"/>
+<wsp:rsid wsp:val="000E3409"/>
+<wsp:rsid wsp:val="000F128B"/>
+<wsp:rsid wsp:val="0010090E"/>
+<wsp:rsid wsp:val="0010174F"/>
+<wsp:rsid wsp:val="0010247B"/>
+<wsp:rsid wsp:val="00103584"/>
+<wsp:rsid wsp:val="00103976"/>
+<wsp:rsid wsp:val="00111D0C"/>
+<wsp:rsid wsp:val="00112409"/>
+<wsp:rsid wsp:val="00113028"/>
+<wsp:rsid wsp:val="00115F6A"/>
+<wsp:rsid wsp:val="00122F4B"/>
+<wsp:rsid wsp:val="00125FF2"/>
+<wsp:rsid wsp:val="00132400"/>
+<wsp:rsid wsp:val="001372DA"/>
+<wsp:rsid wsp:val="00142187"/>
+<wsp:rsid wsp:val="001501A1"/>
+<wsp:rsid wsp:val="0015140C"/>
+<wsp:rsid wsp:val="001525A8"/>
+<wsp:rsid wsp:val="0016019D"/>
+<wsp:rsid wsp:val="001644B7"/>
+<wsp:rsid wsp:val="0017028A"/>
+<wsp:rsid wsp:val="001811DF"/>
+<wsp:rsid wsp:val="001A1F05"/>
+<wsp:rsid wsp:val="001A688F"/>
+<wsp:rsid wsp:val="001B2482"/>
+<wsp:rsid wsp:val="001B598E"/>
+<wsp:rsid wsp:val="001B6B72"/>
+<wsp:rsid wsp:val="001D65ED"/>
+<wsp:rsid wsp:val="001E1822"/>
+<wsp:rsid wsp:val="0020401B"/>
+<wsp:rsid wsp:val="00210172"/>
+<wsp:rsid wsp:val="00210A82"/>
+<wsp:rsid wsp:val="0021339A"/>
+<wsp:rsid wsp:val="002209C5"/>
+<wsp:rsid wsp:val="00226A14"/>
+<wsp:rsid wsp:val="00230FD6"/>
+<wsp:rsid wsp:val="002311E2"/>
+<wsp:rsid wsp:val="00236253"/>
+<wsp:rsid wsp:val="00237D83"/>
+<wsp:rsid wsp:val="00240806"/>
+<wsp:rsid wsp:val="0024578C"/>
+<wsp:rsid wsp:val="00267F16"/>
+<wsp:rsid wsp:val="00270D39"/>
+<wsp:rsid wsp:val="00272871"/>
+<wsp:rsid wsp:val="002755AC"/>
+<wsp:rsid wsp:val="002809B7"/>
+<wsp:rsid wsp:val="002847BD"/>
+<wsp:rsid wsp:val="0029562A"/>
+<wsp:rsid wsp:val="002B3768"/>
+<wsp:rsid wsp:val="002C0F5A"/>
+<wsp:rsid wsp:val="002D4121"/>
+<wsp:rsid wsp:val="002D732C"/>
+<wsp:rsid wsp:val="002E0C1C"/>
+<wsp:rsid wsp:val="002E6A8A"/>
+<wsp:rsid wsp:val="00302306"/>
+<wsp:rsid wsp:val="003151FA"/>
+<wsp:rsid wsp:val="003214A5"/>
+<wsp:rsid wsp:val="003271F7"/>
+<wsp:rsid wsp:val="0033128D"/>
+<wsp:rsid wsp:val="00332201"/>
+<wsp:rsid wsp:val="00335E28"/>
+<wsp:rsid wsp:val="003559D7"/>
+<wsp:rsid wsp:val="00363218"/>
+<wsp:rsid wsp:val="00365128"/>
+<wsp:rsid wsp:val="00366874"/>
+<wsp:rsid wsp:val="003B19AB"/>
+<wsp:rsid wsp:val="003C0D9C"/>
+<wsp:rsid wsp:val="003C125C"/>
+<wsp:rsid wsp:val="003C7954"/>
+<wsp:rsid wsp:val="003D3E0B"/>
+<wsp:rsid wsp:val="003E50CB"/>
+<wsp:rsid wsp:val="003E7360"/>
+<wsp:rsid wsp:val="003F0F37"/>
+<wsp:rsid wsp:val="003F4CFC"/>
+<wsp:rsid wsp:val="003F7795"/>
+<wsp:rsid wsp:val="004008C7"/>
+<wsp:rsid wsp:val="00402A21"/>
+<wsp:rsid wsp:val="004044E1"/>
+<wsp:rsid wsp:val="004071C7"/>
+<wsp:rsid wsp:val="004207B3"/>
+<wsp:rsid wsp:val="00426E3D"/>
+<wsp:rsid wsp:val="004424CC"/>
+<wsp:rsid wsp:val="00444D24"/>
+<wsp:rsid wsp:val="00444D5C"/>
+<wsp:rsid wsp:val="004457E8"/>
+<wsp:rsid wsp:val="00450EC8"/>
+<wsp:rsid wsp:val="00481399"/>
+<wsp:rsid wsp:val="004838F4"/>
+<wsp:rsid wsp:val="004B411B"/>
+<wsp:rsid wsp:val="004B44CD"/>
+<wsp:rsid wsp:val="004C1B6E"/>
+<wsp:rsid wsp:val="004C1DBD"/>
+<wsp:rsid wsp:val="004C28C0"/>
+<wsp:rsid wsp:val="004E3D7D"/>
+<wsp:rsid wsp:val="004F4C29"/>
+<wsp:rsid wsp:val="004F625C"/>
+<wsp:rsid wsp:val="005223E1"/>
+<wsp:rsid wsp:val="00530625"/>
+<wsp:rsid wsp:val="00535F71"/>
+<wsp:rsid wsp:val="00536BA8"/>
+<wsp:rsid wsp:val="00550172"/>
+<wsp:rsid wsp:val="005557C1"/>
+<wsp:rsid wsp:val="0057731C"/>
+<wsp:rsid wsp:val="00590A95"/>
+<wsp:rsid wsp:val="005924BC"/>
+<wsp:rsid wsp:val="00594DDD"/>
+<wsp:rsid wsp:val="005954B9"/>
+<wsp:rsid wsp:val="005A3BAA"/>
+<wsp:rsid wsp:val="005C1E69"/>
+<wsp:rsid wsp:val="005C32F9"/>
+<wsp:rsid wsp:val="005C715E"/>
+<wsp:rsid wsp:val="005C7A39"/>
+<wsp:rsid wsp:val="005D339D"/>
+<wsp:rsid wsp:val="005E1258"/>
+<wsp:rsid wsp:val="005E27E2"/>
+<wsp:rsid wsp:val="005F6894"/>
+<wsp:rsid wsp:val="0060081B"/>
+<wsp:rsid wsp:val="00606B15"/>
+<wsp:rsid wsp:val="006110ED"/>
+<wsp:rsid wsp:val="0061529D"/>
+<wsp:rsid wsp:val="00620D2B"/>
+<wsp:rsid wsp:val="00621DD1"/>
+<wsp:rsid wsp:val="00625736"/>
+<wsp:rsid wsp:val="006322A3"/>
+<wsp:rsid wsp:val="00651A0F"/>
+<wsp:rsid wsp:val="00653F29"/>
+<wsp:rsid wsp:val="006716CC"/>
+<wsp:rsid wsp:val="0068648E"/>
+<wsp:rsid wsp:val="006A26BD"/>
+<wsp:rsid wsp:val="006A65EC"/>
+<wsp:rsid wsp:val="006B246B"/>
+<wsp:rsid wsp:val="006B2CE4"/>
+<wsp:rsid wsp:val="006D5808"/>
+<wsp:rsid wsp:val="006F4819"/>
+<wsp:rsid wsp:val="006F69CF"/>
+<wsp:rsid wsp:val="00700C31"/>
+<wsp:rsid wsp:val="0071396E"/>
+<wsp:rsid wsp:val="007159E9"/>
+<wsp:rsid wsp:val="007208AD"/>
+<wsp:rsid wsp:val="00724282"/>
+<wsp:rsid wsp:val="00731F7E"/>
+<wsp:rsid wsp:val="00741FB7"/>
+<wsp:rsid wsp:val="00745203"/>
+<wsp:rsid wsp:val="00775744"/>
+<wsp:rsid wsp:val="00781C87"/>
+<wsp:rsid wsp:val="0079244A"/>
+<wsp:rsid wsp:val="00794739"/>
+<wsp:rsid wsp:val="007B4356"/>
+<wsp:rsid wsp:val="007C0BDE"/>
+<wsp:rsid wsp:val="007C1F18"/>
+<wsp:rsid wsp:val="007C3097"/>
+<wsp:rsid wsp:val="007C4BDF"/>
+<wsp:rsid wsp:val="007C589D"/>
+<wsp:rsid wsp:val="007E019B"/>
+<wsp:rsid wsp:val="007F1869"/>
+<wsp:rsid wsp:val="007F5D5A"/>
+<wsp:rsid wsp:val="00804FEF"/>
+<wsp:rsid wsp:val="0081137A"/>
+<wsp:rsid wsp:val="008116EF"/>
+<wsp:rsid wsp:val="008140AC"/>
+<wsp:rsid wsp:val="00826E9A"/>
+<wsp:rsid wsp:val="00827E3B"/>
+<wsp:rsid wsp:val="0084260E"/>
+<wsp:rsid wsp:val="00851126"/>
+<wsp:rsid wsp:val="00853824"/>
+<wsp:rsid wsp:val="00860DD8"/>
+<wsp:rsid wsp:val="00863387"/>
+<wsp:rsid wsp:val="00867E43"/>
+<wsp:rsid wsp:val="00876162"/>
+<wsp:rsid wsp:val="008870BA"/>
+<wsp:rsid wsp:val="008878A7"/>
+<wsp:rsid wsp:val="008948B0"/>
+<wsp:rsid wsp:val="00897FB0"/>
+<wsp:rsid wsp:val="008B1440"/>
+<wsp:rsid wsp:val="008C2B60"/>
+<wsp:rsid wsp:val="008E7ADE"/>
+<wsp:rsid wsp:val="00902761"/>
+<wsp:rsid wsp:val="00905466"/>
+<wsp:rsid wsp:val="009154DD"/>
+<wsp:rsid wsp:val="00916BBA"/>
+<wsp:rsid wsp:val="00921523"/>
+<wsp:rsid wsp:val="00926D54"/>
+<wsp:rsid wsp:val="009437B1"/>
+<wsp:rsid wsp:val="00946428"/>
+<wsp:rsid wsp:val="00950A49"/>
+<wsp:rsid wsp:val="00953E56"/>
+<wsp:rsid wsp:val="009567CE"/>
+<wsp:rsid wsp:val="00972A3A"/>
+<wsp:rsid wsp:val="009841D4"/>
+<wsp:rsid wsp:val="0098523B"/>
+<wsp:rsid wsp:val="009865BC"/>
+<wsp:rsid wsp:val="0099357F"/>
+<wsp:rsid wsp:val="009A065E"/>
+<wsp:rsid wsp:val="009A7CD3"/>
+<wsp:rsid wsp:val="009B1AD7"/>
+<wsp:rsid wsp:val="009C15CF"/>
+<wsp:rsid wsp:val="009D1E5C"/>
+<wsp:rsid wsp:val="00A001B4"/>
+<wsp:rsid wsp:val="00A11C15"/>
+<wsp:rsid wsp:val="00A162D9"/>
+<wsp:rsid wsp:val="00A1732E"/>
+<wsp:rsid wsp:val="00A1794F"/>
+<wsp:rsid wsp:val="00A22D01"/>
+<wsp:rsid wsp:val="00A27A0B"/>
+<wsp:rsid wsp:val="00A31800"/>
+<wsp:rsid wsp:val="00A41D15"/>
+<wsp:rsid wsp:val="00A56998"/>
+<wsp:rsid wsp:val="00A57BBB"/>
+<wsp:rsid wsp:val="00A94D21"/>
+<wsp:rsid wsp:val="00AA324A"/>
+<wsp:rsid wsp:val="00AB10A1"/>
+<wsp:rsid wsp:val="00AB3E54"/>
+<wsp:rsid wsp:val="00AD287B"/>
+<wsp:rsid wsp:val="00AE35C4"/>
+<wsp:rsid wsp:val="00AE4C90"/>
+<wsp:rsid wsp:val="00AE4F2B"/>
+<wsp:rsid wsp:val="00AE6EE6"/>
+<wsp:rsid wsp:val="00B01F79"/>
+<wsp:rsid wsp:val="00B15165"/>
+<wsp:rsid wsp:val="00B15FE6"/>
+<wsp:rsid wsp:val="00B27C8A"/>
+<wsp:rsid wsp:val="00B3082C"/>
+<wsp:rsid wsp:val="00B56687"/>
+<wsp:rsid wsp:val="00B57D77"/>
+<wsp:rsid wsp:val="00B57F72"/>
+<wsp:rsid wsp:val="00BA19B1"/>
+<wsp:rsid wsp:val="00BA3982"/>
+<wsp:rsid wsp:val="00BA681A"/>
+<wsp:rsid wsp:val="00BB0B9E"/>
+<wsp:rsid wsp:val="00BC7C1D"/>
+<wsp:rsid wsp:val="00BD6374"/>
+<wsp:rsid wsp:val="00BD7FF7"/>
+<wsp:rsid wsp:val="00BE687C"/>
+<wsp:rsid wsp:val="00BF2E81"/>
+<wsp:rsid wsp:val="00BF5866"/>
+<wsp:rsid wsp:val="00BF6269"/>
+<wsp:rsid wsp:val="00BF75F0"/>
+<wsp:rsid wsp:val="00C13419"/>
+<wsp:rsid wsp:val="00C15464"/>
+<wsp:rsid wsp:val="00C15587"/>
+<wsp:rsid wsp:val="00C249B1"/>
+<wsp:rsid wsp:val="00C31FC2"/>
+<wsp:rsid wsp:val="00C36FC7"/>
+<wsp:rsid wsp:val="00C37E5D"/>
+<wsp:rsid wsp:val="00C47AF8"/>
+<wsp:rsid wsp:val="00C7010F"/>
+<wsp:rsid wsp:val="00C81DA7"/>
+<wsp:rsid wsp:val="00C85229"/>
+<wsp:rsid wsp:val="00C854E8"/>
+<wsp:rsid wsp:val="00C947B8"/>
+<wsp:rsid wsp:val="00C956B1"/>
+<wsp:rsid wsp:val="00CA229A"/>
+<wsp:rsid wsp:val="00CA5A4A"/>
+<wsp:rsid wsp:val="00CC42C0"/>
+<wsp:rsid wsp:val="00CD5184"/>
+<wsp:rsid wsp:val="00CD614F"/>
+<wsp:rsid wsp:val="00CE1300"/>
+<wsp:rsid wsp:val="00CF0457"/>
+<wsp:rsid wsp:val="00D01E49"/>
+<wsp:rsid wsp:val="00D03A25"/>
+<wsp:rsid wsp:val="00D0542B"/>
+<wsp:rsid wsp:val="00D12E1D"/>
+<wsp:rsid wsp:val="00D2114A"/>
+<wsp:rsid wsp:val="00D23D27"/>
+<wsp:rsid wsp:val="00D332A4"/>
+<wsp:rsid wsp:val="00D42B19"/>
+<wsp:rsid wsp:val="00D56E1D"/>
+<wsp:rsid wsp:val="00D7047F"/>
+<wsp:rsid wsp:val="00D76FA2"/>
+<wsp:rsid wsp:val="00D8166D"/>
+<wsp:rsid wsp:val="00D94243"/>
+<wsp:rsid wsp:val="00D96C43"/>
+<wsp:rsid wsp:val="00DA00EB"/>
+<wsp:rsid wsp:val="00DA69EA"/>
+<wsp:rsid wsp:val="00DA6F38"/>
+<wsp:rsid wsp:val="00DA7BFF"/>
+<wsp:rsid wsp:val="00DC2F0A"/>
+<wsp:rsid wsp:val="00DC5AF6"/>
+<wsp:rsid wsp:val="00DC5F0B"/>
+<wsp:rsid wsp:val="00DC6F83"/>
+<wsp:rsid wsp:val="00DD1039"/>
+<wsp:rsid wsp:val="00DD23E1"/>
+<wsp:rsid wsp:val="00DD53E0"/>
+<wsp:rsid wsp:val="00DE4151"/>
+<wsp:rsid wsp:val="00DF0A31"/>
+<wsp:rsid wsp:val="00E152BC"/>
+<wsp:rsid wsp:val="00E15FF3"/>
+<wsp:rsid wsp:val="00E20A2B"/>
+<wsp:rsid wsp:val="00E431E7"/>
+<wsp:rsid wsp:val="00E4509C"/>
+<wsp:rsid wsp:val="00E47318"/>
+<wsp:rsid wsp:val="00E500A0"/>
+<wsp:rsid wsp:val="00E507EF"/>
+<wsp:rsid wsp:val="00E51164"/>
+<wsp:rsid wsp:val="00E517DA"/>
+<wsp:rsid wsp:val="00E60A9E"/>
+<wsp:rsid wsp:val="00E618A4"/>
+<wsp:rsid wsp:val="00E77EE7"/>
+<wsp:rsid wsp:val="00E8368C"/>
+<wsp:rsid wsp:val="00E85BD1"/>
+<wsp:rsid wsp:val="00E87175"/>
+<wsp:rsid wsp:val="00E93EE2"/>
+<wsp:rsid wsp:val="00EC7231"/>
+<wsp:rsid wsp:val="00ED116C"/>
+<wsp:rsid wsp:val="00ED73F2"/>
+<wsp:rsid wsp:val="00EE493E"/>
+<wsp:rsid wsp:val="00EE4EA5"/>
+<wsp:rsid wsp:val="00EF10D7"/>
+<wsp:rsid wsp:val="00EF2552"/>
+<wsp:rsid wsp:val="00EF29AE"/>
+<wsp:rsid wsp:val="00F04DC7"/>
+<wsp:rsid wsp:val="00F06346"/>
+<wsp:rsid wsp:val="00F117BD"/>
+<wsp:rsid wsp:val="00F16F52"/>
+<wsp:rsid wsp:val="00F24276"/>
+<wsp:rsid wsp:val="00F27508"/>
+<wsp:rsid wsp:val="00F306C3"/>
+<wsp:rsid wsp:val="00F349B6"/>
+<wsp:rsid wsp:val="00F504E0"/>
+<wsp:rsid wsp:val="00F54269"/>
+<wsp:rsid wsp:val="00F6566C"/>
+<wsp:rsid wsp:val="00F76E05"/>
+<wsp:rsid wsp:val="00FA0C38"/>
+<wsp:rsid wsp:val="00FA2919"/>
+<wsp:rsid wsp:val="00FA2AD2"/>
+<wsp:rsid wsp:val="00FC1B83"/>
+<wsp:rsid wsp:val="00FC498A"/>
+<wsp:rsid wsp:val="00FD6102"/>
+<wsp:rsid wsp:val="00FE3AC0"/>
+<wsp:rsid wsp:val="00FF0FDB"/>
+<wsp:rsid wsp:val="00FF3876"/>
+<wsp:rsid wsp:val="00FF3993"/>
+<wsp:rsid wsp:val="00FF4D41"/>
+</wsp:rsids>
+</w:docPr>
+<w:body>
+<w:p wsp:rsidR="00E500A0" wsp:rsidRPr="002311E2" wsp:rsidRDefault="00CF0457">
+<w:r>
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:pict>
+<v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+<v:stroke joinstyle="miter"/>
+<v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype>
+<v:shape id="_x0000_s1035" type="#_x0000_t202" style="position:absolute;margin-left:367.2pt;margin-top:-45pt;width:102.45pt;height:18pt;z-index:5" filled="f" stroked="f">
+<v:textbox style="mso-next-textbox:#_x0000_s1035">
+<w:txbxContent>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRPr="004457E8" wsp:rsidRDefault="004457E8">
+<w:pPr>
+<w:rPr>
+<w:b/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="004457E8">
+<w:rPr>
+<w:b/>
+</w:rPr>
+<w:t>№ 
+</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:b/>
+</w:rPr>
+<w:t> 
+</w:t>
+</w:r>
+<w:r wsp:rsidR="00CF0457" wsp:rsidRPr="004457E8">
+<w:rPr>
+<w:b/>
+</w:rPr>
+<w:t>10
+</w:t>
+</w:r>
+</w:p>
+</w:txbxContent>
+</v:textbox>
+</v:shape>
+</w:pict>
+</w:r>
+<w:r>
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:pict>
+<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+<v:stroke joinstyle="miter"/>
+<v:formulas>
+<v:f eqn="if lineDrawn pixelLineWidth 0"/>
+<v:f eqn="sum @0 1 0"/>
+<v:f eqn="sum 0 0 @1"/>
+<v:f eqn="prod @2 1 2"/>
+<v:f eqn="prod @3 21600 pixelWidth"/>
+<v:f eqn="prod @3 21600 pixelHeight"/>
+<v:f eqn="sum @0 0 1"/>
+<v:f eqn="prod @6 1 2"/>
+<v:f eqn="prod @7 21600 pixelWidth"/>
+<v:f eqn="sum @8 21600 0"/>
+<v:f eqn="prod @7 21600 pixelHeight"/>
+<v:f eqn="sum @10 21600 0"/>
+</v:formulas>
+<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+<o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype>
+<w:binData w:name="wordml://02000001.png" xml:space="preserve">{!img}</w:binData>
+<v:shape id="_x0000_s1033" type="#_x0000_t75" style="position:absolute;margin-left:-12.3pt;margin-top:468pt;width:263.25pt;height:255.75pt;z-index:4">
+<v:imagedata src="wordml://02000001.png" o:title="Stil1"/>
+</v:shape>
+</w:pict>
+</w:r>
+<w:r>
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:pict>
+<v:shape id="_x0000_s1031" type="#_x0000_t202" style="position:absolute;margin-left:261pt;margin-top:567pt;width:225pt;height:153pt;z-index:3" filled="f" stroked="f">
+<v:textbox style="mso-next-textbox:#_x0000_s1031">
+<w:txbxContent>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRPr="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457">
+<w:pPr>
+<w:rPr>
+<w:b/>
+<w:sz w:val="28"/>
+<w:sz-cs w:val="28"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CF0457">
+<w:rPr>
+<w:b/>
+<w:sz w:val="28"/>
+<w:sz-cs w:val="28"/>
+</w:rPr>
+<w:t>Салон красоты  «Стиль.
+</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CF0457">
+<w:rPr>
+<w:b/>
+<w:sz w:val="28"/>
+<w:sz-cs w:val="28"/>
+<w:lang w:val="EN-US"/>
+</w:rPr>
+<w:t>RU
+</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CF0457">
+<w:rPr>
+<w:b/>
+<w:sz w:val="28"/>
+<w:sz-cs w:val="28"/>
+</w:rPr>
+<w:t>» 
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457"/>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457">
+<w:r>
+<w:t>г. Екатеринбург, ул. Н. Онуфриева, д.10, офис 3
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457"/>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457">
+<w:r>
+<w:t>(343)  243 – 50 – 55 
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="00CF0457" wsp:rsidP="00CF0457">
+<w:r>
+<w:t>(902)  503 – 29 – 28
+</w:t>
+</w:r>
+</w:p>
+</w:txbxContent>
+</v:textbox>
+</v:shape>
+</w:pict>
+</w:r>
+<w:r wsp:rsidR="002311E2">
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:pict>
+<v:shape id="_x0000_s1030" type="#_x0000_t202" style="position:absolute;margin-left:-36pt;margin-top:405pt;width:522pt;height:90pt;z-index:2" filled="f" stroked="f">
+<v:textbox style="mso-next-textbox:#_x0000_s1030">
+<w:txbxContent>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="0"/>
+<w:ilfo w:val="1"/>
+<wx:t wx:val="·"/>
+<wx:font wx:val="Symbol"/>
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Обязательна предварительная запись по телефону на удобное время.
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00CF0457" wsp:rsidRDefault="002311E2" wsp:rsidP="00CF0457">
+<w:pPr>
+<w:listPr>
+
+<w:ilfo w:val="1"/>
+
+
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Услуга  оказывается в салоне «Стиль.
+</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:lang w:val="EN-US"/>
+</w:rPr>
+<w:t>RU
+</w:t>
+</w:r>
+<w:r>
+<w:t>» по адресу
+</w:t>
+</w:r>
+<w:r wsp:rsidRPr="002311E2">
+<w:t>:
+</w:t>
+</w:r>
+<w:r>
+<w:t> 
+</w:t>
+</w:r>
+<w:r wsp:rsidR="00CF0457">
+<w:br/>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r wsp:rsidR="00CF0457">
+<w:t>г
+</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r wsp:rsidR="00CF0457">
+<w:t>. Екатеринбург, ул. Н. Онуфриева, д.10, офис 3
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="00CF0457">
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="0"/>
+<w:ilfo w:val="1"/>
+<wx:t wx:val="·"/>
+<wx:font wx:val="Symbol"/>
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Сертификат действителен в течени
+</w:t>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r>
+<w:t>и
+</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r>
+<w:t> 6 месяцев.
+</w:t>
+</w:r>
+</w:p>
+</w:txbxContent>
+</v:textbox>
+</v:shape>
+</w:pict>
+</w:r>
+<w:r wsp:rsidR="002311E2">
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:pict>
+<v:shape id="_x0000_s1028" type="#_x0000_t202" style="position:absolute;margin-left:1in;margin-top:252pt;width:414pt;height:90pt;z-index:1" filled="f" stroked="f">
+<v:textbox style="mso-next-textbox:#_x0000_s1028">
+<w:txbxContent>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:pStyle w:val="1"/>
+<w:spacing w:before="0" w:before-autospacing="off" w:after="0" w:after-autospacing="off"/>
+</w:pPr>
+<w:r>
+<w:t>Кедровая бочка + восточный массаж
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:pStyle w:val="a3"/>
+<w:spacing w:before="0" w:before-autospacing="off" w:after="0" w:after-autospacing="off"/>
+</w:pPr>
+<w:r>
+<w:t>Отдых и здоровье для тела:
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="0"/>
+<w:ilfo w:val="1"/>
+<wx:t wx:val="·"/>
+<wx:font wx:val="Symbol"/>
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Кедровая бочка с 
+</w:t>
+</w:r>
+<w:proofErr w:type="spellStart"/>
+<w:r>
+<w:t>аромамаслами
+</w:t>
+</w:r>
+<w:proofErr w:type="spellEnd"/>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="0"/>
+<w:ilfo w:val="1"/>
+<wx:t wx:val="·"/>
+<wx:font wx:val="Symbol"/>
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Массаж на область спины по восточной методике
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2" wsp:rsidP="002311E2">
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="0"/>
+<w:ilfo w:val="1"/>
+<wx:t wx:val="·"/>
+<wx:font wx:val="Symbol"/>
+</w:listPr>
+</w:pPr>
+<w:r>
+<w:t>Уход за кожей лица и глаз
+</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="002311E2" wsp:rsidRDefault="002311E2"/>
+</w:txbxContent>
+</v:textbox>
+</v:shape>
+</w:pict>
+</w:r>
+</w:p>
+<w:sectPr wsp:rsidR="00E500A0" wsp:rsidRPr="002311E2">
+<w:pgSz w:w="12240" w:h="15840"/>
+<w:pgMar w:top="1134" w:right="850" w:bottom="1134" w:left="1701" w:header="720" w:footer="720" w:gutter="0"/>
+<w:cols w:space="720"/>
+</w:sectPr>
+</w:body>
+</w:wordDocument>

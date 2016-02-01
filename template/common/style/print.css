@@ -1,0 +1,7 @@
+body{font-size: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;}
+a img{border:none}
+.grid {border-collapse:collapse}
+.grid td{border:solid .5pt black}
+.grid th{border:solid .5pt black}
+.no-print{display:none}
+.myMap{width:720px;height:360px}
