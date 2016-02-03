@@ -1,0 +1,12 @@
+#AddDefaultCharset utf-8
+#AddDefaultCharset windows-1251
+#Options +Includes +FollowSymLinks -Indexes Multiviews
+#CharsetRecodeMultipartForms Off
+#Options +Includes +FollowSymLinks -Indexes 
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)$ /index.php
+
+php_flag short_open_tag on
