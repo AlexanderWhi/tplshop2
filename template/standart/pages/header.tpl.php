@@ -8,7 +8,13 @@
 <meta name="robots" content="noindex"/>
 <meta name="robots" content="nofollow" />
 <?}?>
+
+<?if($f=$this->cfg('FAVICON_PATH')){?>
+    <link href="<?=$f?>?<?=$no_cache?>" rel="shortcut icon" />
+    <?}else{?>
 <link href="/favicon.ico?<?=$no_cache?>" rel="shortcut icon" />
+    <?}?>
+
 
 
 

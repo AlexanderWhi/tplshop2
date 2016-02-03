@@ -109,7 +109,7 @@ class SQL{
 //		if(get_magic_quotes_gpc()){
 //			$str = stripslashes ( $str );
 //		}
-		$str = mysql_escape_string( $str );
+		$str = mysql_real_escape_string( $str );
 		return $str;
 	}
 	function connect($sqlhost,$login,$password,$base=null){
