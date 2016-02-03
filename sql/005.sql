@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_feedback` ADD  `file` VARCHAR( 128 ) NOT NULL AFTER  `phone`

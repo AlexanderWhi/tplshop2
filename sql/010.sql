@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_shop_order_item` ADD  `proposalid` INT NOT NULL AFTER  `itemid`

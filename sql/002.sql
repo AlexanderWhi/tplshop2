@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_feedback` ADD  `answer` TEXT NOT NULL AFTER  `comment`

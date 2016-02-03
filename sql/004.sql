@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_shop_proposal` ADD  `create_time` TIMESTAMP NOT NULL AFTER  `itemid`

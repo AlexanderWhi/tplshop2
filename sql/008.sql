@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_shop_proposal` ADD  `delivery_city` VARCHAR( 64 ) NOT NULL AFTER  `delivery_time`

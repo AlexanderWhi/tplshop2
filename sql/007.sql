@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_users` ADD  `img_format` INT NOT NULL AFTER  `avat`

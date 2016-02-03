@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_users_vendor` ADD  `adm_comment` TEXT NOT NULL
