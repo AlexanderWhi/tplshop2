@@ -20,6 +20,16 @@
                 <label><input type="checkbox" name="clear_favicon"> По умолчанию</label>
             </td>
         </tr>
+        <tr>
+            <td>Пустышка</td>
+            <td>
+                <?if($no_img){?>
+                <img src="<?=$no_img?>"><br>
+                <?}?>
+                <input type="file" name="no_img">
+                <label><input type="checkbox" name="clear_no_img"> По умолчанию</label>
+            </td>
+        </tr>
     </table>
     <br/>
     <input type="submit" value="Сохранить" class="button"/>	

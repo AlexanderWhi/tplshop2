@@ -18,11 +18,18 @@ foreach ($this->getCatalog() as $node) {
 	<a href="<?=$href?>" class="root"><?=$node['name']?></a><?
 	if(!empty($node['children'])){
 		__render_left_catalog($node['children'],$this);
+                ?><a class="more" href="<?=$href?>">Все разделы</a><?
 	}?>
-	<a class="more" href="<?=$href?>">Все разделы</a>
+	
 </div><!--
 --><?}?>
 </div>
+
+
+<?if($catalog=$hit_list){?>
+<?  include 'catalog_view_table.tpl.php'?>;
+<?}?>
+
 <?if(false && $manufacturer){?>
 <div class="manufacturer">
 <h2>Бренды</h2>

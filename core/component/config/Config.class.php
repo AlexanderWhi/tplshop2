@@ -85,19 +85,17 @@ class Config extends AdminComponent {
         $data=array(
             'logo'=>$this->cfg('LOGO_PATH'),
             'favicon'=>$this->cfg('FAVICON_PATH'),
+            'no_img'=>$this->cfg('NO_IMG'),
         );
         
         $this->display($data, dirname(__FILE__) . '/config_front.tpl.php');
     }
     function actFrontSave(){
         global $post;
-        $data=array(
-            'logo'=>$this->cfg('LOGO_PATH'),
-            'favicon'=>$this->cfg('FAVICON_PATH'),
-        );
+        
         $path=dirname($this->cfg('NO_IMG'));
         if($_FILES['favicon']['tmp_name']){
-            $fname=$path.'/'.time()."_".file_ext($_FILES['favicon']['name']);
+            $fname=$path.'/favicon_'.time()."_".file_ext($_FILES['favicon']['name']);
             if(move_uploaded_file($_FILES['favicon']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('FAVICON_PATH', $fname,'Фавикон');
             }
@@ -106,7 +104,7 @@ class Config extends AdminComponent {
             $this->saveCfg('FAVICON_PATH', '');
         }
         if($_FILES['logo']['tmp_name']){
-            $fname=$path.'/'.time()."_".file_ext($_FILES['logo']['name']);
+            $fname=$path.'/logo_'.time()."_".file_ext($_FILES['logo']['name']);
             if(move_uploaded_file($_FILES['logo']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('LOGO_PATH', $fname,'Лого');
             }
@@ -114,11 +112,26 @@ class Config extends AdminComponent {
         if($post->get('clear_logo')){
             $this->saveCfg('LOGO_PATH', '');
         }
+        if($_FILES['no_img']['tmp_name']){
+            $fname=$path.'/no_img_'.time()."_".file_ext($_FILES['no_img']['name']);
+            if(move_uploaded_file($_FILES['no_img']['tmp_name'], ROOT.$fname)){
+                $this->saveCfg('NO_IMG', $fname,'Лого');
+            }
+        }
+        if($post->get('clear_logo')){
+            $this->saveCfg('NO_IMG', null);
+        }
         
         echo printJSON(array('msg' => 'Данные обновлены'));
         exit;
     }
     function saveCfg($name,$val,$desc=null){
+        
+        if($val===null){
+            DB::delete('sc_config',"name='$name'");
+            return;
+        }
+        
         $rs=DB::select("SELECT * FROM sc_config WHERE name='$name'");
         $d=array('value'=>$val);
         if($desc!==null){
