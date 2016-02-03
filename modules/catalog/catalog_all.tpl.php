@@ -27,7 +27,7 @@ foreach ($this->getCatalog() as $node) {
 
 
 <?if($catalog=$hit_list){?>
-<?  include 'catalog_view_table.tpl.php'?>;
+<?  include 'catalog_view_table.tpl.php'?>
 <?}?>
 
 <?if(false && $manufacturer){?>
