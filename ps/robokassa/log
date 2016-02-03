@@ -1,0 +1,58 @@
+2010-06-25 17:54:02 faul
+Array
+(
+    [inv_id] => 10
+    [out_summ] => 10.00
+    [crc] => 8670dd0dca5a110d364fb4af018de52e
+    [InvId] => 10
+    [OutSum] => 10.00
+    [SignatureValue] => 8670dd0dca5a110d364fb4af018de52e
+    [Culture] => ru
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [PATH] => /usr/local/bin:/usr/bin:/bin
+    [DOCUMENT_ROOT] => /www/cupicu01/www/htdocs/
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_CONNECTION] => close
+    [HTTP_COOKIE] => Apache=188.18.174.140.124921277309967398; __utma=171637298.1136768410.1277309952.1277309952.1277309952.1; __utmz=171637298.1277309952.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)
+    [HTTP_HOST] => www.cupicup.ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; AskTB5.6)
+    [HTTP_X_REAL_IP] => 94.50.158.153
+    [REMOTE_ADDR] => 94.50.158.153
+    [REMOTE_PORT] => 33678
+    [SCRIPT_FILENAME] => /www/cupicu01/www/htdocs/robokassa/faul.php
+    [SCRIPT_URI] => http://www.cupicup.ru/robokassa/faul.php
+    [SCRIPT_URL] => /robokassa/faul.php
+    [SERVER_ADDR] => 79.174.72.70
+    [SERVER_ADMIN] => support@hc.ru
+    [SERVER_NAME] => www.cupicup.ru
+    [SERVER_PORT] => 80
+    [SERVER_SOFTWARE] => Apache/1.3.34 (Unix)
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.0
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => inv_id=10&out_summ=10.00&crc=8670dd0dca5a110d364fb4af018de52e&InvId=10&OutSum=10.00&SignatureValue=8670dd0dca5a110d364fb4af018de52e&Culture=ru&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/faul.php?inv_id=10&out_summ=10.00&crc=8670dd0dca5a110d364fb4af018de52e&InvId=10&OutSum=10.00&SignatureValue=8670dd0dca5a110d364fb4af018de52e&Culture=ru&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/faul.php
+    [CGIPARSED] => environment_parsed
+    [PHPINIDIR] => /www/cupicu01
+    [PHP_SELF] => /robokassa/faul.php
+    [REQUEST_TIME] => 1277474042
+    [argv] => Array
+        (
+            [0] => inv_id=10&out_summ=10.00&crc=8670dd0dca5a110d364fb4af018de52e&InvId=10&OutSum=10.00&SignatureValue=8670dd0dca5a110d364fb4af018de52e&Culture=ru&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+

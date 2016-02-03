@@ -1,0 +1,1124 @@
+2010-06-25 23:49:48
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [PATH] => /usr/local/bin:/usr/bin:/bin
+    [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=utf-8
+    [DOCUMENT_ROOT] => /www/cupicu01/www/htdocs/
+    [HTTP_CONNECTION] => close
+    [HTTP_HOST] => www.cupicup.ru
+    [HTTP_USER_AGENT] => .NET Framework/v2.0.50727
+    [HTTP_X_REAL_IP] => 212.24.63.49
+    [REMOTE_ADDR] => 212.24.63.49
+    [REMOTE_PORT] => 61139
+    [SCRIPT_FILENAME] => /www/cupicu01/www/htdocs/robokassa/result.php
+    [SCRIPT_URI] => http://www.cupicup.ru/robokassa/result.php
+    [SCRIPT_URL] => /robokassa/result.php
+    [SERVER_ADDR] => 79.174.72.70
+    [SERVER_ADMIN] => support@hc.ru
+    [SERVER_NAME] => www.cupicup.ru
+    [SERVER_PORT] => 80
+    [SERVER_SOFTWARE] => Apache/1.3.34 (Unix)
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.0
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [CGIPARSED] => environment_parsed
+    [PHPINIDIR] => /www/cupicu01
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1277495388
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 01:56:58
+Array
+(
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_session_id=31358
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 7985
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /robokassa/result.php
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014218
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+2010-07-02 01:57:51
+Array
+(
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_session_id=31358
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 7987
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /robokassa/result.php
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014271
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+2010-07-02 01:58:19
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_session_id=31358
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 7990
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014299
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 01:58:39
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=28962; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 7993
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014310
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:00:21
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=26464; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 7998
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014417
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:00:48
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; __utmb=56887229.24.10.1278011750; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=30145; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 8003
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014446
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:03:59
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=18827; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 8009
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278014637
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:13:15
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; debug_session_id=11961; debug_port=32; debug_host=127.0.0.1; debug_start_session=1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 8025
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278015193
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:13:32
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; debug_session_id=11961; debug_start_session=1; ZendDebuggerCookie=127.0.0.1%3A32%3A0||04C|77742D65|0
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 8025
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278015209
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-02 02:14:29
+Array
+(
+    [out_summ] => 10.000000
+    [inv_id] => 1277492712
+    [crc] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [OutSum] => 10.000000
+    [InvId] => 1277492712
+    [SignatureValue] => 313F3AAE1F41BCD65A5ECD7CF8CCC07D
+    [PaymentMethod] => LiqPay
+    [IncSum] => 0.340000
+    [IncCurrLabel] => LiqPayZ
+    [Shp_demo] => 0
+    [Shp_item] => 2
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTB5.6)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => __utma=56887229.867565264.1276967753.1277989556.1278011750.8; __utmz=56887229.1276967753.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); status=hide; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=a791e4b82111c5d9a18e0939b8cdfc89; __utmc=56887229; debug_session_id=11961; debug_start_session=1; ZendDebuggerCookie=127.0.0.1%3A32%3A0||04C|77742D65|0
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 8025
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [REQUEST_URI] => /robokassa/result.php?out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1278015268
+    [argv] => Array
+        (
+            [0] => out_summ=10.000000&inv_id=1277492712&crc=313F3AAE1F41BCD65A5ECD7CF8CCC07D&OutSum=10.000000&InvId=1277492712&SignatureValue=313F3AAE1F41BCD65A5ECD7CF8CCC07D&PaymentMethod=LiqPay&IncSum=0.340000&IncCurrLabel=LiqPayZ&Shp_demo=0&Shp_item=2
+        )
+
+    [argc] => 1
+)
+
+2010-07-17 23:23:51
+Array
+(
+    [out_summ] => 300.000000
+    [inv_id] => 96
+    [crc] => F5D70061B713B35A10C9D9D0F934B072
+    [OutSum] => 300.000000
+    [InvId] => 96
+    [SignatureValue] => F5D70061B713B35A10C9D9D0F934B072
+    [PaymentMethod] => PlatezhRu
+    [IncSum] => 300.000000
+    [IncCurrLabel] => OceanBankR
+    [ShpType] => balance
+    [ShpUserId] => 177
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => debug_session_id=2041; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=3248f91d74bd32811001fee540522c73; debug_port=32; debug_host=127.0.0.1; debug_start_session=1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; original_url=http://f-biglion.ru/
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 1520
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+    [REQUEST_URI] => /robokassa/result.php?out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1279387424
+    [argv] => Array
+        (
+            [0] => out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+        )
+
+    [argc] => 1
+)
+
+2010-07-17 23:26:26
+Array
+(
+    [out_summ] => 300.000000
+    [inv_id] => 96
+    [crc] => F5D70061B713B35A10C9D9D0F934B072
+    [OutSum] => 300.000000
+    [InvId] => 96
+    [SignatureValue] => F5D70061B713B35A10C9D9D0F934B072
+    [PaymentMethod] => PlatezhRu
+    [IncSum] => 300.000000
+    [IncCurrLabel] => OceanBankR
+    [ShpType] => balance
+    [ShpUserId] => 177
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => debug_session_id=2041; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=3248f91d74bd32811001fee540522c73; debug_start_session=1; ZendDebuggerCookie=127.0.0.1%3A32%3A0||04C|77742D65|0
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 1539
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+    [REQUEST_URI] => /robokassa/result.php?out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1279387582
+    [argv] => Array
+        (
+            [0] => out_summ=300.000000&inv_id=96&crc=F5D70061B713B35A10C9D9D0F934B072&OutSum=300.000000&InvId=96&SignatureValue=F5D70061B713B35A10C9D9D0F934B072&PaymentMethod=PlatezhRu&IncSum=300.000000&IncCurrLabel=OceanBankR&ShpType=balance&ShpUserId=177
+        )
+
+    [argc] => 1
+)
+
+2010-08-26 21:19:55
+Array
+(
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => debug_session_id=4995; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=f1484b8651d42522165b12a90a96f4be
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 4378
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /robokassa/result.php
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1282835995
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+2010-08-28 21:00:04
+Array
+(
+    [out_summ] => 800.000000
+    [inv_id] => 323
+    [crc] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [OutSum] => 800.000000
+    [InvId] => 323
+    [SignatureValue] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [PaymentMethod] => EMoney
+    [IncSum] => 800.000000
+    [IncCurrLabel] => PCR
+    [ShpOrderId] => 477
+    [ShpType] => balance
+    [ShpUserId] => 1200
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/msword, application/x-shockwave-flash, */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => debug_session_id=4995
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 2232
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [REQUEST_URI] => /robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1283007604
+    [argv] => Array
+        (
+            [0] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+        )
+
+    [argc] => 1
+)
+
+2010-08-28 21:01:52
+Array
+(
+    [out_summ] => 800.000000
+    [inv_id] => 323
+    [crc] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [OutSum] => 800.000000
+    [InvId] => 323
+    [SignatureValue] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [PaymentMethod] => EMoney
+    [IncSum] => 800.000000
+    [IncCurrLabel] => PCR
+    [ShpOrderId] => 477
+    [ShpType] => balance
+    [ShpUserId] => 1200
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => ZDEDebuggerPresent=php,phtml,php3; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=2041; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 2261
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [REQUEST_URI] => /robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1283007708
+    [argv] => Array
+        (
+            [0] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+        )
+
+    [argc] => 1
+)
+
+2010-08-28 21:03:18
+Array
+(
+    [out_summ] => 800.000000
+    [inv_id] => 323
+    [crc] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [OutSum] => 800.000000
+    [InvId] => 323
+    [SignatureValue] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [PaymentMethod] => EMoney
+    [IncSum] => 800.000000
+    [IncCurrLabel] => PCR
+    [ShpOrderId] => 477
+    [ShpType] => balance
+    [ShpUserId] => 1200
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => ZDEDebuggerPresent=php,phtml,php3; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=20467; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 2308
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [REQUEST_URI] => /robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1283007797
+    [argv] => Array
+        (
+            [0] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+        )
+
+    [argc] => 1
+)
+
+2010-08-28 21:04:17
+Array
+(
+    [out_summ] => 800.000000
+    [inv_id] => 323
+    [crc] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [OutSum] => 800.000000
+    [InvId] => 323
+    [SignatureValue] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [PaymentMethod] => EMoney
+    [IncSum] => 800.000000
+    [IncCurrLabel] => PCR
+    [ShpOrderId] => 477
+    [ShpType] => balance
+    [ShpUserId] => 1200
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => ZDEDebuggerPresent=php,phtml,php3; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=8334; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 2308
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [REQUEST_URI] => /robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1283007855
+    [argv] => Array
+        (
+            [0] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+        )
+
+    [argc] => 1
+)
+
+2010-08-28 21:23:28
+Array
+(
+    [out_summ] => 800.000000
+    [inv_id] => 323
+    [crc] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [OutSum] => 800.000000
+    [InvId] => 323
+    [SignatureValue] => 1FAC23C9D939835A4766BA0CA6D72FBA
+    [PaymentMethod] => EMoney
+    [IncSum] => 800.000000
+    [IncCurrLabel] => PCR
+    [ShpOrderId] => 477
+    [ShpType] => balance
+    [ShpUserId] => 1200
+)
+
+Array
+(
+)
+
+Array
+(
+    [HTTP_ACCEPT] => */*
+    [HTTP_ACCEPT_LANGUAGE] => ru
+    [HTTP_USER_AGENT] => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WebMoney Advisor; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbPTV/5.8.0.12304)
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_HOST] => f-biglion.ru
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_COOKIE] => ZDEDebuggerPresent=php,phtml,php3; debug_port=32; debug_host=127.0.0.1; start_debug=1; debug_stop=1; send_sess_end=1; debug_jit=1; no_remote=1; debug_session_id=28500; original_url=http://f-biglion.ru/robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [PATH] => \usr\local\ImageMagick;\usr\local\php5;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\cvsnt;C:\Program Files\Common Files\DivX Shared\;C:\Sun\SDK\bin
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => <address>Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4 Server at f-biglion.ru Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+    [SERVER_NAME] => f-biglion.ru
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => Z:/home/f-biglion.ru/www
+    [SERVER_ADMIN] => admin@localhost
+    [SCRIPT_FILENAME] => Z:/home/f-biglion.ru/www/robokassa/result.php
+    [REMOTE_PORT] => 2665
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [REQUEST_URI] => /robokassa/result.php?out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+    [SCRIPT_NAME] => /robokassa/result.php
+    [PHP_SELF] => /robokassa/result.php
+    [REQUEST_TIME] => 1283008995
+    [argv] => Array
+        (
+            [0] => out_summ=800.000000&inv_id=323&crc=1FAC23C9D939835A4766BA0CA6D72FBA&OutSum=800.000000&InvId=323&SignatureValue=1FAC23C9D939835A4766BA0CA6D72FBA&PaymentMethod=EMoney&IncSum=800.000000&IncCurrLabel=PCR&ShpOrderId=477&ShpType=balance&ShpUserId=1200
+        )
+
+    [argc] => 1
+)
+

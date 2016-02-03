@@ -17,6 +17,7 @@ class AdminComponent extends BaseComponent{
 		array("label"=>'Проводник','url'=>"/admin/files/",'accessgroup'=>'supervisor'),	
 		array("label"=>'Пользователи','url'=>"/admin/users/"),	
 		array("label"=>'Настройки','url'=>"/admin/config/"),	
+		array("label"=>'Настройки сайта','url'=>"/admin/config/front"),	
 		array("label"=>'Настройки ПС','url'=>"/admin/paysystem/",'accessgroup'=>'supervisor'),	
 	);
 	

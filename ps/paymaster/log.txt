@@ -1,0 +1,182 @@
+2014-09-01 04:40:06Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 04:42:08Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 04:43:41Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 04:58:22Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 04:58:49Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 04:59:59Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
+2014-09-01 05:07:42Array
+(
+    [start_debug] => 1
+    [debug_port] => 32
+    [debug_fastfile] => 1
+    [debug_host] => 127.0.0.1
+)
+
+Array
+(
+    [LMI_MERCHANT_ID] => c90f4342-4ce0-4718-b416-6fe47af9673b
+    [LMI_PAYMENT_SYSTEM] => 3
+    [LMI_CURRENCY] => RUB
+    [LMI_PAYMENT_AMOUNT] => 1290.00
+    [LMI_PAYMENT_NO] => 20
+    [LMI_PAYMENT_DESC] => Покупка товара
+    [LMI_SYS_PAYMENT_DATE] => 2014-08-29T14:25:43
+    [LMI_SYS_PAYMENT_ID] => 19847001
+    [LMI_PAID_AMOUNT] => 1290.00
+    [LMI_PAID_CURRENCY] => RUB
+    [LMI_SIM_MODE] => 0
+    [LMI_PAYER_IDENTIFIER] => 351775724336
+    [LMI_PAYMENT_METHOD] => Test
+    [LMI_HASH] => 8X+kCfAYHsRD67ZojcBgtQ==
+)
+
