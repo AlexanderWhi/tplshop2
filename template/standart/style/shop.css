@@ -39,7 +39,7 @@ table.goods .city_list div{font-size:13px;border:solid 1px #e27a3f}
 .lab .new{display:block;width:56px;height:37px;padding-top:15px;background:url(img/i_new.png);color:#fff;font-size:0}
 
 div.goods{margin:0 -10px;margin-bottom:20px}
-div.goods .item{display:inline-block;*display:inline;zoom:1;padding:20px;width:178px;margin:10px;vertical-align:top;position:relative;border:solid 1px #e6e6e6;height:310px}
+div.goods .item{display:inline-block;*display:inline;zoom:1;padding:20px;width:178px;margin:10px;vertical-align:top;position:relative;border:solid 1px #e6e6e6;height:290px}
 div.goods .item .in_basket{position:absolute;top:8px;right:-17px;display:none;background:#fff;border:solid 2px #a6ce39;border-radius:16px;width:30px;height:27px;padding-top:3px;color:#a6ce39;font-weight:500;font-size:18px;text-align:center}
 div.goods .item.changed{border:solid 2px #a6ce39;margin:8px;}
 div.goods .item.changed .in_basket{display:block}

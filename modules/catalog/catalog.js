@@ -65,7 +65,7 @@ $(function(){
 //	});	
 	
 
-$('.goods-menu h4 a').each(function(){
+/*$('.goods-menu h4 a').each(function(){
 	
 	if($(this).hasClass('expand')){
 		$(this).parents('.goods-menu').find('ul').hide();
@@ -84,7 +84,7 @@ $('.goods-menu h4 a').each(function(){
 		$(this).removeClass('unexpand').addClass('expand');
 	}
 	return false;
-});
+});*/
 $('a.show_all').click(function(){
 	$('.prop_item.h').toggle();
 	return false;

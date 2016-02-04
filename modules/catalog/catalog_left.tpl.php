@@ -26,11 +26,13 @@
 <?if(!$this->getUriVal('goods')){?>
 <div class="goods-menu">
 <?if(isset($parentname)){?>
-<h4><a href="#" class="unexpand"><?=@$parentname?></a></h4>
+<h4><?=@$parentname?></h4>
 <?}?>
 
-<?foreach ($this->getCatalog() as $node) {?>
-<h4><?=$node['name']?></h4>
+<?foreach ($this->getCatalog() as $node) {
+    $href="/catalog/{$node['id']}";
+    ?>
+<h4><a href="<?=$href?>"><?=$node['name']?></a></h4>
 <?if(!empty($node['children'])){?>
 <ul><?
 foreach ($node['children'] as $item) {

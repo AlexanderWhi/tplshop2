@@ -223,4 +223,16 @@ function my_session_start($save=true){
 		session_start();
 	}
 }
-?>
+
+
+if (!defined('ENT_SUBSTITUTE')) {
+    define('ENT_SUBSTITUTE', 0);
+}if (!defined('ENT_HTML5')) {
+    define('ENT_HTML5', 0);
+}if (!defined('ENT_DISALLOWED')) {
+    define('ENT_DISALLOWED', 0);
+}
+
+function my_htmlspecialchars($str, $encoding = "cp1251") {
+    return htmlspecialchars($str, ENT_QUOTES | ENT_HTML5 | ENT_DISALLOWED | ENT_SUBSTITUTE, $encoding);
+}

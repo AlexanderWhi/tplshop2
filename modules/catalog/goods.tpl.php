@@ -81,13 +81,18 @@ function propList($prop,$lim=0,$list=null){
 
 <?/*div>Наличие: <?if($in_stock){?><span class="in_stock">Есть в наличии</span><?}else{?><span class="no_in_stock">НЕТ в наличии</span><?}?></div*/?>
 <br>
-
-<strong class="price"><?=price($price,$weight_flg) ?></strong><br>
+<br>
+<?if(false){?>
 Кол-во: 
 <!--<a class="down"></a>--><input id="count" class="field count <?if($weight_flg){?>weight<?}?>" value="1"><!--<a class="up"></a>-->
-
 <br>
 <a class="add title" href="javascript:shop.add(<?=$id?>,$('#count').val())" title=" В корзину">В корзину</a>
+<?}else{?>
+
+<a class="add title" href="javascript:shop.add(<?=$id?>,'+1')" title=" В корзину">В корзину</a><br>
+<?}?>
+<strong class="price"><?=price($price,$weight_flg) ?></strong><br>
+
 
 
 <br>

@@ -22,7 +22,7 @@
 				<?if($item['sort3']>0){?><span class="new">Новинка</span><?}?>
 			</div>
 			<?$img=($item['img']?$item['img']:$this->cfg('NO_IMG'))?>
-			<a class="img  " title=" <?=htmlspecialchars($item['name'])?>" style="background-image:url('<?=scaleImg($img,'w280h140')?>')"  href="<?=$url?>" rel="<?=scaleImg($img,'w420h420')?>"></a>
+			<a class="img  <?if($this->cfg('SHOP_SCALE_IMAGE')=='true'){?>image<?}?>" title=" <?=htmlspecialchars($item['name'])?>" style="background-image:url('<?=scaleImg($img,'w280h140')?>')"  href="<?=$url?>" rel="<?=scaleImg($img,'w420h420')?>"></a>
 			<a class="name" <?/*title=" <?=$item['name']?>"*/?> href="<?=$url?>"><?=isset($_GET['search'])?preg_replace('='.preg_quote($_GET['search']).'=i','<span style="color:red">\0</span>',$item['name']):$item['name']?></a>
 			<?if(!empty($item['r'])){?><div class="rait r<?=round($item['r'])?>"></div><?}?>
 			<?if(!$this->inFav($item['id'])){?>

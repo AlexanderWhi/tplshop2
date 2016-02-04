@@ -42,8 +42,8 @@ if(!$name){
 
 <div class="inline-block">
 
-<input  title="Имя *" name="name" class="field top" value="<?=$name?>"><br>
-<input  title="Телефон" name="phone" class="field bottom"><br>
+<input  placeholder="Имя *" name="name" class="field top" value="<?=$name?>"><br>
+<input  placeholder="Телефон" name="phone" class="field bottom"><br>
 <div>
 <?if(defined('IMG_SECURITY')){?>
 		
@@ -53,7 +53,7 @@ if(!$name){
 </div>
 
 <div class="inline-block m">
-<textarea name="comment" class="field " title="Сообщение"></textarea><br>
+<textarea name="comment" class="field " placeholder="Сообщение"></textarea><br>
 
 	<input type="submit" class="button" name="send" value="Отправить отзыв">
 </div>

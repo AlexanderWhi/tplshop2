@@ -13,7 +13,7 @@
 
 <!--<a href="/contacts/print/" class="print no-print" target="_blank">Печать страницы</a>-->
 <br>
-<div class="common_block no-print" style="display:none">
+<div class="common_block no-print" >
 
 
 <form  class="common no-print" id="contacts-form" action="/contacts/?act=send" >

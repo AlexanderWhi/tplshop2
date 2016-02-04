@@ -24,7 +24,7 @@ body { min-width: 940px;_height:100%;}
 #header{position:relative;z-index:2;}
 #header .wrapper{position:relative;padding-top:86px;}
 
-#logo {position:absolute;background:url(img/logo.png) top no-repeat;width:217px;top:22px;text-decoration:none;padding-top:25px;left:0;text-transform:uppercase;font-size:11px;color:#838383}
+#logo {position:absolute;width:217px;top:22px;text-decoration:none;left:0;text-transform:uppercase;font-size:11px;color:#838383;text-align:center;line-height:10px}
 
 #slide-bar{height:70px;width:1240px;background:url(img/slide_bar_bg.png);border-top:solid 1px #ebebeb;position:relative;box-shadow:0 2px 5px #dbdbdb}
 
@@ -166,6 +166,10 @@ ul.left_menu li a.act{color:#000;text-decoration:none}
 .social a.tw{background:url(img/soc_tw.png)}
 .social a.inst{background:url(img/soc_inst.png)}
 
+#top .social a.fb{background:url(img/soc1_fb.png)}
+#top .social a.vk{background:url(img/soc1_vk.png)}
+#top .social a.tw{background:url(img/soc1_tw.png)}
+
 
 #contacts{position:absolute;font-size:14px;top:20px;right:0px;text-align:right}
 #contacts strong{display:block;font-size:20px;font-weight:normal;padding-top:4px}
@@ -175,9 +179,6 @@ ul.left_menu li a.act{color:#000;text-decoration:none}
 
 #block-info-footer{position:absolute;left:0px;top:30px;line-height:30px}
 #block-info-footer strong{font-size:18px;font-weight:normal}
-
-
-
 
 
 

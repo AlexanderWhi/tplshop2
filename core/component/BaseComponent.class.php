@@ -331,7 +331,7 @@ class BaseComponent{
 	function render($data=array(),$tpl=null,$CONTENT=null){
 		if(!$tpl)return;
 		foreach ($data as $k=>$v){
-			$$k=is_string($v)?htmlspecialchars($v):$v;
+			$$k=is_string($v)?my_htmlspecialchars($v):$v;
 		}
 		ob_start();
 		if(method_exists($this,$tpl)){
