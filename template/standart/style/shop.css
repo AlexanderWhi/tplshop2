@@ -44,7 +44,7 @@ div.goods .item .in_basket{position:absolute;top:8px;right:-17px;display:none;ba
 div.goods .item.changed{border:solid 2px #a6ce39;margin:8px;}
 div.goods .item.changed .in_basket{display:block}
 div.goods .img_name_desc{}
-div.goods .img{display:block;height:170px;background:#fff center no-repeat;margin:-20px;margin-bottom:10px;}
+div.goods .img{display:block;height:170px;background:#fff top left no-repeat;margin:-20px;margin-bottom:10px;}
 div.goods .img_over{display:none;height:320px;background:center no-repeat;}
 div.goods .name{padding:5px 0px;display:block;overflow:hidden;font-size:14px;}
 div.goods .desc{max-height:30px;_height:30px;display:block;overflow:hidden;font-size:11px}

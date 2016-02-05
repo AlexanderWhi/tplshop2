@@ -831,6 +831,7 @@ class AdminCatalog extends AdminListComponent {
 			}
 		}
 		
+                $field['img_format_list']=Img::getFormatList();
 		
 		$field['catalog']=$this->getCatalog();
 		
@@ -1041,6 +1042,7 @@ class AdminCatalog extends AdminListComponent {
 			'in_stock'=>$post->getInt('in_stock'),
 			'sort3'=>$post->getInt('sort3'),
 			'ext_id'=>$post->get('ext_id'),
+			'unit'=>$post->get('unit'),//Тип вставки изображения
 			
 		);
 		if($post->exists('manufacturer')){
