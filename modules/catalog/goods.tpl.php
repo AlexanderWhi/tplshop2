@@ -183,3 +183,4 @@ $(function(){
 	$('a[rel="gallery"]').colorbox();
 });
 </script>
+<?include('template/common/yametrica_goods.tpl.php')?>

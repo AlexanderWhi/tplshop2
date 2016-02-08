@@ -46,4 +46,4 @@
         
         </div>
 </div><!--/#footer-->
-<?include('metrica.tpl.php')?>
+<?include('template/common/yametrica.tpl.php')?>
