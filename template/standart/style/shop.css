@@ -108,7 +108,7 @@ div.manufacturer a{text-decoration:none;margin:0 5px;}
 
 #goods{margin-bottom:30px;}
 #goods .left_bar{display:inline-block;vertical-align:top;width:620px;}
-#goods .left_bar .img_list a{display:block;height:360px;background:center no-repeat;border:solid 1px #e6e6e6}
+#goods .left_bar .img_list a{display:block;height:360px;background:top no-repeat;border:solid 1px #e6e6e6}
 #goods .discount{font-style:italic;font-size:14px}
 #goods .right_bar {display:inline-block;vertical-align:top;margin-left:18px;width:300px;}
 #goods .right_bar .price{font-weight:normal;font-size:30px;color:#000;}
@@ -135,7 +135,7 @@ div.manufacturer a{text-decoration:none;margin:0 5px;}
 
 #preview ul{margin:0 -10px;;padding:3px 0;overflow:hidden;white-space:nowrap}
 #preview ul li{margin:0;padding:0;list-style:none;display:inline-block;margin:0 10px;border:solid 1px #e6e6e6;}
-#preview ul li a{background:center no-repeat;display:block;width:110px;height:80px;}
+#preview ul li a{background:top no-repeat;display:block;width:110px;height:80px;}
 #preview ul li.act{border:solid 2px #e6e6e6 ;margin:-2px 9px}
 #preview ul li.act img{border-radius:0px}
 

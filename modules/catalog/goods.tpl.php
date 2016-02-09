@@ -44,7 +44,7 @@ function propList($prop,$lim=0,$list=null){
 <div class="left_bar">
 	<div class="img_list">
 	<?$img=($img?$img:$this->cfg('NO_IMG'))?>
-		<a rel="gallery" href="<?=scaleImg($img,'w800')?>" style="background-image:url('<?=(scaleImg($img,'w380h320'))?>')"></a>
+		<a rel="gallery" href="<?=scaleImg($img,'w800')?>" style="background-image:url('<?=Img::scaleBySize($img,$unit,array(620,360))?><?//=(scaleImg($img,'w380h320'))?>')"></a>
 	</div>
 	
 	
@@ -56,7 +56,7 @@ function propList($prop,$lim=0,$list=null){
 	<ul>
 	<?foreach ($rs as $n=>$item) {?>
 		<li>
-		<a href="<?=scaleImg($item,'w800')?>" rel='<?if($n){?>gallery<?}?>' rel2="<?=scaleImg($item,'w400')?>" rel2="" style="background-image:url(<?=scaleImg($item,'h80')?>)"></a>
+		<a href="<?=scaleImg($item,'w800')?>" rel='<?if($n){?>gallery<?}?>' rel2="<?=Img::scaleBySize($item,$unit,array(620,360))?><?//=scaleImg($item,'w400')?>" style="background-image:url(<?=Img::scaleBySize($item,$unit,array(110,80))?><?//=scaleImg($item,'h80')?>)"></a>
 		</li>
 	<?}?>
 	</ul>

@@ -29,4 +29,4 @@
 <? if ($this->getUri() == '/') { ?><link rel="stylesheet" type="text/css" href="/template/<?= $this->theme() ?>/style/main.css?<?= $no_cache ?>" /><? } ?>
 
 <link rel="stylesheet" type="text/css" href="/datepicker/datepicker.css" />
-
+<?include('script.tpl.php')?>
