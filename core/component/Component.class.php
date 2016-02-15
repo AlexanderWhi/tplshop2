@@ -377,6 +377,39 @@ class Component extends BaseComponent {
         return $output;
     }
 
+    function setClientId() {
+        if (!empty($_COOKIE['Client_id'])) {
+            $uid = $_COOKIE['Client_id'];
+        } else {
+            $uid = md5(uniqid());
+        }
+        setcookie('Client_id', $_COOKIE['Client_id'] = $uid, time() + 3600 * 24 * 365, '/');
+    }
+
+    function getClientId() {
+        return @$_COOKIE['Client_id'];
+    }
+
+    function setFirstReferer() {
+        if ($r = $this->getReferer()) {
+            if (!$this->getFirstReferer()) {
+                setcookie('first_referer', $_COOKIE['first_referer'] = $r, time() + 3600 * 24 * 365, '/');
+            }
+        }
+    }
+
+    function getFirstReferer() {
+        return @$_COOKIE['first_referer'];
+    }
+
+    function getReferer() {
+        if (!empty($_SERVER['HTTP_REFERER'])) {
+            if (!preg_match('|^http://' . $_SERVER['HTTP_HOST'] . '|', $_SERVER['HTTP_REFERER'])) {
+                return $_SERVER['HTTP_REFERER'];
+            }
+        }
+    }
+
     function getText($name) {
         return '{%' . $name . '%}';
     }
@@ -404,6 +437,8 @@ class Component extends BaseComponent {
 
     function display($data = array(), $tpl = null, $tplContainer = null, $cache = null) {
         global $ST;
+        $this->setClientId();
+        $this->setFirstReferer();
         if (!$tpl) {
             $tpl = $this->tplComponent;
         }
