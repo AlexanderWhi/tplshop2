@@ -125,8 +125,13 @@ class Catalog extends Component {
         }
         if ($this->getURIVal('catalog') == 'new') {
 
-            $condition.=" AND i.sort>0";
+            $condition.=" AND i.sort3>0";
             $this->setPageTitle('Новинки');
+        }
+        if ($this->getURIVal('catalog') == 'special') {
+
+            $condition.=" AND i.sort>0";
+            $this->setPageTitle('СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ');
         }
 //		if($this->getURIVal('catalog')=='action'){
 //			$condition.=" AND i.sort1>0";
@@ -277,10 +282,16 @@ class Catalog extends Component {
         $q = trim(strtolower(SQL::slashes(urldecode($get->get('search')))));
 
         if ($q) {
-//			$condition.=" AND i.category=c.id
-//				AND (lower(i.name) LIKE '%".$q."%')";
-
-            $condition.=" AND (lower(i.name) LIKE '%" . $q . "%')"; //19.11.2012 нет привязки к каталогу
+            if ($words = Rumor::getAllForms($q)) {
+                $or = array();
+                foreach ($words as $w) {
+                    $or[] = "i.name LIKE '%" . $w . "%'";
+                }
+                $condition.=" AND (" . implode(' OR ', $or) . ")";
+            } else {
+                $condition.=" AND (i.name LIKE '%" . SQL::slashes($q) . "%')";
+            }
+            //$condition.=" AND lower(i.name) LIKE '%" . $q . "%'";
         }
 
 //		$query="SELECT count(*) AS c FROM sc_shop_item i,sc_shop_offer of $condition $man_condition $p_condition $prop_condition $s_condition" ;

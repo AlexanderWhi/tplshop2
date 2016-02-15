@@ -17,6 +17,4 @@ foreach ($catalog as $item) {
 </ul>
 <?}?>
 
-
-
 <?__render_menu_catalog($this->getMenuCatalog())?>

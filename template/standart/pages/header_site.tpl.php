@@ -27,7 +27,7 @@
         <? if ($this->cfg('SEARCH_FORM') == 'true') { ?>
             <!--search-->
             <form id="search-bar" action="/catalog/">
-                <input name="search" placeholder="<?= $this->cfg('SEARCH_TITLE') ?>" value="<?= isset($_GET['search']) ? htmlspecialchars(trim(urldecode($_GET['search']))) : '' ?>"><!--
+                <input name="search" placeholder="<?= $this->cfg('SEARCH_TITLE') ?>" value="<?= isset($_GET['search']) ? Html::encode(trim($_GET['search'])) : '' ?>"><!--
                 --><button type="submit">Найти</button>
             </form>
         <? } ?>

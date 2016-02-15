@@ -10,6 +10,9 @@
 					<?if($catalog=$goods){?>
 					<h2>Спецпредложения</h2>
 					<?include("modules/catalog/catalog_view_table.tpl.php")?>
+                                        <div style="text-align:right">
+                                            <a href="/catalog/special/">Смотреть все предложения</a>
+                                        </div>
 					<?}?>	
 				
 					<?if($manufacturer){?>
