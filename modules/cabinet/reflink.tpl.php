@@ -17,5 +17,23 @@
 <br>
 
 <?=$this->getText('referal_info')?>
-
+<table>
+    <tr>
+    
+        <td>Привлеченных</td>
+        <td><?=$ref_count?></td>
+    </tr>
+    
+    <tr>
+    
+        <td>Заказов</td>
+        <td><?=$ref_order_count?></td>
+    </tr>
+    <tr>
+    
+        <td>Сумма заказов</td>
+        <td><?=$ref_order_sum?></td>
+    </tr>
+    
+</table>
 </div>

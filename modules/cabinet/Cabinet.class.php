@@ -335,8 +335,22 @@ class Cabinet extends Component {
     function actReflink() {
         global $post;
         $data=array(
-            
+            'ref_count'=>0,
+            'ref_order_sum'=>0,
+            'ref_order_count'=>0,
         );
+        $rs=DB::select("SELECT COUNT(*) AS c FROM sc_users WHERE refid={$this->getUserid()}");
+        if($rs->next()){
+            $data['ref_count']=$rs->getInt('c');
+        }
+        $rs=DB::select("SELECT sum(price) AS s FROM sc_shop_order o,sc_users u WHERE u.u_id=o.userid AND refid={$this->getUserid()}");
+        if($rs->next()){
+            $data['ref_order_sum']=$rs->getInt('s');
+        }
+        $rs=DB::select("SELECT COUNT(*) AS c FROM sc_shop_order o,sc_users u WHERE u.u_id=o.userid AND u.refid={$this->getUserid()}");
+        if($rs->next()){
+            $data['ref_order_count']=$rs->getInt('c');
+        }
         $this->display($data, dirname(__FILE__) . "/reflink.tpl.php");
     }
 }

@@ -133,8 +133,15 @@ foreach ($pay_system_list as $k=>$desc) {?>
 <br>
 
 <span class="total">Итого: <strong id="basket_total_summ_1"><?=price($price);?></strong></span>
-
 <br>
+<br>
+<div>
+<label>Реферальный номер:</label><br>
+<input name="refid" class="field" value="<?=$this->getRefId()?>">
+</div>
+<br>
+
+
 <br>
 <button class="button order silver" name="order" type="submit" alt="Заказ в обработке" >Оформить заказ</button>
 </div>

@@ -377,6 +377,15 @@ class Component extends BaseComponent {
         return $output;
     }
 
+    function setRefId() {
+        if (!empty($_GET['refid'])) {
+            setcookie('Ref_id', $_GET['refid'], time() + 3600 * 24 * 365, '/');
+        }
+    }
+
+    function getRefId() {
+        return @$_COOKIE['Ref_id'];
+    }
     function setClientId() {
         if (!empty($_COOKIE['Client_id'])) {
             $uid = $_COOKIE['Client_id'];
@@ -439,6 +448,7 @@ class Component extends BaseComponent {
         global $ST;
         $this->setClientId();
         $this->setFirstReferer();
+        $this->setRefId();
         if (!$tpl) {
             $tpl = $this->tplComponent;
         }

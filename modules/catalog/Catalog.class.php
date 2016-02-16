@@ -1764,7 +1764,15 @@ class Catalog extends Component {
 //					'company'=>$post->get('company'),
             );
 
-
+//Добавим реферала
+            if ($refid = $post->getInt('refid')) {
+                $rs = DB::select("SELECT * FROM sc_users WHERE u_id=$refid");
+                if ($rs->next()) {
+                    $data['refid'] = $post->getInt('refid');
+                } else {
+                    //Если неправильный refid
+                }
+            }
 
             if (!$this->getUserId() && $post->getInt('reg') == 1 /* $post->exists('reg_login') */) {//&& $post->exists('want_reg')
                 if ($post->exists('mail')) {
