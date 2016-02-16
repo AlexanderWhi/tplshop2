@@ -5,6 +5,7 @@
 		'/shop/'=>'История заказов',
 //		'/shop/archives/'=>'Архив заказов',
 		'/shopnote/'=>'Список покупок',
+		'/cabinet/reflink/'=>'Реферальная ссылка',
 		
 //		'/cabinet/password/'=>'Изменить пароль',
 		'/catalog/basket/'=>'Корзина',
