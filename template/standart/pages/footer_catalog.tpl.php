@@ -11,13 +11,13 @@
 				<?if($i && ($i%$div==0)){?>
 				</td><td>
 				<?}$i++ ;?>
-	        	<a class="root" href="<?="/cat/".$item['id']."/"?>"><?=$item['name']?></a>
+	        	<a class="root" href="/catalog/<?=$item['id']?>/"><?=$item['name']?></a>
 	           
 	            <?if(isset($item['children'] )){?>
 	            <div class="ch">
 	            <? $j=0;
 	            foreach ($item['children'] as $item){
-	            ?><a href="<?="/cat/".$item['id']."/"?>"><?=$item['name']?></a><?}?>
+	            ?><a href="/catalog/<?=$item['id']?>/"><?=$item['name']?></a><?}?>
 				</div><?}?>  
 	            
 			<?}?>
