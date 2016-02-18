@@ -1387,8 +1387,8 @@ class AdminCatalog extends AdminListComponent {
 		<?if($this->getURIVal('catalog')!='goodsPopup'){?>
 		<a href="<?=$this->mod_uri?>goodsEdit/<?if(!empty($_GET['category'])){?>?category=<?=$_GET['category']?><?}?>"><img src="/img/pic/add_16.gif" title="Добавить" alt="Добавить"/>Добавить</a>
 		
-		| <a href="<?=$this->getURI(array('offer'=>$this->getURIBoolVal('offer')?null:'1'))?>">Расширенный вид</a>
-		| <a href="<?=$this->getURI(array('imgmode'=>$this->getURIBoolVal('imgmode')?'0':'1'))?>">Изображения</a>
+		| <a href="<?=$this->getURI(array('offer'=>$this->getURIBoolVal('offer')?null:'1'),true)?>">Расширенный вид</a>
+		| <a href="<?=$this->getURI(array('imgmode'=>$this->getURIBoolVal('imgmode')?'0':'1'),true)?>">Изображения</a>
 		| <a href="/admin/catalog/prop/">Свойства товаров</a>
 		| <a href="?act=Manufacturer">Производитель</a>
 		| <a href="/admin/catalog/relation/">Связи</a>
