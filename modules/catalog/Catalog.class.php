@@ -1694,6 +1694,13 @@ class Catalog extends Component {
         $bsk = new Basket($this->getBasket());
         if ($bsk->getTotalPrice() < (int) $this->cfg('SHOP_ORDER_COND')) {
             $error['basket'] = "Сумма заказа не менее {$this->cfg('SHOP_ORDER_COND')} р.";
+        }else{
+            foreach ($this->getBasket() as $item){
+                if($item['in_stock']<0){
+                    $error['basket']=$item['name']." НЕТ В НАЛИЧИИ";
+                    break;
+                }
+            }
         }
         return $error;
     }
@@ -1883,7 +1890,7 @@ class Catalog extends Component {
 //			
 //			}
             //Добавим заказ
-            $id = $ST->insert('sc_shop_order', $data);
+            $id=LibShop::addOrder($data,$basket['basket']);
 
             $ps_href = '';
 
@@ -1901,31 +1908,15 @@ class Catalog extends Component {
                 }
             }
 
-            $icq_notice = "Новый заказ на сайте {$_SERVER['HTTP_HOST']}\n";
-
-            foreach ($basket['basket'] as $item) {
-                $d = array(
-                    'orderid' => $id,
-                    'itemid' => $item['id'],
-                    'count' => $item['count'],
-                    'price' => $item['price'],
-//						'unit_sale'=>$item['unit_sale'],
-                );
-                if (!empty($item['nmnid'])) {
-                    $d['nmn'] = $item['nmnid'];
-                }
-                if (!empty($item['item_comment'])) {
-                    $d['comment'] = $item['item_comment'];
-                }
-                $ST->insert('sc_shop_order_item', $d);
-                $icq_notice.="{$item['name']} - [{$item['count']}] {$item['price']}р. \n";
-            }
-            $icq_notice.="Итого: {$basket['sum']}\n";
-            $icq_notice.="Заказчик: {$post->get('from_name')}\n";
-            $icq_notice.="Контактный телефон: {$post->get('from_phone')}\n";
-            $icq_notice.="Адрес: {$post->get('address')}\n";
-//			$icq_notice.="Сообщение: {$post->get('comment')}\n";
-            $icq_notice.="Время доставки: {$post->get('date')} {$post->get('time')}\n";
+//            $icq_notice = "Новый заказ на сайте {$_SERVER['HTTP_HOST']}\n";
+//
+//            
+//            $icq_notice.="Итого: {$basket['sum']}\n";
+//            $icq_notice.="Заказчик: {$post->get('from_name')}\n";
+//            $icq_notice.="Контактный телефон: {$post->get('from_phone')}\n";
+//            $icq_notice.="Адрес: {$post->get('address')}\n";
+////			$icq_notice.="Сообщение: {$post->get('comment')}\n";
+//            $icq_notice.="Время доставки: {$post->get('date')} {$post->get('time')}\n";
 
             //уведомление о заказе пользователю
 
@@ -1986,7 +1977,7 @@ class Catalog extends Component {
             $this->sendTemplateMail($this->cfg('MAIL'), 'notice_new_order4admin', $notice
             );
 
-            $this->noticeICQ($this->cfg('ICQ'), $icq_notice);
+           // $this->noticeICQ($this->cfg('ICQ'), $icq_notice);
 
             $d = $this->getOrderData();
             unset($d['additionally']);

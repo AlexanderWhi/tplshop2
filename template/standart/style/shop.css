@@ -26,6 +26,9 @@ a.b_up:hover{background:#a6ce39 url(img/c_up_over.png) center no-repeat;}
 .total{font-size:18px;font-weight:500;}
 .total strong{font-size:30px;font-weight:500;color:#d5222c}
 
+.in_stock{color:green}
+.no_in_stock{color:red}
+
 table.goods .city_list{}
 table.goods .city_list div{font-size:13px;border:solid 1px #e27a3f}
 

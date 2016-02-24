@@ -211,6 +211,7 @@ class LibCatalog {
 //					$item['vendor']=$rs->get('vendor');
                     $item['img'] = $rs->get('img');
                     $item['description'] = $rs->get('description');
+                    $item['in_stock'] = $rs->get('in_stock');
                     $item['price'] = $rs->getFloat('price'); //цена с наценкой//14,09,2013
                     $item['unit'] = $rs->getInt('unit');
 //					$item['company']=$rs->get('company');
@@ -287,6 +288,5 @@ class LibCatalog {
         setcookie('favorite', $_COOKIE['favorite'] = json_encode($favorite), COOKIE_EXP, '/');
     }
 
+    
 }
-
-?>
