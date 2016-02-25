@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_shop_item` ADD  `awards` FLOAT NOT NULL COMMENT  'Агентское вознаграждение' AFTER  `old_price`

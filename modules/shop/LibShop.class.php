@@ -93,6 +93,7 @@ class LibShop {
 
     static function addOrder($data,$basket) {
         $id = DB::insert('sc_shop_order', $data);
+        
         foreach ($basket as $item) {
             $d = array(
                 'orderid' => $id,
@@ -101,6 +102,9 @@ class LibShop {
                 'price' => $item['price'],
 //						'unit_sale'=>$item['unit_sale'],
             );
+            if(!empty($item['discount'])){
+                $d['price']-=$item['discount'];
+            }
             if (!empty($item['nmnid'])) {
                 $d['nmn'] = $item['nmnid'];
             }

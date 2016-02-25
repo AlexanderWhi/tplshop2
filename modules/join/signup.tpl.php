@@ -31,8 +31,8 @@
         <span id="error-phone" class="error"></span><br>
     </div>
     <div class="inline_block">
-        <label class="i">Номер: </label>
-        <input name="refid" class="field" value="<?= $this->getRefId() ?>"/>
+        <label class="i">Промо код: </label>
+        <input name="promo" class="field" value="<?= $this->getPromo() ?>"/>
      </div>
 
 

@@ -1,6 +1,7 @@
 <div class="block_info">
 Ваша ссылка для привлечения рефералов<br>
-<strong>http://<?=$_SERVER['HTTP_HOST']?>/?refid=<?=$this->getUserId()?></strong>
+<?$promo="http://{$_SERVER['HTTP_HOST']}/?promo=".ShopBonus::genPromo($this->getUserId());?>
+<strong><?=$promo?></strong>
 <br>
 
 <script type="text/javascript">(function() {
@@ -11,7 +12,7 @@
           var h=d[g]('head')[0] || d[g]('body')[0];
           h.appendChild(s);
           })();</script>
-        <div class="pluso" data-options="small,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir" data-background="transparent" data-url="http://<?=$_SERVER['HTTP_HOST']?>/?refid=<?=$this->getUserId()?>" data-title="<?=my_htmlspecialchars($this->cfg('HEADER_TITLE'))?>"></div>
+        <div class="pluso" data-options="small,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir" data-background="transparent" data-url="<?=$promo?>" data-title="<?=my_htmlspecialchars($this->cfg('HEADER_TITLE'))?>"></div>
 
 <br>
 <br>

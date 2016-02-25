@@ -333,6 +333,7 @@ class Cabinet extends Component {
     }
 
     function actReflink() {
+        include_once 'modules/shop/ShopBonus.class.php';
         global $post;
         $data=array(
             'ref_count'=>0,

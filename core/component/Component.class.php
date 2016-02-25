@@ -381,8 +381,17 @@ class Component extends BaseComponent {
         if (!empty($_GET['refid'])) {
             setcookie('Ref_id', $_GET['refid'], time() + 3600 * 24 * 365, '/');
         }
+        if (!empty($_GET['promo'])) {
+            include_once 'modules/shop/ShopBonus.class.php';
+            if($refid=  ShopBonus::getPromoRefId($_GET['promo'])){
+                setcookie('promo', $_GET['promo'], time() + 3600 * 24 * 365, '/');
+            }
+        }
     }
 
+    function getPromo() {
+        return @$_COOKIE['promo'];
+    }
     function getRefId() {
         return @$_COOKIE['Ref_id'];
     }

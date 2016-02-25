@@ -116,6 +116,7 @@ class Join extends Component {
     }
 
     function actSign() {
+        include_once 'modules/shop/ShopBonus.class.php';
         global $ST, $post;
 
         if (!$err = $this->checkAll($post)) {
@@ -133,6 +134,14 @@ class Join extends Component {
             );
             //Добавим реферала
             if($refid=$post->getInt('refid')){
+                $rs=DB::select("SELECT * FROM sc_users WHERE u_id=$refid");
+                if($rs->next()){
+                    $field['refid']=$post->getInt('refid');
+                }else{
+                    //Если неправильный refid
+                } 
+            }
+            if($refid=  ShopBonus::getPromoRefId($post->get('promo'))){
                 $rs=DB::select("SELECT * FROM sc_users WHERE u_id=$refid");
                 if($rs->next()){
                     $field['refid']=$post->getInt('refid');

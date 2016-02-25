@@ -1248,6 +1248,12 @@ class Catalog extends Component {
             if ($post->exists('delivery_type')) {
                 $d['delivery_type'] = $post->get('delivery_type');
             }
+            if ($post->exists('refid')) {
+                $d['refid'] = $post->getInt('refid');
+            }
+            if ($post->exists('promo')) {
+                $d['promo'] = $post->get('promo');
+            }
 //			if($post->exists('not_use_bonus')){
 //				$d['not_use_bonus']=$post->get('not_use_bonus');
 //			}
@@ -1503,6 +1509,12 @@ class Catalog extends Component {
             }
         }
 
+        if(!empty($d['refid'])){
+            ShopBonus::recountBasket($d['refid'],$data['basket']);
+        }
+        if(!empty($d['promo'])){
+            ShopBonus::recountBasket(ShopBonus::getPromoRefId($d['promo']),$data['basket']);
+        }
 
         foreach ($data['basket'] as &$item) {
             if (isset($d['item_comment'][$item['key']])) {
@@ -1892,6 +1904,12 @@ class Catalog extends Component {
             //Добавим заказ
             $id=LibShop::addOrder($data,$basket['basket']);
 
+            if($refid=$post->getInt('refid')){
+                ShopBonus::addRefAwards($refid, $basket['basket']);
+            }elseif($refid=  ShopBonus::getPromoRefId ($post->get('promo'))){
+                ShopBonus::addRefAwards($refid, $basket['basket']);
+            }
+            
             $ps_href = '';
 
             if (isset($data['pay_system']) && $data['pay_system'] == 3 && $data['total_price']) {//Если электронные платежи и есть сумма

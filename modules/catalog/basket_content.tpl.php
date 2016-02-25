@@ -52,7 +52,13 @@ if($item['weight_flg']){
 ?> 
 <?=$this->getUnit($item['unit'])?>
 </td>
-<td><strong class="price"><?=price($item['price'],$item['weight_flg'])?></strong></td>
+<td><strong class="price"><?=price($item['price'],$item['weight_flg'])?></strong>
+
+<?if(!empty($item['discount'])){?>
+    <span style="color:red">(-<?=price($item['discount'])?>)</span>
+<?}?>
+
+</td>
 <td><strong class="price sum"><?=price($item['sum'])?></strong></td>
 
 <?/*td>

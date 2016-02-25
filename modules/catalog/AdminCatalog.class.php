@@ -802,6 +802,7 @@ class AdminCatalog extends AdminListComponent {
 			'img_add'=>'',
 			'price'=>0,
 			'old_price'=>0,
+			'awards'=>0,
 			'unit'=>'',
 			'ext_id'=>'',
 			'in_stock'=>1,			
@@ -1038,6 +1039,7 @@ class AdminCatalog extends AdminListComponent {
 			'weight_flg'=>$post->getInt('weight_flg'),
 			'price'=>$post->getFloat('price'),
 			'old_price'=>$post->getFloat('old_price'),
+			'awards'=>$post->getFloat('awards'),
 		
 			'in_stock'=>$post->getInt('in_stock'),
 			'sort3'=>$post->getInt('sort3'),

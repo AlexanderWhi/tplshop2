@@ -57,12 +57,9 @@
 		
 		<tr><th>Товар весовой:</th><td><input type="checkbox" value="1" name="weight_flg" value="1" <? if ($weight_flg) { ?>checked<? } ?>></td></tr>
 		<tr><th>Цена:</th><td><input class="input-text num2" name="price"  value="<?= $price ?>"/></td></tr>
-		
-		
-		
-		
 		<tr><th>Старая цена:</th><td><input class="input-text num2" name="old_price"  value="<?= $old_price ?>"/></td></tr>
 		<tr><th>В наличии:</th><td><input class="input-text num" name="in_stock"  value="<?= $in_stock ?>"/></td></tr>
+		<tr><th>Агентское вознаграждение:</th><td><input class="input-text num2" name="awards"  value="<?= $awards ?>"/></td></tr>
 		<tr><th>Новинка:</th><td><input class="input-text num" name="sort3"  value="<?= $sort3 ?>"/></td></tr>
 		
 		</table>

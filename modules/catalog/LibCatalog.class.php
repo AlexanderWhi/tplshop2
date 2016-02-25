@@ -56,8 +56,6 @@ class LibCatalog {
 			) AS t
 				
 			GROUP BY t.catid) AS mcnt ON mcnt.catid=cat.id
-			
-			
 			WHERE sort>-1 AND ((sort>0 AND parentid=0) OR parentid>0)"; //AND state=1 //AND sort<20 
 
         $q.=" ORDER BY sort";
@@ -86,7 +84,7 @@ class LibCatalog {
 
         if (isset($item)) {
             foreach ($item as &$i) {
-                $i[$k . "r"] = LibCatalog::_recount_cat($i, $k);
+                $i[$k . "r"] = self::_recount_cat($i, $k);
             }
         }
 
@@ -99,18 +97,26 @@ class LibCatalog {
         return $MENU_CATALOG = $menu;
     }
 
+    /**
+     * Производители
+     * @return type
+     */
     function getManufacturer() {
         return DB::select("SELECT * FROM sc_manufacturer WHERE img<>''")->toArray();
     }
 
-    function getMainGoods($type='sort') {
+    /**
+     * Товары на главной
+     * @param type $type
+     * @return type
+     */
+    function getMainGoods($type = 'sort') {
         $q = "SELECT * FROM sc_shop_item i
 			LEFT JOIN(SELECT COUNT(DISTINCT commentid) AS c,AVG(rating) AS r,itemid  FROM sc_comment,sc_comment_rait r 
 				WHERE commentid=id  AND TRIM(comment)<>'' AND status=1 AND type IN('','goods') GROUP BY itemid) AS rait ON rait.itemid=i.id
 			WHERE i.$type>0 ORDER BY i.$type";
         return DB::select($q)->toArray();
     }
-    
 
     function getRelation($id) {
         $field = array();
@@ -170,10 +176,6 @@ class LibCatalog {
 
     function getPrice($price) {
         $margin = 0; //Наценка//14,09,2013 /admin/catsrv/delivery/
-        //Условия наценки для стрекозы
-//		if(($cityProp=$this->getCityProperties()) && isset($cityProp['margin'])){
-//			$margin=(int)$cityProp['margin'];
-//		}
         return $price + $price / 100 * $margin;
     }
 
@@ -190,7 +192,7 @@ class LibCatalog {
             $ids = array();
             foreach ($basket as $key => $val) {
                 if (preg_match('/id(\d+)/', $key, $res)) {
-//					$ids[]=preg_replace('/id(\d+)(_\d+)?/','\1',$key);//Выбираем идентификатор товара
+//		$ids[]=preg_replace('/id(\d+)(_\d+)?/','\1',$key);//Выбираем идентификатор товара
                     $ids[] = $res[1]; //Выбираем идентификатор товара
                 }
             }
@@ -213,6 +215,7 @@ class LibCatalog {
                     $item['description'] = $rs->get('description');
                     $item['in_stock'] = $rs->get('in_stock');
                     $item['price'] = $rs->getFloat('price'); //цена с наценкой//14,09,2013
+                    $item['awards'] = $rs->getFloat('awards'); //Агентские
                     $item['unit'] = $rs->getInt('unit');
 //					$item['company']=$rs->get('company');
                     $item['weight_flg'] = $rs->getInt('weight_flg');
@@ -265,7 +268,6 @@ class LibCatalog {
     }
 
     static function addFav($id) {
-
         $favorite = array();
         if (isset($_COOKIE['favorite'])) {
             $favorite = json_decode(stripslashes($_COOKIE['favorite']), true);
@@ -288,5 +290,4 @@ class LibCatalog {
         setcookie('favorite', $_COOKIE['favorite'] = json_encode($favorite), COOKIE_EXP, '/');
     }
 
-    
 }
