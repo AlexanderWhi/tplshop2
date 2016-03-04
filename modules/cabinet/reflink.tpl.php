@@ -1,9 +1,12 @@
 <div class="block_info">
 Ваша ссылка для привлечения рефералов<br>
-<?$promo="http://{$_SERVER['HTTP_HOST']}/?promo=".ShopBonus::genPromo($this->getUserId());?>
+<?
+$kod=ShopBonus::genPromo($this->getUserId());
+$promo="http://{$_SERVER['HTTP_HOST']}/?promo=".$kod;?>
 <strong><?=$promo?></strong>
 <br>
-
+<div style="padding:10px;border:dotted 1px #f00;margin:10px 0">Промокод: <strong><?=$kod?></strong></div>
+Поделиться в соц сетях
 <script type="text/javascript">(function() {
           if (window.pluso)if (typeof window.pluso.start == "function") return;
           var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
