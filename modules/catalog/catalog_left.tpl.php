@@ -12,7 +12,7 @@
                 </ul>
 
             </div>
-        <a href="/action/">Все акции</a>
+            <a class="more" href="/action/">Все акции</a>
     </div>
 <? } ?>
 
@@ -28,31 +28,32 @@
                 <? if (false && isset($parentname)) { ?>
                     <h4><?= @$parentname ?></h4>
                 <? } ?>
+                <ul>
+                    <?
+                    foreach ($this->getCatalog() as $node) {
+                        $href = "/catalog/{$node['id']}";
+                        ?>
+                        <li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $node['name'] ?></a><!--<h4></h4>-->
+                            <? if (!empty($node['children'])) { ?>
+                                <ul><?
+                                    foreach ($node['children'] as $item) {
+                                        $href = "/catalog/{$item['id']}";
+                                        if ($this->getUri() != '/') {
+                                            $href = $this->getUri(array('catalog' => (int) $item['id']));
+                                        }
+                                        if ($item['c'] || true) {
+                                            ?><li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $item['name'] ?></a> <?= $item['c'] ?></li><?
+                                        }
+                                    }
+                                    ?></ul>
 
-                <?
-                foreach ($this->getCatalog() as $node) {
-                    $href = "/catalog/{$node['id']}";
-                    ?>
-                    <h4><a href="<?= $href ?>"><?= $node['name'] ?></a></h4>
-                        <? if (!empty($node['children'])) { ?>
-                        <ul><?
-                            foreach ($node['children'] as $item) {
-                                $href = "/catalog/{$item['id']}";
-                                if ($this->getUri() != '/') {
-                                    $href = $this->getUri(array('catalog' => (int) $item['id']));
-                                }
-                                if ($item['c'] || true) {
-                                    ?><li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $item['name'] ?></a> <?= $item['c'] ?></li><?
-                }
-            }
-                            ?></ul>
-
-        <? } ?>
-            <? } ?>
-
-<a href="/catalog/">Все категории</a>
+                            <? } ?>
+                        </li>
+                    <? } ?>
+                </ul>
+                <a class="more" href="/catalog/">Все категории</a>
             </div>
-<? } ?>
+        <? } ?>
 
 
 
@@ -81,8 +82,8 @@
                 <strong>Тип:</strong><br>
                 <? foreach ($type_list as $id => $itm) { ?>
                     <input type="checkbox" id="type<?= $id ?>" name="type[]" value="<?= $id ?>" <? if (isset($_GET['type']) && @in_array($id, $_GET['type'])) { ?>checked<? } ?>><label for="type<?= $id ?>"><?= $itm ?></label><br>
-        <? } ?>
-    <? } ?>
+                <? } ?>
+            <? } ?>
 
 
 
@@ -96,10 +97,10 @@
                 foreach ($prop_list2 as $pid => $itm) {
                     ?>
 
-                        <?
-                        if (!(count($itm['v']) == 1 && ($vals = array_keys($itm['v'])) && in_array($vals[0], array('есть', 'true')))) {
-                            $exists = isset($_GET['p'][$pid]);
-                            ?>
+                    <?
+                    if (!(count($itm['v']) == 1 && ($vals = array_keys($itm['v'])) && in_array($vals[0], array('есть', 'true')))) {
+                        $exists = isset($_GET['p'][$pid]);
+                        ?>
                         <div class="prop_item <? if ($itm['sort'] < 1 && !$exists) { ?>h<? } ?> type<?= $itm['type'] ?>">
 
                             <?
@@ -111,18 +112,18 @@
                                 <a class="cls" href="<?= $this->getUri(array(), $prp) ?>" title="очистить">X</a>
                             <? } ?>
 
-            <? if ($itm['type'] != 1) { ?><h5><?= $itm['name'] ?></h5><? } ?>
-            <? if (false && preg_match('/shpt_/', $itm['type'])) { ?>
-                                    <? foreach ($itm['v'] as $row) { ?>
+                            <? if ($itm['type'] != 1) { ?><h5><?= $itm['name'] ?></h5><? } ?>
+                            <? if (false && preg_match('/shpt_/', $itm['type'])) { ?>
+                                <? foreach ($itm['v'] as $row) { ?>
                                     <input id="p_<?= $pid ?>_<?= $row ?>" name="p[<?= $pid ?>][]" type="checkbox" value="<?= $row ?>" <? if (isset($_GET['p'][$pid]) && in_array($row, $_GET['p'][$pid])) { ?>checked<? } ?>>
 
                                     <label for="p_<?= $pid ?>_<?= $row ?>">
 
                                         <? if (isset($itm['value_list'][$row])) { ?>
-                        <?= $itm['value_list'][$row] ?>
-                    <? } else { ?>
-                                        <?= $row ?>
-                                    <? } ?>
+                                            <?= $itm['value_list'][$row] ?>
+                                        <? } else { ?>
+                                            <?= $row ?>
+                                        <? } ?>
 
                                     </label><br>
 
@@ -141,11 +142,11 @@
                                   </option>
                                   <?}?>
                                   </select */ ?>
-                <?
-                if ($itm['type'] == 3 && count($itm['v']) > 1) {
-                    $vals = array_keys($itm['v']);
-                    sort($vals, SORT_NUMERIC);
-                    ?>
+                                <?
+                                if ($itm['type'] == 3 && count($itm['v']) > 1) {
+                                    $vals = array_keys($itm['v']);
+                                    sort($vals, SORT_NUMERIC);
+                                    ?>
                                     <div rel="<?= $pid ?>" class="slider" values="<?= implode('|', $vals) ?>"></div>
                                     <input name="p[<?= $pid ?>]" id="p-<?= $pid ?>" value="<?= @$_GET['p'][$pid] ?>" type="hidden">
                                 <? } elseif ($itm['type'] == 1) { ?>
@@ -153,55 +154,59 @@
                                     <label for="p<?= $pnum ?>" title="Всего товаров <?= count($itm['v'][1]) ?>"><?= $itm['name'] ?></label><br>
                                     <? $pnum++; ?>
                                 <? } else { ?>
-                    <? foreach ($itm['v'] as $v => $c) { ?>
+                                    <? foreach ($itm['v'] as $v => $c) { ?>
                                         <input id="p<?= $pnum ?>" type="checkbox" name="p[<?= $pid ?>][]" value="<?= $v ?>" <? if (isset($_GET['p'][$pid]) && is_array($_GET['p'][$pid]) && in_array($v, $_GET['p'][$pid])) { ?>checked<? } ?> >
                                         <label for="p<?= $pnum ?>" title="Всего товаров <?= $c ?>"><?= $v ?></label><br>
-                        <? $pnum++;
-                    } ?>
+                                        <?
+                                        $pnum++;
+                                    }
+                                    ?>
                                 <? } ?>
 
 
 
 
 
-                        <? } ?>
+                            <? } ?>
                         </div>
                     <? } ?>
                 <? } ?>
-    <?
-    $hidden_exist = false;
-    foreach ($prop_list as $pid => $itm) {
-        ?>
+                <?
+                $hidden_exist = false;
+                foreach ($prop_list as $pid => $itm) {
+                    ?>
                     <?
                     if (count($itm['v']) == 1 && in_array($itm['v'][0], array('есть', 'true'))) {
                         $checked = isset($_GET['p'][$pid]) && $_GET['p'][$pid] == $itm['v'][0];
                         ?>
-                        <div class="prop_item <? if ($itm['sort'] < 1 && !$checked) { ?>h<? $hidden_exist = true;
-                        } ?>">
+                        <div class="prop_item <? if ($itm['sort'] < 1 && !$checked) { ?>h<?
+                            $hidden_exist = true;
+                        }
+                        ?>">
                             <input type="checkbox" id="pid<?= $pid ?>" name="p[<?= $pid ?>]" value="<?= $itm['v'][0] ?>" <? if ($checked) { ?>checked<? } ?>><label for="pid<?= $pid ?>"><?= $itm['name'] ?></label>
                         </div>
-                        <? } ?>
                     <? } ?>
+                <? } ?>
 
 
 
 
-    <? if (!empty($manufacturer_list)) { ?>
+                <? if (!empty($manufacturer_list)) { ?>
                     <div class="prop_item">
                         <h5>Производитель:</h5>
-                    <? foreach ($manufacturer_list as $itm) { ?>
+                        <? foreach ($manufacturer_list as $itm) { ?>
                             <input type="checkbox" id="manid<?= $itm['id'] ?>" name="manid[]" value="<?= $itm['id'] ?>" <? if (isset($_GET['manid']) && @in_array($itm['id'], $_GET['manid'])) { ?>checked<? } ?>><label for="manid<?= $itm['id'] ?>"><?= $itm['name'] ?></label><br>
-                    <? } ?>
+                        <? } ?>
                     </div>
-    <? } ?>
+                <? } ?>
 
 
 
 
-    <? if ($hidden_exist) { ?>
+                <? if ($hidden_exist) { ?>
                     <br>
                     <a href="#" class="show_all">Показать все свойства</a>
-            <? } ?>
+                <? } ?>
             </div>
 
 
@@ -211,11 +216,11 @@
 
 
 
-                <? } ?>
+        <? } ?>
 
 
 
-                <? if (false && !empty($data['manufacturer_list'])) { ?>	
+        <? if (false && !empty($data['manufacturer_list'])) { ?>	
             <div class="goods-menu">
                 <h4><a href="" class="<? if (!$this->getUriVal('manid')) { ?>expand<? } else { ?>unexpand<? } ?>">Бренд</a></h4>
                 <ul class=" checkbox"><?
@@ -235,7 +240,7 @@
                     }
                     ?></ul>
             </div>
-    <? } ?>	
+        <? } ?>	
 
 
 
@@ -245,11 +250,11 @@
 <? if (!empty($manufacturer) && $this->getUri() != '/') { ?>
     <div class="left_menu man">
         <h3>Бренды</h3>
-    <? foreach ($manufacturer as $item) { ?>
+        <? foreach ($manufacturer as $item) { ?>
             <a href="/catalog/manid/<?= $item['id'] ?>" title="<?= $item['name'] ?>">
                 <img src="<?= scaleImg($item['img'], 'w80') ?>">
             </a>
-    <? } ?>
+        <? } ?>
     </div>
-<?
+    <?
 }?>

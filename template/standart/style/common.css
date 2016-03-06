@@ -103,8 +103,11 @@ body { min-width: 940px;_height:100%;}
 
 div.left_menu{background:#fff;padding:20px;}
 div.left_menu a{}
+div.left_menu h3 a{color:#010101;text-decoration:none}
+div.left_menu h3 a:hover{text-decoration:underline}
 div.left_menu a.act{color:#000;text-decoration:none}
 div.left_menu.man a{display:inline-block;vertical-align:middle;width:80px;margin-right:5px}
+div.left_menu  a.more{font-size:12px;}
 
 ul.left_menu{background:#f7f5f0;padding:0;margin:0;padding:20px;margin-bottom:20px}
 ul.left_menu li{margin:0;display:block;padding:8px 0;list-style:none}

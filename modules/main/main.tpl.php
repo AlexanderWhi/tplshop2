@@ -1,9 +1,9 @@
 <div class="wrapper">
-			<div id="left-bar">
+			<aside id="left-bar">
 			
 			<?include('modules/catalog/catalog_left.tpl.php')?>
 			
-			</div>
+			</aside>
 			<div id="center-bar" class="border">
 				<div id="content" class="bar">
 				
