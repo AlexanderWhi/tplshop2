@@ -15,18 +15,19 @@ function displayCatalog($catalog, $deep, $mod_uri) {
             <td style="padding-left:<?= $deep * 20 ?>px;">
 
                 <a href="<?= $mod_uri ?>CatalogEdit/?id=<?= $item['id'] ?>">
-        <?= $item['name'] ?></a>
+                    <?= $item['name'] ?></a>
             </td>
             <td><?= $item['id'] ?></td>
             <td>
                 <a href="<?= $mod_uri ?>goods/?category=<?= $item['id'] ?>">
-        <?= intval(@$offer['count'][$item['id']]) ?>
+                    <?= intval(@$offer['count'][$item['id']]) ?>
                 </a>
-                <?if(Cfg::get('GOODS_FIELD_CATALOGS')){?>
-                /<a href="<?= $mod_uri ?>goods/?category=<?= $item['id'] ?>">
-        <?= intval(@$offer['counts'][$item['id']]) ?>
-                <?}?>
-                </a>
+                <? if (Cfg::get('GOODS_FIELD_CATALOGS')) { ?>
+                    /<a href="<?= $mod_uri ?>goods/?category=<?= $item['id'] ?>">
+                        <?= intval(@$offer['counts'][$item['id']]) ?>
+
+                    </a>
+                <? } ?>
             </td>
             <td><input name="sort[<?= $item['id'] ?>]" value="<?= $item['sort'] ?>" style="width:50px"></td>
             <td><input name="main_sort[<?= $item['id'] ?>]" value="<?= $item['main_sort'] ?>" style="width:50px"></td>
@@ -58,7 +59,7 @@ function displayCatalog($catalog, $deep, $mod_uri) {
             </td>
             <td style="text-align:right"><button class="button" type="submit" name="save">Применить</button>
                 <button class="button" type="submit" name="remove">Удалить</button>
-<? if ($this->isSu()) { ?>
+                <? if ($this->isSu()) { ?>
                     <button class="button_long" type="submit" name="UpdateCatalogCache">Обновить кеш</button>
                 <? } ?>
 
@@ -72,7 +73,7 @@ function displayCatalog($catalog, $deep, $mod_uri) {
             <tr><th></th><th><?= $this->sort('name', 'Название') ?></th><th><?= $this->sort('id', 'Идентификатор') ?></th><th>товаров</th><th><?= $this->sort('sort', 'Позиция') ?></th><th><?= $this->sort('main_sort', 'Позиция на главной') ?></th><th><input type="checkbox" id="export_all"> <?= $this->sort('export', 'Экспорт') ?></th></tr>
         </thead>
         <tbody>
-<? displayCatalog($catalog, 0, $this->mod_uri) ?>
+            <? displayCatalog($catalog, 0, $this->mod_uri) ?>
         </tbody>
     </table>
 </form>
