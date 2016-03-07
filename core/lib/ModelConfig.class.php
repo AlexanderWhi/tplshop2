@@ -1,11 +1,4 @@
 <?php
-
-function __fill_config(&$item, $key, $data) {
-    if (isset($data[$key])) {
-        $item['value'] = $data[$key];
-    }
-}
-
 class ModelConfig {
 
     const TYPE_BOOL=2;
@@ -36,6 +29,21 @@ class ModelConfig {
         self::_getConfig($data, $this->data);
         return $data;
     }
+    
+    function getFields($grp=null){
+        $out=array();
+        if($grp===null){
+            $grp=$this->fields();
+        }
+        foreach ($grp as $name=>$node){
+            if(isset($node['group'])){
+                $out+=$this->getFields($node['group']);
+            }else{
+                $out[$name]=$node;
+            }
+        }
+        return $out;
+    }
 
     function load($data = null) {
         if ($data === null) {
@@ -51,14 +59,19 @@ class ModelConfig {
     public $data = array();
 
     function save($data) {
-        foreach ($data as $k => $v) {
+        $fields=$this->getFields();
+        
+        foreach ($fields as $k=>$node){
+            $v='';
+            if(!empty($data[$k])){
+                $v=$data[$k];
+            }
             $rs = DB::select("SELECT * FROM sc_config WHERE name='{$k}'");
             if ($rs->next()) {
                 DB::update('sc_config', array('value' => $v), "name='{$k}'");
             } else {
-                DB::insert('sc_config', array('value' => $v, 'name' => $k));
+                DB::insert('sc_config', array('value' => $v, 'name' => $k,'description'=>$node['name']));
             }
         }
     }
-
 }
