@@ -8,6 +8,10 @@ function __fill_config(&$item, $key, $data) {
 
 class ModelConfig {
 
+    const TYPE_BOOL=2;
+    const TYPE_STR=1;
+    const TYPE_NUM=3;
+    const TYPE_ENUM=4;
     function fields() {
         return array();
     }

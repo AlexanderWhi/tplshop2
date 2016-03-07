@@ -9,7 +9,12 @@ function __render_config($config){
             ?>
             <div>
                 <label><?=@$node['name']?></label><br>
+                <?if(@$node['type']==ModelConfig::TYPE_BOOL){?>
+                <input type="checkbox" name="<?=$k?>" value="1" <?if(@$node['value']){?>checked=""<?}?>>
+                <?}else{?>
                 <input class="input-text" name="<?=$k?>" value="<?=@$node['value']?>">
+                <?}?>
+                
             </div>
                 <?
         }
@@ -19,5 +24,5 @@ function __render_config($config){
 <form action="?act=saveConfig" class="config-form" method="POST">
     <?/*pre><?  print_r($config->getConfig())?></pre*/?>
     <?  __render_config($config->getConfig())?>
-    <button type="submit">Сохранить</button>
+    <button type="submit" class="button">Сохранить</button>
 </form>
