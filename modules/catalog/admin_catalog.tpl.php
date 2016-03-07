@@ -22,8 +22,10 @@ function displayCatalog($catalog, $deep, $mod_uri) {
                 <a href="<?= $mod_uri ?>goods/?category=<?= $item['id'] ?>">
         <?= intval(@$offer['count'][$item['id']]) ?>
                 </a>
+                <?if(Cfg::get('GOODS_FIELD_CATALOGS')){?>
                 /<a href="<?= $mod_uri ?>goods/?category=<?= $item['id'] ?>">
         <?= intval(@$offer['counts'][$item['id']]) ?>
+                <?}?>
                 </a>
             </td>
             <td><input name="sort[<?= $item['id'] ?>]" value="<?= $item['sort'] ?>" style="width:50px"></td>
