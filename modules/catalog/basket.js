@@ -81,7 +81,13 @@ $(function () {
 
 
     var rendTime = function () {
-        var dte = $('[name=date]').val().split('.');
+        var dte = $('[name=date]').val();
+        if(dte){
+            dte=dte.split('.');
+        } else{
+            return;
+        }       
+                
         dte = dte[1] + '/' + dte[0] + '/' + dte[2]
         $('[name=time] option').each(function () {
             var tme = dte + ' ' + $(this).attr('value') + ':00:00';
@@ -101,7 +107,7 @@ $(function () {
         });
 
 
-    }
+    };
     rendTime();
 
     $('[name=date],[name=time]').change(function () {

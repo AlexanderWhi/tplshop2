@@ -161,17 +161,17 @@ ul.left_menu li a.act{color:#000;text-decoration:none}
 
 
 #footer .social {position:absolute;left:480px;}
-#top .social {position:absolute;left:620px;margin-top:-3px;}
-.social a{display:block;width:20px;height:20px;float:left;margin-right:5px}
-.social a.fb{background:url(img/soc_fb.png)}
-.social a.vk{background:url(img/soc_vk.png)}
-.social a.yt{background:url(img/soc_yt.png)}
-.social a.tw{background:url(img/soc_tw.png)}
-.social a.inst{background:url(img/soc_inst.png)}
+#top .social {position:absolute;right:250px;margin-top:-3px;}
+.social a{display:block;width:20px;height:20px;float:left;margin-right:5px;background-size: contain}
+/*.social a.fb{background-image:url(img/soc_fb.png)}
+.social a.vk{background-image:url(img/soc_vk.png)}
+.social a.yt{background-image:url(img/soc_yt.png)}
+.social a.tw{background-image:url(img/soc_tw.png)}
+.social a.inst{background-image:url(img/soc_inst.png)}
 
 #top .social a.fb{background:url(img/soc1_fb.png)}
 #top .social a.vk{background:url(img/soc1_vk.png)}
-#top .social a.tw{background:url(img/soc1_tw.png)}
+#top .social a.tw{background:url(img/soc1_tw.png)}*/
 
 
 #contacts{position:absolute;font-size:14px;top:20px;right:0px;text-align:right}

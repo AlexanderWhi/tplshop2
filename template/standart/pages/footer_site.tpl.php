@@ -33,7 +33,16 @@
         <?foreach ($this->enum('social') as $n=>$url) {
         	if(empty($url))continue;
         	?>
-        	<a href="<?=$url?>" class="<?=$n?>"></a>
+            
+            
+            <?$pic="/img/soc/soc_{$n}.png";
+            if(!file_exists(ROOT.$pic)){
+                continue;
+            }
+            ?>
+            <a href="<?= $url ?>" class="<?= $n ?>" style="background-image: url(<?=$pic?>)"></a>
+            
+            
         <?}?>
         </div>
         
