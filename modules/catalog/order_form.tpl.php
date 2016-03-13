@@ -1,118 +1,101 @@
 <div id="order">
-
-
     <h2>Оформить заказ</h2>
 
     <? if (!$this->getUserId()) { ?>
         <?= $this->getText('order_guest_comment') ?>
     <? } ?>
-
     <table>
-        <tr>
-            <td style="width:400px">
-                <h3>Укажите адрес доставки:</h3>
+        <? if (Cfg::get('SHOP_DELIVERY_ENABLED')) { ?>
+            <tr>
+                <td style="width:400px">
+                    <h3>Укажите адрес доставки:</h3>
+                </td>
+                <td style="width:400px">
+                    <h3>Дата и время доставки:
+                        <div class="quest">
+                            <?= $this->getText('quest_date_time') ?>
+                        </div>
+                    </h3>
+                </td>
+                <td rowspan="2">
+                    <? if (false && !empty($pay_system_list)) { ?>
+                        <h3>Оплата</h3>
+                        <? if ($this->isAdmin()) { ?><a class="coin-edit" href="/admin/enum/sh_pay_system/mode/desc/">Редактировать способы оплаты</a><br><? } ?>
+                        <?
+                        $i = 0;
+                        foreach ($pay_system_list as $k => $desc) {
+                            ?>
+                            <input name="pay_system" type="radio" class="radio" value="<?= $k ?>" id="pay_system<?= $k ?>" <? if (false && $k == 2) { ?>checked<? } ?>>
+                            <label for="pay_system<?= $k ?>"><?= $desc ?></label><br>
+                        <? } ?>
+                        <div id="error-pay_system" class="error"></div>
+                    <? } ?>
 
 
+                </td>
+            </tr>
 
-            </td>
+            <tr>
+                <td>
 
-            <td style="width:400px">
-                <h3>Дата и время доставки:
-                    <div class="quest">
-                        <?= $this->getText('quest_date_time') ?>
+                    <div>
+                        <label>населённый пункт или район<span>*</span></label><br>
+                        <? if (false && $city_list) { ?>
+
+                            <select name="city" class="select">
+                                <? foreach ($city_list as $t => $d) { ?>
+                                    <option value="<?= $d ?>" <? if ($city == $d) { ?>selected<? } ?>><?= $d ?></option>
+                                <? } ?>
+                            </select>
+                        <? } else { ?>
+                            <input name="city" class="field" value="<?= $city ?>">
+                        <? } ?>
+
+
 
                     </div>
-                </h3>
 
+                    <br>
 
-            </td>
+                </td>
+                <td>
+                    <label>&nbsp;</label><br>
+                    <input name="date" class="date" value="<?= $date ?>"/>
 
-            <td rowspan="2">
+                    <? if ($time_list) { ?>
 
-
-
-                <? if (false && !empty($pay_system_list)) { ?>
-
-
-                    <h3>Оплата</h3>
-                    <? if ($this->isAdmin()) { ?><a class="coin-edit" href="/admin/enum/sh_pay_system/mode/desc/">Редактировать способы оплаты</a><br><? } ?>
-                    <?
-                    $i = 0;
-                    foreach ($pay_system_list as $k => $desc) {
-                        ?>
-                        <input name="pay_system" type="radio" class="radio" value="<?= $k ?>" id="pay_system<?= $k ?>" <? if (false && $k == 2) { ?>checked<? } ?>>
-                        <label for="pay_system<?= $k ?>"><?= $desc ?></label><br>
-                    <? } ?>
-                    <div id="error-pay_system" class="error"></div>
-<? } ?>
-
-
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-
-                <div>
-                    <label>населённый пункт или район<span>*</span></label><br>
-<? if (false && $city_list) { ?>
-
-                        <select name="city" class="select">
-                            <? foreach ($city_list as $t => $d) { ?>
-                                <option value="<?= $d ?>" <? if ($city == $d) { ?>selected<? } ?>><?= $d ?></option>
-                        <? } ?>
+                        <select name="time" class="select">
+                            <? foreach ($time_list as $t => $d) { ?>
+                                <option value="<?= $t ?>"><?= $d ?></option>
+                            <? } ?>
                         </select>
                     <? } else { ?>
-                        <input name="city" class="field" value="<?= $city ?>">
-<? } ?>
-
-
-
-                </div>
-
-                <br>
-
-            </td>
-            <td>
-                <label>&nbsp;</label><br>
-                <input name="date" class="date" value="<?= $date ?>"/>
-
-<? if ($time_list) { ?>
-
-                    <select name="time" class="select">
-                        <? foreach ($time_list as $t => $d) { ?>
-                            <option value="<?= $t ?>"><?= $d ?></option>
+                        <input name="time" class="field">
                     <? } ?>
-                    </select>
-                <? } else { ?>
-                    <input name="time" class="field">
-<? } ?>
-                <div id="error-time" class="error"></div>
+                    <div id="error-time" class="error"></div>
 
-                <input type="checkbox" class="checkbox" name="delivery_type" id="delivery_type2" value="2"><label for="delivery_type2">Самовывоз</label>
-            </td>
+                    <input type="checkbox" class="checkbox" name="delivery_type" id="delivery_type2" value="2"><label for="delivery_type2">Самовывоз</label>
+                </td>
 
-        </tr>
+            </tr>
 
-        <tr>
-            <td colspan="2">
-                <label>улица, № дома, № квартиры, № подьезда, этаж, схема заезда: <span>*</span></label><br>
-                <input name="address" class="field extralong" value="<?= $address ?>" style="width:670px">
-                <div class="comment" id="comment-address"></div>
-                <input name="delivery_zone" type="hidden">
-                <div id="error-address" class="error"></div>
+            <tr>
+                <td colspan="2">
+                    <label>улица, № дома, № квартиры, № подьезда, этаж, схема заезда: <span>*</span></label><br>
+                    <input name="address" class="field extralong" value="<?= $address ?>" style="width:670px">
+                    <div class="comment" id="comment-address"></div>
+                    <input name="delivery_zone" type="hidden">
+                    <div id="error-address" class="error"></div>
                     <? if ($addr_list) { ?>
-                    <div style="padding:10px">
-                        <? foreach ($addr_list as $addr) { ?>
-                            <a class="addr" href="javascript:addr('<?= $addr ?>')"><?= $addr ?></a><br>
+                        <div style="padding:10px">
+                            <? foreach ($addr_list as $addr) { ?>
+                                <a class="addr" href="javascript:addr('<?= $addr ?>')"><?= $addr ?></a><br>
+                            <? } ?>
+                        </div>
                     <? } ?>
-                    </div>
-<? } ?>
-            </td>
-
-
-        </tr>
-
+                </td>
+            </tr>
+        <? } ?>
         <tr>
             <td>
                 <label>Телефон: <span>*</span></label><br>

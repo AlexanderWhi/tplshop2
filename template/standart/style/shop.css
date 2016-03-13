@@ -117,6 +117,7 @@ div.manufacturer a{text-decoration:none;margin:0 5px;}
 #goods .right_bar .price{font-weight:normal;font-size:30px;color:#000;}
 #goods .right_bar .price small{font-weight:normal;font-size:30px;}
 
+#goods  span.old_price{color:#9a9a9a;font-size:16px;margin-right:20px}
 
 #goods .right_bar .present{display:block;background:url(img/present.png) left no-repeat;padding-left:40px;color:#eb3517;margin:5px 0}
 /*#goods a.add{display:inline-block;font-size:18px;vertical-align:top;background:url(img/add2_long.png)  no-repeat;padding-left:60px;padding-top:12px;width:111px;height:40px;z-index:1;color:#fff;text-decoration:none;font-weight:500}

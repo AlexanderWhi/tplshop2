@@ -13,6 +13,7 @@ class CatalogConfig extends ModelConfig {
                     'GOODS_FIELD_CATALOGS' => array('name' => 'Каталоги','type'=>  self::TYPE_BOOL),
                     'GOODS_FIELD_WEIGHT_FLG' => array('name' => 'Весовой товар','type'=>  self::TYPE_BOOL),
                     'GOODS_FIELD_AWARDS' => array('name' => 'Агентское вознаграждение','type'=>  self::TYPE_BOOL),
+                    'GOODS_ACTION' => array('name' => 'Акции','type'=>  self::TYPE_BOOL),
                 )
             ),
 //            'SHOP_R' => array(

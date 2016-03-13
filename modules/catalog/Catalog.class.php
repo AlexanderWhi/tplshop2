@@ -1509,11 +1509,11 @@ class Catalog extends Component {
             }
         }
 
-        if(!empty($d['refid'])){
-            ShopBonus::recountBasket($d['refid'],$data['basket']);
+        if (!empty($d['refid'])) {
+            ShopBonus::recountBasket($d['refid'], $data['basket']);
         }
-        if(!empty($d['promo'])){
-            ShopBonus::recountBasket(ShopBonus::getPromoRefId($d['promo']),$data['basket']);
+        if (!empty($d['promo'])) {
+            ShopBonus::recountBasket(ShopBonus::getPromoRefId($d['promo']), $data['basket']);
         }
 
         foreach ($data['basket'] as &$item) {
@@ -1657,6 +1657,29 @@ class Catalog extends Component {
         exit;
     }
 
+    function checkDelivery($args) {
+
+        $error = array();
+        if (!Cfg::get('SHOP_DELIVERY_ENABLED')) {
+            return $error;
+        }
+        if ($args->exists('date')) {//Если передаём дату доставки
+            if (!trim($args->get('date'))) {
+                $error['time'] = 'Введите дату';
+            } elseif (!preg_match('|\d{2}\.\d{2}\.\d{4}|', $args->get('date'))) {
+                $error['time'] = 'Введите дату корректно [dd.mm.yyyy]';
+            }
+        }
+        if ($this->cfg('SHOP_CHECK_DELIVERY_TIME') && time() > strtotime($args->get('date') . ' ' . $args->get('time') . ':00:00')) {
+            $error['time'] = BaseComponent::getText('delivery_time_error_notice');
+            $error['time'].='<small style="color:#aaa">Текущее время ' . date('H:i:s') . '</small>';
+        }
+        if (!trim($args->get('address'))) {
+            $error['address'] = 'Введите адрес доставки';
+        }
+        return $error;
+    }
+
     function checkOrder($args, $basket) {
         $error = array();
 
@@ -1665,26 +1688,10 @@ class Catalog extends Component {
         if (!trim($args->get('phone'))) {
             $error['phone'] = 'Введите телефон';
         }
-        if (!trim($args->get('address'))) {
-            $error['address'] = 'Введите адрес';
-        }
 
+        $error+=$this->checkDelivery($args);
 
 //		if($err=$this->checkMail($args->get('mail'),false))$error['mail']=$err;
-
-        if ($args->exists('date')) {//Если передаём дату доставки
-            if (!trim($args->get('date'))) {
-                $error['time'] = 'Введите дату';
-            } elseif (!preg_match('|\d{2}\.\d{2}\.\d{4}|', $args->get('date'))) {
-                $error['time'] = 'Введите дату корректно [dd.mm.yyyy]';
-            }
-        }
-
-        if ($this->cfg('SHOP_CHECK_DELIVERY_TIME') == 1 && time() > strtotime($args->get('date') . ' ' . $args->get('time') . ':00:00')) {
-            $error['time'] = BaseComponent::getText('delivery_time_error_notice');
-            $error['time'].='<small style="color:#aaa">Текущее время ' . date('H:i:s') . '</small>';
-        }
-
 //		if($args->getInt('reg')==1 && !$args->exists('auto_pass')){//Хочет реги и не автопароль
 //			if(strlen($args->get('reg_password'))<6){
 //				$error['reg_password']='длина пароля не должна быть меньше 6 символов';
@@ -1706,10 +1713,10 @@ class Catalog extends Component {
         $bsk = new Basket($this->getBasket());
         if ($bsk->getTotalPrice() < (int) $this->cfg('SHOP_ORDER_COND')) {
             $error['basket'] = "Сумма заказа не менее {$this->cfg('SHOP_ORDER_COND')} р.";
-        }else{
-            foreach ($this->getBasket() as $item){
-                if($item['in_stock']<0){
-                    $error['basket']=$item['name']." НЕТ В НАЛИЧИИ";
+        } else {
+            foreach ($this->getBasket() as $item) {
+                if ($item['in_stock'] < 0) {
+                    $error['basket'] = $item['name'] . " НЕТ В НАЛИЧИИ";
                     break;
                 }
             }
@@ -1759,15 +1766,15 @@ class Catalog extends Component {
         } else {
 
 
-            $address = $post->get('address');
+            $address = $post->getString('address');
 
 
             /* Информация о заказчике */
             $data = array(
                 'phone' => $post->get('phone'),
-                'city' => $post->get('city'),
+//                'city' => $post->get('city'),
 //					'district'=>$post->get('district'),
-                'address' => $address,
+//                'address' => $address,
 //					"street" =>$post->get('street'),
 //					"house" =>$post->get('house'),
 //					"flat" =>$post->get('flat'),
@@ -1782,6 +1789,13 @@ class Catalog extends Component {
 //					'name'=>"{$post->get('last_name')} {$post->get('first_name')} {$post->get('middle_name')}",
 //					'company'=>$post->get('company'),
             );
+            
+            if($city=$post->get('city')){
+            	$data['city']=$city;
+            }
+            if($address){
+            	$data['address']=$address;
+            }
 
 //Добавим реферала
             if ($refid = $post->getInt('refid')) {
@@ -1839,44 +1853,53 @@ class Catalog extends Component {
             }
             $this->setUser($data);
 
-            $time = $post->get('time');
-            if ($t = $this->enum('sh_delivery_time', $time)) {
-                $time = $t;
-            }
-
-            $delivery_type = 1; //доставка курьером
-            if ($post->getInt('delivery_type')) {
-                $delivery_type = $post->getInt('delivery_type');
-            }
-            if ($basket['delivery'] === false) {//доставка не возможна
-                $delivery_type = 2;
-            }
+            
 
 
             $data = array(
                 'userid' => $this->getUserId(),
                 'fullname' => $this->getUser('name'),
-                'date' => $post->get('date') ? dte($post->get('date'), 'Y-m-d') : date('Y-m-d'),
-                'time' => $time,
+//                'date' => $post->get('date') ? dte($post->get('date'), 'Y-m-d') : date('Y-m-d'),
+                //'time' => $time,
                 'mail' => $post->get('mail') ? $post->get('mail') : $this->getUser('mail'),
                 'pay_system' => $post->get('pay_system'),
                 'phone' => $post->get('phone'),
-                'address' => $address,
+                //'address' => $address,
 //					'postcard'=>$post->get('postcard'),
                 'additionally' => $post->get('additionally'),
                 'price' => $basket['sum'], //это стоимость заказа
                 'total_price' => $basket['total_sum'], //Стоимость с учётом доставки и скидки
                 'order_status' => 0,
-                'delivery_type' => $delivery_type,
+//                'delivery_type' => $delivery_type,
                 'pay_system' => $post->get('pay_system'),
                 'delivery' => $basket['delivery'],
                 'pay_bonus' => $basket['bonus'],
 //					'country'=>$this->getCountry(),
 //					'region'=>$this->getRegion(),
-                'city' => $post->get('city'),
+//                'city' => $post->get('city'),
                 'discount' => $basket['discount'],
                 'margin' => $basket['margin'],
             );
+            
+            if(Cfg::get("SHOP_DELIVERY_ENABLED")){
+            	$data['date']=$post->get('date') ? dte($post->get('date'), 'Y-m-d') : date('Y-m-d');
+            	$time = $post->getString('time');
+	            if ($t = $this->enum('sh_delivery_time', $time)) {
+	                $time = $t;
+	            }
+	
+	            $delivery_type = 1; //доставка курьером
+	            if ($post->getInt('delivery_type')) {
+	                $delivery_type = $post->getInt('delivery_type');
+	            }
+	            if ($basket['delivery'] === false) {//доставка не возможна
+	                $delivery_type = 2;
+	            }
+	            $data['city']=$address;
+	            $data['address']=$post->get('city');
+	            $data['delivery_type']=$delivery_type;
+	            
+            }
 
 //			$order_data=array(
 //				'from_name'=>$post->get('from_name'),
@@ -1902,14 +1925,14 @@ class Catalog extends Component {
 //			
 //			}
             //Добавим заказ
-            $id=LibShop::addOrder($data,$basket['basket']);
+            $id = LibShop::addOrder($data, $basket['basket']);
 
-            if($refid=$post->getInt('refid')){
+            if ($refid = $post->getInt('refid')) {
                 ShopBonus::addRefAwards($refid, $basket['basket']);
-            }elseif($refid=  ShopBonus::getPromoRefId ($post->get('promo'))){
+            } elseif ($refid = ShopBonus::getPromoRefId($post->get('promo'))) {
                 ShopBonus::addRefAwards($refid, $basket['basket']);
             }
-            
+
             $ps_href = '';
 
             if (isset($data['pay_system']) && $data['pay_system'] == 3 && $data['total_price']) {//Если электронные платежи и есть сумма
@@ -1935,11 +1958,13 @@ class Catalog extends Component {
 //            $icq_notice.="Адрес: {$post->get('address')}\n";
 ////			$icq_notice.="Сообщение: {$post->get('comment')}\n";
 //            $icq_notice.="Время доставки: {$post->get('date')} {$post->get('time')}\n";
-
             //уведомление о заказе пользователю
 
             $notice = $data; //+$order_data;
-            $notice['date'] = dte($notice['date']);
+            if(!empty($notice['date'])){
+            	$notice['date'] = dte($notice['date']);
+            }
+            
 //			$notice['description']='';
 //			foreach (array('remember','report','call','call_no_report',) as $v){
 //				$notice['description'].=$this->enum('field_label',@"{$v}_{$notice[$v]}")."<br>";
@@ -1967,7 +1992,10 @@ class Catalog extends Component {
             include('function.tpl.php');
 
 
-            $notice['address'] = parsAddr($notice['address']);
+            if(!empty($notice['address'])){
+            	$notice['address'] = parsAddr($notice['address']);
+            }
+            
 
 //			$url="http://{$_SERVER['HTTP_HOST']}/prnt/SHET/?id=$id&PHPSESSID=".session_id();
 //			$url="http://{$_SERVER['HTTP_HOST']}/prnt/SBER/?id=$id&PHPSESSID=".session_id();
@@ -1995,7 +2023,7 @@ class Catalog extends Component {
             $this->sendTemplateMail($this->cfg('MAIL'), 'notice_new_order4admin', $notice
             );
 
-           // $this->noticeICQ($this->cfg('ICQ'), $icq_notice);
+            // $this->noticeICQ($this->cfg('ICQ'), $icq_notice);
 
             $d = $this->getOrderData();
             unset($d['additionally']);

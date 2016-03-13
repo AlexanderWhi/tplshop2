@@ -26,10 +26,13 @@ class ShopConfig extends ModelConfig {
             'SHOP' => array(
                 'name' => 'Основные настройки',
                 'group' => array(
-                    'SHOP_SCALE_IMAGE' => array('name' => 'Увеличивать картинку при наведении'),
-                    'SHOP_CHECK_DELIVERY_TIME' => array('name' => 'Проверка времени доставки'),
-                    'SHOP_SHOW_GOODS' => array('name' => 'Показывать товары в корне каталога'),
-                    'SHOP_REFERAL_ORDER' => array('name' => 'Партнёрская программа'),
+                    'SHOP_SCALE_IMAGE' => array('name' => 'Увеличивать картинку при наведении','type'=>  self::TYPE_BOOL),
+                    
+                    'SHOP_SHOW_GOODS' => array('name' => 'Показывать товары в корне каталога','type'=>  self::TYPE_BOOL),
+                    'SHOP_REFERAL_ORDER' => array('name' => 'Партнёрская программа','type'=>  self::TYPE_BOOL),
+                    'SHOP_DELIVERY_ENABLED' => array('name' => 'Доставка','type'=>  self::TYPE_BOOL),
+                    'SHOP_CHECK_DELIVERY_TIME' => array('name' => 'Проверка времени доставки','type'=>  self::TYPE_BOOL),
+                    'SHOP_ORDER_COND' => array('name' => 'Условие доставки'),
                 ),
             ),
         );

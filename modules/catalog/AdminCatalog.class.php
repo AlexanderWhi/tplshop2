@@ -832,6 +832,7 @@ class AdminCatalog extends AdminListComponent {
             'in_stock' => 1,
             'weight_flg' => 0,
             'sort3' => 1, //новинка		
+            'sort1' => 0, //Акция		
         );
         if ($this->cfg('SHOP_GOODS_NEED_CONFIRM')) {//Настройка показывать только в подтверждённые
             $field['confirm'] = 0;
@@ -861,6 +862,7 @@ class AdminCatalog extends AdminListComponent {
         $field['catalog'] = $this->getCatalog();
 
         $field['catalogs'] = $this->getCatalog();
+        $field['actions'] = LibNews::getActions();
 
         $field['categories'] = array();
         $rs = $ST->select("SELECT * FROM sc_shop_item2cat WHERE itemid=$id");
@@ -1054,7 +1056,8 @@ class AdminCatalog extends AdminListComponent {
             'old_price' => $post->getFloat('old_price'),
             'awards' => $post->getFloat('awards'),
             'in_stock' => $post->getInt('in_stock'),
-            'sort3' => $post->getInt('sort3'),
+            'sort3' => $post->getInt('sort3'),//Новинки
+            'sort1' => $post->getInt('sort1'),//Акции
             'ext_id' => $post->get('ext_id'),
             'unit' => $post->get('unit'), //Тип вставки изображения
         );

@@ -82,12 +82,12 @@ $(function () {
 
     var rendTime = function () {
         var dte = $('[name=date]').val();
-        if(dte){
-            dte=dte.split('.');
-        } else{
+        if (dte) {
+            dte = dte.split('.');
+        } else {
             return;
-        }       
-                
+        }
+
         dte = dte[1] + '/' + dte[0] + '/' + dte[2]
         $('[name=time] option').each(function () {
             var tme = dte + ' ' + $(this).attr('value') + ':00:00';
@@ -203,18 +203,26 @@ $(function () {
         $(order_but).text($(order_but).attr('alt'))//.attr('disabled',true);
         $.post("?act=sendOrder", data, function (res) {
             if (res.error) {
-                var focus = true;
+                var err_txt = '';
                 for (var i in res.error) {
-//					if(focus){focus=false;$('[name='+i+']').focus()}
-                    $('#error-' + i).html(res.error[i]).show();
-                    $('[name=' + i + ']', form).addClass('error');
+                    var el = $('[name=' + i + ']', form);
+                    if (el.length > 0) {
+                        $('#error-' + i).html(res.error[i]).show();
+                        el.addClass('error');
+                    }else{
+                       err_txt+= res.error[i]+'<br>';
+                    }
+
+                }
+                if(err_txt){
+                    $.alert(err_txt);
                 }
                 //$('.step').removeClass('act');
                 var first = $('input.error:eq(0)', form);
 //				alert(first.attr('name'))
 
-                var tab_id = first.parents('.step').attr('id');
-                tab('step', tab_id);
+                //var tab_id = first.parents('.step').attr('id');
+                //tab('step', tab_id);
                 first.focus();
 
                 $(order_but).text(order_but_label).attr('disabled', false);
@@ -268,7 +276,7 @@ $(function () {
     $('#is_receiver').click(function () {
         $('#receiver').toggle(!$(this).attr('checked'))
     });
-    
+
     if (!!window.ymaps) {
         ymaps.ready(function () {
 
