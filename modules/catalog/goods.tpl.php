@@ -106,6 +106,9 @@ function propList($prop, $lim = 0, $list = null) {
 
             <a class="add title" href="javascript:shop.add(<?= $id ?>,'+1')" title=" В корзину">В корзину</a><br>
 <? } ?>
+            <? if ($old_price) { ?>
+                    <span class="old_price"><strike><?= price($old_price, $weight_flg) ?></strike></span>
+                <? } ?>
         <strong class="price"><?= price($price, $weight_flg) ?></strong><br>
 
 
