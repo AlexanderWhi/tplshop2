@@ -98,6 +98,7 @@ class Users extends AdminListComponent {
             'avat' => $post->get('avat'),
             'balance' => $post->getFloat('balance'),
             'discount' => $post->getFloat('discount'),
+            'hide' => 0,
 //		'bonus'=>$post->getFloat('bonus'),
             'type' => $post->get('type'),
         );
