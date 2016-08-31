@@ -1,7 +1,9 @@
 <?
-function __in_stock($in_stock){
-    ?> <div>Наличие: <?if($in_stock){?><span class="in_stock">Есть в наличии</span><?}else{?><span class="no_in_stock">НЕТ в наличии</span><?}?></div><?
+
+function __in_stock($in_stock) {
+    ?> <div>Наличие: <? if ($in_stock) { ?><span class="in_stock">Есть в наличии</span><? } else { ?><span class="no_in_stock">НЕТ в наличии</span><? } ?></div><?
 }
+
 function propListGrp($id, $propGrp, $onlyPSort = false) {
     $out = '';
     foreach ($propGrp as $item) {
@@ -23,12 +25,13 @@ function propList($prop, $lim = 0, $list = null) {
                 <? } ?>
             <? } ?>
         <? } else { ?>
-            <? $n = 0;
+            <?
+            $n = 0;
             foreach ($prop as $id => $propGrp) {
                 ?>
                 <h3><?= $propGrp['name'] ?></h3>
                 <table class="prop-list">
-                <? propListGrp($id, $propGrp['p']) ?>	
+                    <? propListGrp($id, $propGrp['p']) ?>	
                 </table>
                 <?
                 if ($lim && ++$n >= $lim) {
@@ -49,35 +52,35 @@ function propList($prop, $lim = 0, $list = null) {
     ?>
 
 
-<? if ($comment_rait || $comment_count) { ?>
+    <? if ($comment_rait || $comment_count) { ?>
         <div class="rait_blk">
             <div class="rait r<?= $comment_rait ?>"></div>
             <a class="comment_count" href="javascript:comments()"><?= $comment_count ?> <?= morph($comment_count, 'отзыв', 'отзыва', 'отзывов') ?></a>
         </div>
         <br>
-<? } ?>
+    <? } ?>
 
     <div class="left_bar">
         <div class="img_list">
-<? $img = ($img ? $img : $this->cfg('NO_IMG')) ?>
-            <a rel="gallery" href="<?= scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))  ?>')"></a>
+            <? $img = ($img ? $img : $this->cfg('NO_IMG')) ?>
+            <a rel="gallery" href="<?= scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
         </div>
 
 
-<? if (($rs = $imgList) && count($rs) > 1) { ?>
+        <? if (($rs = $imgList) && count($rs) > 1) { ?>
             <div id="preview" class="">
 
                 <a href="javascript:previewScrool(-160);" class="left" ></a>
                 <a href="javascript:previewScrool(160);" class="right"></a>
                 <ul>
-    <? foreach ($rs as $n => $item) { ?>
+                    <? foreach ($rs as $n => $item) { ?>
                         <li>
-                            <a href="<?= scaleImg($item, 'w800') ?>" rel='<? if ($n) { ?>gallery<? } ?>' rel2="<?= Img::scaleBySize($item, $unit, array(620, 360)) ?><? //=scaleImg($item,'w400') ?>" style="background-image:url(<?= Img::scaleBySize($item, $unit, array(110, 80)) ?><? //=scaleImg($item,'h80') ?>)"></a>
+                            <a href="<?= scaleImg($item, 'w800') ?>" rel='<? if ($n) { ?>gallery<? } ?>' rel2="<?= Img::scaleBySize($item, $unit, array(620, 360)) ?><? //=scaleImg($item,'w400')   ?>" style="background-image:url(<?= Img::scaleBySize($item, $unit, array(110, 80)) ?><? //=scaleImg($item,'h80')   ?>)"></a>
                         </li>
-            <? } ?>
+                    <? } ?>
                 </ul>
             </div>
-<? } ?>
+        <? } ?>
 
 
 
@@ -90,14 +93,14 @@ function propList($prop, $lim = 0, $list = null) {
     
     --><div class="right_bar">
         <?= $description ?>
-<? if ($product) { ?><div>Артикул: <?= $product ?></div><? } ?>
-<? if ($m_name) { ?><div>Производитель: <?= $m_name ?></div><? } ?>
+        <? if ($product) { ?><div>Артикул: <?= $product ?></div><? } ?>
+        <? if ($m_name) { ?><div>Производитель: <?= $m_name ?></div><? } ?>
 
         <!--Свойства товаров-->
-<?__in_stock($in_stock)?>
+        <? __in_stock($in_stock) ?>
         <br>
         <br>
-<? if (false) { ?>
+        <? if (false) { ?>
             Кол-во: 
             <!--<a class="down"></a>--><input id="count" class="field count <? if ($weight_flg) { ?>weight<? } ?>" value="1"><!--<a class="up"></a>-->
             <br>
@@ -105,11 +108,11 @@ function propList($prop, $lim = 0, $list = null) {
         <? } else { ?>
 
             <a class="add title" href="javascript:shop.add(<?= $id ?>,'+1')" title=" В корзину">В корзину</a><br>
-<? } ?>
-            <? if ($old_price) { ?>
-                    <span class="old_price"><strike><?= price($old_price, $weight_flg) ?></strike></span>
-                <? } ?>
-        <strong class="price"><?= price($price, $weight_flg) ?></strong><br>
+        <? } ?>
+        <? if ($old_price) { ?>
+            <span class="old_price"><strike><?= price($old_price, $unit) ?></strike></span>
+        <? } ?>
+        <strong class="price"><?= price($price, $unit) ?></strong><br>
 
 
 
@@ -122,7 +125,7 @@ function propList($prop, $lim = 0, $list = null) {
 
         </br>
         <div class="discount"><?= $this->getText('msg_discount') ?></div>
-<? include('template/common/social.tpl.php') ?>
+        <? include('template/common/social.tpl.php') ?>
 
 
 
@@ -138,43 +141,45 @@ function propList($prop, $lim = 0, $list = null) {
             <? if (!empty($data['html'])) { ?><li><a href="#t1">Описание</a></li><? } ?>
             <? if (!empty($prop)) { ?><li><a href="#t2">Характеристики</a></li><? } ?>
             <? if (!empty($rel1)) { ?><li><a href="#t11">Аналоги</a></li><? } ?>
-<? if (!empty($rel2)) { ?><li><a href="#t12">Составные товары</a></li><? } ?>
-<? if (!empty($rel3)) { ?><li><a href="#t13">Комплектующие</a></li><? } ?>
-
-            <li><a href="#t4">Отзывы <span><?= $comment_count ?></span></a></li>
+            <? if (!empty($rel2)) { ?><li><a href="#t12">Составные товары</a></li><? } ?>
+            <? if (!empty($rel3)) { ?><li><a href="#t13">Комплектующие</a></li><? } ?>
+            <? if ($comment_enabled) { ?>
+                <li><a href="#t4">Отзывы <span><?= $comment_count ?></span></a></li>
+            <? } ?>
         </ul>
 
 
-            <? if (!empty($data['html'])) { ?>
+        <? if (!empty($data['html'])) { ?>
             <div id="t1" class="tabs">
-            <?= $data['html'] ?>
+                <?= $data['html'] ?>
             </div>
-            <? } ?>
+        <? } ?>
 
         <div id="t2" class="tabs">
-        <? propList($prop); ?>
+            <? propList($prop); ?>
         </div>
 
-            <? if (!empty($rel1)) { ?>
+        <? if (!empty($rel1)) { ?>
             <div id="t11" class="tabs">
-            <?= $this->render(array('catalog' => $rel1), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
+                <?= $this->render(array('catalog' => $rel1), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
             </div>
-            <? } ?>
-            <? if (!empty($rel2)) { ?>
+        <? } ?>
+        <? if (!empty($rel2)) { ?>
             <div id="t12" class="tabs">
-            <?= $this->render(array('catalog' => $rel2), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
+                <?= $this->render(array('catalog' => $rel2), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
             </div>
-            <? } ?>
-            <? if (!empty($rel3)) { ?>
+        <? } ?>
+        <? if (!empty($rel3)) { ?>
             <div id="t13" class="tabs">
-            <?= $this->render(array('catalog' => $rel3), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
+                <?= $this->render(array('catalog' => $rel3), dirname(__FILE__) . "/catalog_view_table.tpl.php") ?>
             </div>
-            <? } ?>
-            <? /* div id="t3" class="tabs"><?=$data['html3']?></div */ ?>
-        <div id="t4" class="tabs goods_comment">
-<? include('comment.tpl.php') ?>
-        </div>
-
+        <? } ?>
+        <? /* div id="t3" class="tabs"><?=$data['html3']?></div */ ?>
+        <? if ($comment_enabled) { ?>
+            <div id="t4" class="tabs goods_comment">
+                <? include('comment.tpl.php') ?>
+            </div>
+        <? } ?>
     </div>
 
 
@@ -192,4 +197,4 @@ function propList($prop, $lim = 0, $list = null) {
             $('a[rel="gallery"]').colorbox();
         });
     </script>
-<? include('template/common/yametrica_goods.tpl.php') ?>
+    <? include('template/common/yametrica_goods.tpl.php') ?>

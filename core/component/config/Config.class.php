@@ -95,7 +95,7 @@ class Config extends AdminComponent {
         
         $path=dirname($this->cfg('NO_IMG'));
         if($_FILES['favicon']['tmp_name']){
-            $fname=$path.'/favicon_'.time()."_".file_ext($_FILES['favicon']['name']);
+            $fname=$path.'/favicon_'.time().".".file_ext($_FILES['favicon']['name']);
             if(move_uploaded_file($_FILES['favicon']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('FAVICON_PATH', $fname,'Фавикон');
             }
@@ -104,7 +104,7 @@ class Config extends AdminComponent {
             $this->saveCfg('FAVICON_PATH', '');
         }
         if($_FILES['logo']['tmp_name']){
-            $fname=$path.'/logo_'.time()."_".file_ext($_FILES['logo']['name']);
+            $fname=$path.'/logo_'.time().".".file_ext($_FILES['logo']['name']);
             if(move_uploaded_file($_FILES['logo']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('LOGO_PATH', $fname,'Лого');
             }
@@ -113,7 +113,7 @@ class Config extends AdminComponent {
             $this->saveCfg('LOGO_PATH', '');
         }
         if($_FILES['no_img']['tmp_name']){
-            $fname=$path.'/no_img_'.time()."_".file_ext($_FILES['no_img']['name']);
+            $fname=$path.'/no_img_'.time().".".file_ext($_FILES['no_img']['name']);
             if(move_uploaded_file($_FILES['no_img']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('NO_IMG', $fname,'Лого');
             }

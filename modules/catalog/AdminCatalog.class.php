@@ -420,7 +420,7 @@ class AdminCatalog extends AdminListComponent {
         $order = 'ORDER BY ';
         $ord = $this->getURIVal('ord') != 'asc' ? 'asc' : 'desc';
 
-        if (in_array($this->getURIVal('sort'), array('name', 'price', 'c_name', 'manufacturer', 'update_time', 'insert_time', 'm_name', 'img', 'sort', 'sort1', 'sort2', 'sort3', 'in_stock', 'confirm', 'bonus'))) {
+        if (in_array($this->getURIVal('sort'), array('name', 'price', 'c_name', 'manufacturer', 'update_time', 'insert_time', 'm_name', 'img', 'sort', 'sort_main','sort1', 'sort2', 'sort3', 'in_stock', 'confirm', 'bonus'))) {
             $order.=$this->getURIVal('sort') . ' ' . $ord;
         } else {
             $order.='category ,i.name';
@@ -762,6 +762,7 @@ class AdminCatalog extends AdminListComponent {
         global $ST, $post;
         $res = array();
         if ($this->isAdmin()) {
+            $sort_main = $post->get('sort_main');
             $sort = $post->get('sort');
             $sort1 = $post->get('sort1');
             $sort2 = $post->get('sort2');
@@ -779,6 +780,9 @@ class AdminCatalog extends AdminListComponent {
                         'sort1' => intval($val),
                         'export' => in_array($id, $export) ? 1 : 0,
                     );
+                    if (isset($sort_main[$id])) {
+                        $d['sort_main'] = $sort_main[$id];
+                    }
                     if (isset($sort[$id])) {
                         $d['sort'] = $sort[$id];
                     }
@@ -824,10 +828,12 @@ class AdminCatalog extends AdminListComponent {
             'html4' => '',
             'img' => '',
             'img_add' => '',
+            'img_format' => 0,
             'price' => 0,
             'old_price' => 0,
             'awards' => 0,
             'unit' => '',
+            
             'ext_id' => '',
             'in_stock' => 1,
             'weight_flg' => 0,
@@ -859,6 +865,7 @@ class AdminCatalog extends AdminListComponent {
 
         $field['img_format_list'] = Img::getFormatList();
 
+        $field['unit_list'] = $this->enum('sh_unit');
         $field['catalog'] = $this->getCatalog();
 
         $field['catalogs'] = $this->getCatalog();
@@ -1059,7 +1066,8 @@ class AdminCatalog extends AdminListComponent {
             'sort3' => $post->getInt('sort3'),//Новинки
             'sort1' => $post->getInt('sort1'),//Акции
             'ext_id' => $post->get('ext_id'),
-            'unit' => $post->get('unit'), //Тип вставки изображения
+            'img_format' => $post->get('img_format'), //Тип вставки изображения
+            'unit' => $post->get('unit'), //Единица стоимости
         );
         if ($post->exists('manufacturer')) {
             $field['manufacturer'] = $post->get('manufacturer');

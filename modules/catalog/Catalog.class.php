@@ -311,21 +311,21 @@ class Catalog extends Component {
         }
 //		$order.='sort DESC,name';
 //		$order.='category,views DESC,name';
-        $order.='sort1 DESC,name';
+        $order.='sort DESC,name';
 
         if ($this->getURIVal('price')) {
             $order = 'price DESC';
         }
 
         if ($this->getURIVal('catalog') == 'new') {
-            $order = 'sort DESC';
+            $order = 'sort3 DESC';
         }
         $ord = $this->getURIVal('ord');
         if (in_array($ord, array('price', 'manufacturer', 'name', 'views', 'sort1', 'sort2', 'sort3'))) {
             $order = $ord . ' ' . $sort;
         }
         if ($ord == 'hit') {
-            $order = 'sort DESC';
+            $order = 'sort2 DESC';
         }
         if ($ord == 'updated') {
             $order = 'sort_print DESC';
@@ -389,14 +389,14 @@ class Catalog extends Component {
         $rs = $ST->select($queryStr);
         $data['catalog'] = array();
         $data['page'] = $page;
-
+        $units = $this->enum('sh_unit');
         while ($rs->next()) {
             $row = $rs->getRow();
 
 //			if($row['pack_size']>1){
 //				$row['price_pack']=$row['price']*$row['pack_size']*$discount;
 //			}
-//			$row['unit']=@$units[$row['unit']];
+            $row['unit'] = @$units[$row['unit']];
 //			if($row['sort']>0){
 //				$row['hit']=true;
 //			}
@@ -809,12 +809,14 @@ class Catalog extends Component {
 		LEFT JOIN sc_manufacturer AS m ON m.id=i.manufacturer_id
 		WHERE i.price>=0 AND i.id=$id";
 
+        $units=$this->enum('sh_unit');
         $rs = $ST->select($q);
         if ($rs->next()) {
             $this->addLastView($id);
             $ST->update('sc_shop_item', array('views=views+1'), "id=" . (int) $id); //Увеличим счётчик просмотров
             $field = $rs->getRow();
             $field['class'] = 'goods';
+            $field['unit'] = @$units[$field['unit']];
             $field['imgList'] = array();
             if ($field['img']) {
                 $field['imgList'][] = $field['img'];
@@ -884,6 +886,8 @@ class Catalog extends Component {
             $field['comment'] = LibComment::getInstance()->getGoodsComment($field['id'], $this->isAdmin());
 
             $field['can_comment'] = LibComment::getInstance()->canGoodsComment($field['id']);
+            $field['comment_enabled'] = Cfg::get('GOODS_COMMENT_ENABLED');
+
 
 
 //			$this->tplLeftComponent=dirname(__FILE__).'/catalog_left.tpl.php';
@@ -1789,12 +1793,12 @@ class Catalog extends Component {
 //					'name'=>"{$post->get('last_name')} {$post->get('first_name')} {$post->get('middle_name')}",
 //					'company'=>$post->get('company'),
             );
-            
-            if($city=$post->get('city')){
-            	$data['city']=$city;
+
+            if ($city = $post->get('city')) {
+                $data['city'] = $city;
             }
-            if($address){
-            	$data['address']=$address;
+            if ($address) {
+                $data['address'] = $address;
             }
 
 //Добавим реферала
@@ -1853,7 +1857,7 @@ class Catalog extends Component {
             }
             $this->setUser($data);
 
-            
+
 
 
             $data = array(
@@ -1880,25 +1884,24 @@ class Catalog extends Component {
                 'discount' => $basket['discount'],
                 'margin' => $basket['margin'],
             );
-            
-            if(Cfg::get("SHOP_DELIVERY_ENABLED")){
-            	$data['date']=$post->get('date') ? dte($post->get('date'), 'Y-m-d') : date('Y-m-d');
-            	$time = $post->getString('time');
-	            if ($t = $this->enum('sh_delivery_time', $time)) {
-	                $time = $t;
-	            }
-	
-	            $delivery_type = 1; //доставка курьером
-	            if ($post->getInt('delivery_type')) {
-	                $delivery_type = $post->getInt('delivery_type');
-	            }
-	            if ($basket['delivery'] === false) {//доставка не возможна
-	                $delivery_type = 2;
-	            }
-	            $data['city']=$address;
-	            $data['address']=$post->get('city');
-	            $data['delivery_type']=$delivery_type;
-	            
+
+            if (Cfg::get("SHOP_DELIVERY_ENABLED")) {
+                $data['date'] = $post->get('date') ? dte($post->get('date'), 'Y-m-d') : date('Y-m-d');
+                $time = $post->getString('time');
+                if ($t = $this->enum('sh_delivery_time', $time)) {
+                    $time = $t;
+                }
+
+                $delivery_type = 1; //доставка курьером
+                if ($post->getInt('delivery_type')) {
+                    $delivery_type = $post->getInt('delivery_type');
+                }
+                if ($basket['delivery'] === false) {//доставка не возможна
+                    $delivery_type = 2;
+                }
+                $data['city'] = $address;
+                $data['address'] = $post->get('city');
+                $data['delivery_type'] = $delivery_type;
             }
 
 //			$order_data=array(
@@ -1961,10 +1964,10 @@ class Catalog extends Component {
             //уведомление о заказе пользователю
 
             $notice = $data; //+$order_data;
-            if(!empty($notice['date'])){
-            	$notice['date'] = dte($notice['date']);
+            if (!empty($notice['date'])) {
+                $notice['date'] = dte($notice['date']);
             }
-            
+
 //			$notice['description']='';
 //			foreach (array('remember','report','call','call_no_report',) as $v){
 //				$notice['description'].=$this->enum('field_label',@"{$v}_{$notice[$v]}")."<br>";
@@ -1992,10 +1995,10 @@ class Catalog extends Component {
             include('function.tpl.php');
 
 
-            if(!empty($notice['address'])){
-            	$notice['address'] = parsAddr($notice['address']);
+            if (!empty($notice['address'])) {
+                $notice['address'] = parsAddr($notice['address']);
             }
-            
+
 
 //			$url="http://{$_SERVER['HTTP_HOST']}/prnt/SHET/?id=$id&PHPSESSID=".session_id();
 //			$url="http://{$_SERVER['HTTP_HOST']}/prnt/SBER/?id=$id&PHPSESSID=".session_id();

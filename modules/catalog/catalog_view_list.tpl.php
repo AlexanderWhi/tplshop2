@@ -30,9 +30,9 @@
 			</span>
 			
 			
-			<span class="price " <?if($this->isAdmin()){?>title="<?=$item['price']?>"<?}?> > <?=price($this->getPrice($item['price']))?></span>
+			<span class="price " <?if($this->isAdmin()){?>title="<?=$item['price']?>"<?}?> > <?=price($this->getPrice($item['price']),$item['unit'])?></span>
 				<?if($item['old_price']){?>
-				<span class="old_price"><strike><?=price($item['old_price'])?></strike></span>
+				<span class="old_price"><strike><?=price($item['old_price'],$item['unit'])?></strike></span>
 				<?}?>
 			
 		</div>

@@ -203,8 +203,17 @@ function price($price = 0, $lab = 'Ð') {
     );
     if (isset($labArr[$lab])) {
         $lab = $labArr[$lab];
+    }elseif($lab && $lab!='Ð'){
+        $lab='Ð/'.$lab;
+    }else{
+        $lab='Ð';
     }
-    return preg_replace('/,00$/', '', number_format($price, 2, ',', ' ')) . " <small>$lab</small>";
+    if(Cfg::get('GOODS_PRICE_FORMAT')==1){
+        return number_format($price, 2, ',', ' ') . " <small>$lab</small>";
+    }else{
+        return preg_replace('/,00$/', '', number_format($price, 2, ',', ' ')) . " <small>$lab</small>";
+    }
+    
 }
 
 function price2($price = 0, $lab = 'ð.') {

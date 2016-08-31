@@ -9,8 +9,8 @@
             <? include('basket_content.tpl.php') ?>
             <span class="error" id="error-basket" style="font-size:14pt"></span>
         </div>
-
-        <? include("order_form.tpl.php") ?>
+<?include($this->getTpl('catalog/order_form.tpl.php'))?>
+        <?/* include("order_form.tpl.php") */?>
 
     </form>
 

@@ -68,4 +68,8 @@ global $_CURLOPT;
 //$_CURLOPT['PROXYUSERPWD']="";
 
 $CORE=array('config','paysystem','modules','mail_template','files','users','content','mailtpl','adv','enum','query');
-?>
+$local = ROOT . '/local-config.php';
+
+if (file_exists($local)) {
+    require $local;
+}

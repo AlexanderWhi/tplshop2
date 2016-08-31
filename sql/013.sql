@@ -1,0 +1,1 @@
+ALTER TABLE  `sc_shop_item` ADD  `img_format` INT NOT NULL AFTER  `img`

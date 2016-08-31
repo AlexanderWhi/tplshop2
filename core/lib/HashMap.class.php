@@ -117,7 +117,14 @@ class HashMap {
 
     function get($key = null) {
         if ($key) {
-            return isset($this->map[$key]) ? trim($this->map[$key]) : null;
+            if (isset($this->map[$key])) {
+                if (is_string($this->map[$key])) {
+                    return trim($this->map[$key]);
+                } else {
+                    return $this->map[$key];
+                }
+            }
+            return null;
         } else {
             return $this->map;
         }

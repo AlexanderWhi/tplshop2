@@ -31,13 +31,13 @@
                 <ul>
                     <?
                     foreach ($this->getCatalog() as $node) {
-                        $href = "/catalog/{$node['id']}";
+                        $href = "/catalog/{$node['id']}/";
                         ?>
-                        <li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $node['name'] ?></a><!--<h4></h4>-->
+                        <li class="<? if ($this->getUriVal('catalog') == $node['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $node['name'] ?></a><!--<h4></h4>-->
                             <? if (!empty($node['children'])) { ?>
                                 <ul><?
                                     foreach ($node['children'] as $item) {
-                                        $href = "/catalog/{$item['id']}";
+                                        $href = "/catalog/{$item['id']}/";
                                         if ($this->getUri() != '/') {
                                             $href = $this->getUri(array('catalog' => (int) $item['id']));
                                         }

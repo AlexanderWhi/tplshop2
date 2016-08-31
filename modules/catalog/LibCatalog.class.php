@@ -110,7 +110,7 @@ class LibCatalog {
      * @param type $type
      * @return type
      */
-    function getMainGoods($type = 'sort') {
+    function getMainGoods($type = 'sort_main') {
         $q = "SELECT * FROM sc_shop_item i
 			LEFT JOIN(SELECT COUNT(DISTINCT commentid) AS c,AVG(rating) AS r,itemid  FROM sc_comment,sc_comment_rait r 
 				WHERE commentid=id  AND TRIM(comment)<>'' AND status=1 AND type IN('','goods') GROUP BY itemid) AS rait ON rait.itemid=i.id
@@ -289,5 +289,6 @@ class LibCatalog {
         $favorite = array_diff($favorite, array($id));
         setcookie('favorite', $_COOKIE['favorite'] = json_encode($favorite), COOKIE_EXP, '/');
     }
-
+    
+    
 }

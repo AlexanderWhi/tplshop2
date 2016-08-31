@@ -22,7 +22,7 @@
                     <? if ($item['sort3'] > 0) { ?><span class="new">Новинка</span><? } ?>
                 </div>
                 <? $img = ($item['img'] ? $item['img'] : $this->cfg('NO_IMG')) ?>
-                <a class="img  <? if ($this->cfg('SHOP_SCALE_IMAGE') == 'true') { ?>image<? } ?>" title=" <?= Html::encode($item['name']) ?>" style="background-image:url('<?= Img::scaleBySize($img, $item['unit'], array(218, 170)) ?>')"  href="<?= $url ?>" rel="<?= scaleImg($img, 'w420') ?>"></a>
+                <a class="img  <? if ($this->cfg('SHOP_SCALE_IMAGE') == 'true') { ?>image<? } ?>" title=" <?= Html::encode($item['name']) ?>" style="background-image:url('<?= Img::scaleBySize($img, $item['img_format'], array(218, 170)) ?>')"  href="<?= $url ?>" rel="<?= Img::scaleImg($img, 'w420') ?>"></a>
                 <a class="name" <? /* title=" <?=$item['name']?>" */ ?> href="<?= $url ?>"><?= isset($_GET['search']) ? preg_replace('=' . preg_quote($_GET['search']) . '=i', '<span style="color:red">\0</span>', $item['name']) : $item['name'] ?></a>
                 <? if (!empty($item['r'])) { ?><div class="rait r<?= round($item['r']) ?>"></div><? } ?>
                 <? if (!$this->inFav($item['id'])) { ?>
@@ -43,10 +43,10 @@
 
             <div class="price">
 
-                <span class="price " <? if ($this->isAdmin()) { ?>title="<?= $item['price'] ?>"<? } ?> > <?= price($this->getPrice($item['price']), $item['weight_flg']) ?></span>
+                <span class="price " <? if ($this->isAdmin()) { ?>title="<?= $item['price'] ?>"<? } ?> > <?= price($this->getPrice($item['price']), $item['unit']) ?></span>
 
                 <? if ($item['old_price']) { ?>
-                    <span class="old_price"><strike><?= price($item['old_price'], $item['weight_flg']) ?></strike></span>
+                    <span class="old_price"><strike><?= price($item['old_price'], $item['unit']) ?></strike></span>
                 <? } ?>
             </div>
 

@@ -94,7 +94,7 @@ $imgmode = $this->getUriIntVal('imgmode');
 
     <select class="input" name="catalog-category" id="catalog-category">
         <option style="<?= (($temp_n++ % 2) ? 'background-color:#EEEEEE' : '') ?>" value="0">[раздел не указан]</option>
-<? displayCatalog2($catalog, $selected, 0, $temp_n); ?>
+        <? displayCatalog2($catalog, $selected, 0, $temp_n); ?>
     </select>
 </div>
 
@@ -133,7 +133,7 @@ $imgmode = $this->getUriIntVal('imgmode');
     <br>
     <? $this->displayPageControl(); ?>
 
-<? if ($rs->getCount() > 0) { ?>
+    <? if ($rs->getCount() > 0) { ?>
 
         <!--	-->
 
@@ -158,24 +158,25 @@ $imgmode = $this->getUriIntVal('imgmode');
                     <? } ?>
                     <? if ($offer) { ?>
                         <th>Внешний id</th>
-    <? } ?>
+                    <? } ?>
                     <th><? $this->sort('price', 'Стоимость'); ?></th>
 
                     <th><? $this->sort('in_stock', 'В&nbsp;наличии'); ?></th>
+                    <th><? $this->sort('sort', 'сортировка'); ?></th>
+                    <th><? $this->sort('sort_main', 'на главной'); ?></th>
 
-                    <th><? $this->sort('sort', 'на главной'); ?></th>
                     <th><? $this->sort('sort1', 'Акция'); ?></th>
                     <? if ($offer) { ?>
                         <th>Связи</th>
                         <th><input type="checkbox" id="export_all"> <? $this->sort('export', 'Экспорт'); ?></th>
-    <? } ?>
+                    <? } ?>
                     <th><? $this->sort('sort2', 'Хит'); ?></th>
                     <th><? $this->sort('sort3', 'Новинки'); ?></th>
                     <th style="text-align:right">Действие</th>
                 </tr>
             </thead>
             <tbody>
-    <? while ($rs->next()) { ?>
+                <? while ($rs->next()) { ?>
                     <tr id="goods_item<?= $rs->get('id') ?>">
                         <td>
                             <input type="checkbox" name="item[]" value="<?= $rs->get('id') ?>" class="item"/>
@@ -191,8 +192,8 @@ $imgmode = $this->getUriIntVal('imgmode');
                                     <img src="<?= scaleImg($rs->get('img'), 'w100') ?>">
                                 <? } else { ?>
                                     <img src="/img/pic/photo.gif"/>
-            <? } ?>
-        <? } ?>
+                                <? } ?>
+                            <? } ?>
                         </td>
                         <td><a href="<?= $this->mod_uri ?>goodsEdit/?id=<?= $rs->get('id'); ?>" title="Редактировать"><?= Html::encode($rs->get("name")); ?><?= $rs->get("product") ? "/{$rs->get("product")}" : '' ?></a></td>
                         <td><small><?= $rs->get('c_name'); ?></small></td>
@@ -206,19 +207,19 @@ $imgmode = $this->getUriIntVal('imgmode');
 
                         <? if ($offer) { ?>
                             <td><input name="ext_id[<?= $rs->get('id'); ?>]" value="<?= $rs->get('ext_id'); ?>" style="width:100px"/></td>
-                            <? } ?>
+                        <? } ?>
                         </td>
                         <td class="price">
                             <? if ($offer) { ?>
                                 <input name="price[<?= $rs->get('id'); ?>]" value="<?= $rs->get('price') ?>" style="width:50px"/>
                             <? } else { ?>
-            <?= $rs->get('price') ?>
+                                <?= $rs->get('price') ?>
                             <? } ?>
                         </td>
                         <td>
                             <? if ($offer) { ?>
                                 <input name="in_stock[<?= $rs->get('id'); ?>]" value="<?= $rs->get('in_stock') ?>" style="width:50px"/>
-                                <? } else { ?>
+                            <? } else { ?>
                                 <strong>
                                     <? if ($rs->get('in_stock') == 0) { ?>
                                         <span style="color:red">НЕТ</span>
@@ -226,17 +227,20 @@ $imgmode = $this->getUriIntVal('imgmode');
                                         <span style="color:red">УДАЛЁН</span>
                                     <? } else { ?>
                                         <span style="color:green"><?= $rs->get('in_stock') ?> <?= $rs->get('unit') ?></span>
-            <? } ?></strong>
-        <? } ?>
+                                    <? } ?></strong>
+                            <? } ?>
 
                         </td>
                         <td>
                             <input name="sort[<?= $rs->get('id'); ?>]" value="<?= $rs->get('sort'); ?>" style="width:20px"/>
                         </td>
                         <td>
+                            <input name="sort_main[<?= $rs->get('id'); ?>]" value="<?= $rs->get('sort_main'); ?>" style="width:20px"/>
+                        </td>
+                        <td>
                             <input name="sort1[<?= $rs->get('id'); ?>]" value="<?= $rs->get('sort1'); ?>" style="width:20px"/>
                         </td>
-        <? if ($offer) { ?>
+                        <? if ($offer) { ?>
                             <td>
                                 <a href="/admin/catalog/relation/<?= $rs->get('id'); ?>/"><?= $rs->get('rc'); ?></a>
 
@@ -244,7 +248,7 @@ $imgmode = $this->getUriIntVal('imgmode');
                             <td>
                                 <input type="checkbox" name="export[]" value="<?= $rs->get('id'); ?>" <? if ($rs->get('export') == 1) { ?>checked<? } ?>>
                             </td>
-        <? } ?>
+                        <? } ?>
 
                         <td>
                             <input name="sort2[<?= $rs->get('id'); ?>]" value="<?= $rs->get('sort2'); ?>" style="width:20px"/>
@@ -253,18 +257,18 @@ $imgmode = $this->getUriIntVal('imgmode');
                             <input name="sort3[<?= $rs->get('id'); ?>]" value="<?= $rs->get('sort3'); ?>" style="width:20px"/>
                         </td>
                         <td style="vertical-align:top;text-align:right">
-        <? /* a class="scrooll" href="?method=onChangeStatus&id=<?=$rs->get('id');?>&status=<?=$rs->get('status')==0?'1':'0';?>"><img src="/img/pic/<?=$rs->get('status')==0?'redo_16.gif':'undo_16.gif';?>" title="<?=$rs->get('status')==0?'На главную':'С главной';?>" alt=""/></a */ ?>
+                            <? /* a class="scrooll" href="?method=onChangeStatus&id=<?=$rs->get('id');?>&status=<?=$rs->get('status')==0?'1':'0';?>"><img src="/img/pic/<?=$rs->get('status')==0?'redo_16.gif':'undo_16.gif';?>" title="<?=$rs->get('status')==0?'На главную':'С главной';?>" alt=""/></a */ ?>
                             <a href="<?= $this->mod_uri ?>goodsEdit/?id=<?= $rs->get('id'); ?>"><img src="/img/pic/edit_16.gif" title="Редактировать" alt="Редактировать"/></a>
                             <a class="remove" href="?act=deleteGoods&id=<?= $rs->get('id'); ?>"><img src="/img/pic/trash_16.gif" title="Удалить запись" border="0" alt=""/></a>
                         </td>
                     </tr>	
-    <? } ?>
+                <? } ?>
             </tbody>
         </table>
         <br>
         <? $this->displayPageControl(false); ?>
     <? } else { ?>
         <div>Список пуст</div>
-<? } ?>
+    <? } ?>
 </form>
 <script type="text/javascript" src="/modules/catalog/catalog_goods.js"></script>

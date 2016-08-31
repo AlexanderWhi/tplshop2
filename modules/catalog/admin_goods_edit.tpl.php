@@ -32,7 +32,8 @@
                     <tr><th>Артикул:</th><td><input class="input-text" name="product"  value="<?= $product ?>"/></td></tr>
                 <? } ?>
                 <? if (Cfg::get('GOODS_FIELD_MANUFACTURER_ID')) { ?>
-                    <tr><th><a href="?act=Manufacturer">Производитель</a>:</th><td>
+                    <tr>
+                        <th><a href="?act=Manufacturer">Производитель</a>:</th><td>
                             <? if (isset($manList)) { ?>
                                 <select name="manufacturer_id">
                                     <option value="0">--не выбран</option>
@@ -46,38 +47,55 @@
                             <? } ?>
 
 
-                        </td></tr>
+                        </td>
+                    </tr>
                 <? } ?>
                 <tr><th>Описание:</th><td><textarea name="description" class="input-text" style="height:100px"><?= $description ?></textarea></td></tr>		
 		<tr><th>Каталог:</th>
 			<td><?= $this->displayCatalog($catalog, $category) ?></td>
 		</tr>
                 <? if (Cfg::get('GOODS_FIELD_CATALOGS') && !empty($catalogs)) { ?>
-                        		<tr><th>Каталоги:<br>(для множественного выбора удерживайте Ctrl)</th>
-                        			<td><?= $this->displayCatalogs($catalogs, $categories) ?></td>
-                        		</tr>
+                                            		<tr><th>Каталоги:<br>(для множественного выбора удерживайте Ctrl)</th>
+                                            			<td><?= $this->displayCatalogs($catalogs, $categories) ?></td>
+                                            		</tr>
                 <? } ?>
                 <? if (Cfg::get('GOODS_FIELD_WEIGHT_FLG')) { ?>
-            		<tr><th>Товар весовой:</th><td><input type="checkbox" value="1" name="weight_flg" value="1" <? if ($weight_flg) { ?>checked<? } ?>></td></tr>
+                                		<tr><th>Товар весовой:</th><td><input type="checkbox" value="1" name="weight_flg" value="1" <? if ($weight_flg) { ?>checked<? } ?> /></td></tr>
                 <? } ?>
 		<tr><th>Цена:</th><td><input class="input-text num2" name="price"  value="<?= $price ?>"/></td></tr>
 		<tr><th>Старая цена:</th><td><input class="input-text num2" name="old_price"  value="<?= $old_price ?>"/></td></tr>
+		<tr><th><a href="/admin/enum/sh_unit/">Единца измерения</a>:</th><td>
+                   
+
+                        <? if ($unit_list) { ?>
+                                        	
+                                        	<select name="unit">
+                                        	<option value="0">--не выбрана</option>
+                                <? foreach ($unit_list as $k => $d) { ?>
+                                                                                		<option value="<?= $k ?>" <? if ($k == $unit) { ?>selected<? } ?>><?= $d ?></option>
+                                <? } ?>
+                                        	</select>
+                        <? } ?>
+</td></tr>
+
+
+
 		<tr><th>В наличии:</th><td><input class="input-text num" name="in_stock"  value="<?= $in_stock ?>"/></td></tr>
                 <? if (Cfg::get('GOODS_FIELD_AWARDS')) { ?>
-            		<tr><th>Агентское вознаграждение:</th><td><input class="input-text num2" name="awards"  value="<?= $awards ?>"/></td></tr>
+                                		<tr><th>Агентское вознаграждение:</th><td><input class="input-text num2" name="awards"  value="<?= $awards ?>"/></td></tr>
                 <? } ?>
 		<tr><th>Новинка:</th><td><input class="input-text num" name="sort3"  value="<?= $sort3 ?>"/></td></tr>
                 <? if (Cfg::get('GOODS_ACTION')) { ?>	
-    <tr><th><a href="/admin/action/">Акция</a>:</th><td>
-                                    <select name="sort1">
-                                        <option value="0">--не выбран</option>
+                        <tr><th><a href="/admin/action/">Акция</a>:</th><td>
+                                                        <select name="sort1">
+                                                            <option value="0">--не выбран</option>
                                 <? foreach ($actions as $itm) { ?>
-                                                    <option value="<?= $itm['id'] ?>" <? if ($sort1 == $itm['id']) { ?>selected<? } ?>><?= $itm['title'] ?></option>
+                                                                                            <option value="<?= $itm['id'] ?>" <? if ($sort1 == $itm['id']) { ?>selected<? } ?>><?= $itm['title'] ?></option>
                                 <? } ?>
 
-                                    </select>
-                                
-    </td></tr>
+                                                        </select>
+                                                    
+                        </td></tr>
                 <? } ?>	
 		</table>
 	</div>
@@ -104,12 +122,12 @@
 		</thead>
 		<tbody>
                     <? foreach ($nmnList as $k => $row) { ?>
-                        		<tr>
-                        		<td><input style="width:50px" name="nmn_price[]" value="<?= $row['price'] ?>" class="nmn_price"></td>
-                        		<td><input style="width:350px" name="nmn_description[]" value="<?= $row['description'] ?>" class="nmn_description"></td>
-                        		<td><input style="width:50px" name="nmn_sort[]" value="<?= $row['sort'] ?>" class="nmn_sort"></td>
-                        		<td><td><a href="#" class="del"><img src="/img/pic/trash_16.gif"></a></td></td>
-                        		</tr>
+                                            		<tr>
+                                            		<td><input style="width:50px" name="nmn_price[]" value="<?= $row['price'] ?>" class="nmn_price"></td>
+                                            		<td><input style="width:350px" name="nmn_description[]" value="<?= $row['description'] ?>" class="nmn_description"></td>
+                                            		<td><input style="width:50px" name="nmn_sort[]" value="<?= $row['sort'] ?>" class="nmn_sort"></td>
+                                            		<td><td><a href="#" class="del"><img src="/img/pic/trash_16.gif"></a></td></td>
+                                            		</tr>
                     <? } ?>
 		</tbody>
 		
@@ -130,16 +148,16 @@
 	
 	<div id="img-bar" style="min-height:250px;">
             <? if ($img_format_list) { ?>
-                    	
-                    	<select name="unit">
-                    	<option value="0">--формат</option>
+                                        	
+                                        	<select name="img_format">
+                                        	<option value="0">--формат</option>
                     <? foreach ($img_format_list as $k => $d) { ?>
-                                        		<option value="<?= $k ?>" <? if ($k == $unit) { ?>selected<? } ?>><?= $d ?></option>
+                                                                                		<option value="<?= $k ?>" <? if ($k == $img_format) { ?>selected<? } ?>><?= $d ?></option>
                     <? } ?>
-                    	</select>
+                                        	</select>
             <? } ?>
 				<input type="file" name="upload[]" multiple><button name="img_del" class="img_del">Удалить</button>
-				<hr>
+				<hr/>
 				<div id="img-tpl" style="display:none;margin-right:30px">
 					<input type="hidden" name="img_" value=""/>
 					<input type="checkbox" name="itm_" value="1"/>
@@ -161,11 +179,11 @@
 		<th>В наличии</th>
 		</tr>
                 <? foreach ($offerList as $reg => $row) { ?>
-                        			<tr>
-                        			<td><?= $row['reg'] ?></td>
+                                            			<tr>
+                                            			<td><?= $row['reg'] ?></td>
                         <? /* td><input style="width:50px" name="price[<?=$reg?>]" value="<?=(float)$row['price']?>"></td */ ?>
-                        			<td><input style="width:30px" name="in_stock[<?= $reg ?>]" value="<?= (int) $row['in_stock'] ?>"></td>
-                        			</tr>
+                                            			<td><input style="width:30px" name="in_stock[<?= $reg ?>]" value="<?= (int) $row['in_stock'] ?>"></td>
+                                            			</tr>
                 <? } ?>
 		</table>
 		
@@ -197,7 +215,7 @@
 		<select id="relation">
 		<option>--Выбрать связанные</option>
                 <? foreach ($shop_relation as $k => $d) { ?>
-                        			<option value="<?= $k ?>"><?= $d ?></option>
+                                            			<option value="<?= $k ?>"><?= $d ?></option>
                 <? } ?>
 		</select>
 		<hr>

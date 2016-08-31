@@ -1,0 +1,57 @@
+
+a.print{display:block;padding-top:8px;background:url(img/button.png);text-transform:uppercase;text-decoration:none;}
+
+
+label.radio{padding:5px 0;padding-left:30px;background: url(img/ctrl/radio.png) left no-repeat;margin-right:35px;line-height:30px}
+label.radio.margin{margin-left:30px;}
+label.radio.checked{background: url(img/ctrl/radio_checked.png) left no-repeat}
+label.checkbox{padding:5px 0;padding-left:30px;background: url(img/ctrl/checkbox.png) left no-repeat;}
+label.checkbox.margin{margin-left:30px;}
+label.checkbox.checked{background: url(img/ctrl/checkbox_checked.png) left no-repeat}
+input.custom{position:absolute;left:-9999px;}
+label.file{color:#45b29d;border-bottom:dotted 1px #45b29d;cursor:pointer}
+
+div.select{vertical-align:top;display:inline-block;position:relative;border:solid 1px #b2b2b2;border-radius:3px;background:#fff url(img/ctrl/select.png) 90% no-repeat;padding:5px 12px;height:26px;}
+div.select span{position:absolute;z-index:0;font-size:18px;}
+div.select select{position:relative;z-index:1;width:100%;font-size:18px;}
+
+#login-box{position:absolute;right:0px;top:0px;height:34px;width:220px}
+#login-box a{font-size:12px;}
+
+#login-box .i{border:0;background:#fbfbfb;box-shadow:inset 2px 2px 3px #dadada;padding:8px 0px;padding-left:6px;vertical-align:top;margin-bottom:10px;width:240px;}
+#login-box .l{display:block;}
+#login-box button{background:#ed5411;color:#fff;height:40px;border:0;font-size:14px;text-transform:uppercase;padding:10px 25px;font-weight:bold}
+
+#login-box div.join{display:inline-block;padding-left:30px;padding-top:7px;height:27px;position:relative;width:42px;background:url(img/login.png) 10px no-repeat}
+#login-box div.join a.join{color:#919191;}
+#login-box div.join .join-bar{display:none;position:absolute;left:0;top:100%;background:#fff;padding:15px 20px;box-shadow:3px 3px 3px #c5c5c5}
+#login-box div.join .join-bar .forget{display:inline-block;color:#919191;margin:7px 0}
+
+#login-box div.join:hover{background:#fff url(img/login.png) 10px no-repeat;box-shadow:3px 0px 3px #c0c0c0;}
+#login-box div.join:hover .join-bar{display:block;}
+#login-box div.join:hover a.join{color:#000;text-decoration:none;}
+#login-box a.signup{background:url(img/cabinet.png) 10px no-repeat;color:#919191;padding-left:25px;}
+
+#login-box .cabinet{padding-top:7px;}
+#login-box .cabinet a{color:#694f66;font-size:13px;}
+#login-box .cabinet a.login{background:url(img/cabinet.png) left no-repeat;padding-left:40px;display:inline-block}
+#login-box .cabinet a.exit{color:#424242;margin-left:20px;font-size:12px;}
+
+
+#block-nav{position:absolute;top:117px;left:650px}
+#block-nav a{display:inline-block;*display:inline;zoom:1;width:28px;height:28px;margin-right:7px;}
+#block-nav .map{background:url(img/m_map.png)}
+#block-nav .map.act{background:url(img/m_map_act.png)}
+#block-nav .map:hover{background:url(img/m_map_act.png)}
+#block-nav .home{background:url(img/m_home.png)}
+#block-nav .home.act{background:url(img/m_home_act.png)}
+#block-nav .home:hover{background:url(img/m_home_act.png)}
+#block-nav .contacts{background:url(img/m_mail.png)}
+#block-nav .contacts.act{background:url(img/m_mail_act.png)}
+#block-nav .contacts:hover{background:url(img/m_mail_act.png)}
+
+
+
+#addr_list .addr_item {position:relative}
+#addr_list .addr_item .remove{font-size:13px;display:none;position:absolute;right:0;top:7px;font-size:0px;width:13px;height:13px;background:url(img/ctrl/close.png)}
+#addr_list .addr_item:hover .remove{display:block}

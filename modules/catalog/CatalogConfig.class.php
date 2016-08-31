@@ -14,6 +14,8 @@ class CatalogConfig extends ModelConfig {
                     'GOODS_FIELD_WEIGHT_FLG' => array('name' => 'Âåñîâîé òîâàğ','type'=>  self::TYPE_BOOL),
                     'GOODS_FIELD_AWARDS' => array('name' => 'Àãåíòñêîå âîçíàãğàæäåíèå','type'=>  self::TYPE_BOOL),
                     'GOODS_ACTION' => array('name' => 'Àêöèè','type'=>  self::TYPE_BOOL),
+                    'GOODS_COMMENT_ENABLED' => array('name' => 'Âêëş÷èòü êîìåíòàğèè ê òîâàğàì','type'=>  self::TYPE_BOOL),
+                    'GOODS_PRICE_FORMAT' => array('name' => 'Ôîğìàò öåíû','type'=>  self::TYPE_ENUM,'enum'=>array(1=>'123,00 123,21',2=>'123 123,21',)),
                 )
             ),
 //            'SHOP_R' => array(

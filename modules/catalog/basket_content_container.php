@@ -9,7 +9,7 @@ foreach ($basket as $item){
 }?>
 
 <div id="basket" class="<?=$summ?'full':'clear'?>" >
-<span>ќформить заказ</span>
+<span>ќформить за€вку</span>
 <small class="cnt"><?=$count?></small> <strong><?=price($summ)?></strong>
 
 </div>

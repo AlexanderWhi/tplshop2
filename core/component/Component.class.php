@@ -383,7 +383,7 @@ class Component extends BaseComponent {
         }
         if (!empty($_GET['promo'])) {
             include_once 'modules/shop/ShopBonus.class.php';
-            if($refid=  ShopBonus::getPromoRefId($_GET['promo'])){
+            if ($refid = ShopBonus::getPromoRefId($_GET['promo'])) {
                 setcookie('promo', $_GET['promo'], time() + 3600 * 24 * 365, '/');
             }
         }
@@ -392,9 +392,11 @@ class Component extends BaseComponent {
     function getPromo() {
         return @$_COOKIE['promo'];
     }
+
     function getRefId() {
         return @$_COOKIE['Ref_id'];
     }
+
     function setClientId() {
         if (!empty($_COOKIE['Client_id'])) {
             $uid = $_COOKIE['Client_id'];
@@ -444,9 +446,12 @@ class Component extends BaseComponent {
 
     function getTpl($tpl_name) {
         $path = "template/{$this->theme()}/pages/{$this->mod_module_name}/{$tpl_name}";
+        $path1 = "template/{$this->theme()}/pages/{$tpl_name}";
         $path2 = "modules/{$this->mod_module_name}/{$tpl_name}";
         if (file_exists($path)) {
             return $path;
+        } elseif (file_exists($path1)) {
+            return $path1;
         } elseif (file_exists($path2)) {
             return $path2;
         }
@@ -485,6 +490,11 @@ class Component extends BaseComponent {
                 $this->setDescription($this->getCeo('description'));
             if ($this->getCeo('keywords'))
                 $this->setKeywords($this->getCeo('keywords'));
+        }
+
+
+        if (Cfg::get('STAMP')) {
+            Img::$stamp = true;
         }
 
 
