@@ -63,7 +63,7 @@ function propList($prop, $lim = 0, $list = null) {
     <div class="left_bar">
         <div class="img_list">
             <? $img = ($img ? $img : $this->cfg('NO_IMG')) ?>
-            <a rel="gallery" href="<?= scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
+            <a rel="gallery" href="<?= Img::scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
         </div>
 
 

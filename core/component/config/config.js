@@ -73,6 +73,9 @@ $(function () {
             {
                 msg(data.msg);
                 $('#preloader').hide();
+                setTimeout(function(){
+                    document.location.reload();
+                },1000);
             },
             error: function (jqXHR, textStatus, errorThrown)
             {

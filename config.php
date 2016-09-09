@@ -58,6 +58,7 @@ $CONFIG['ADVERTISING_PATH']='/storage/adv';
 $CONFIG['GALLERY_PATH']='/storage/gallery';
 $CONFIG['AVATAR_PATH']='/storage/avatar';
 $CONFIG['NO_IMG']='/storage/img/no_img.png';
+$CONFIG['STAMP_IMG']='/storage/stamp/stamp.png';
 $CONFIG['SHOP_IS_MULTY_CAT']=0;
 $CONFIG['SITE_LOG']=1;
 $CONFIG['VERSION']='3.80';

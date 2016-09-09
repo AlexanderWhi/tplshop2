@@ -86,6 +86,7 @@ class Config extends AdminComponent {
             'logo'=>$this->cfg('LOGO_PATH'),
             'favicon'=>$this->cfg('FAVICON_PATH'),
             'no_img'=>$this->cfg('NO_IMG'),
+            'stamp_img'=>$this->cfg('STAMP_IMG'),
         );
         
         $this->display($data, dirname(__FILE__) . '/config_front.tpl.php');
@@ -118,9 +119,24 @@ class Config extends AdminComponent {
                 $this->saveCfg('NO_IMG', $fname,'Лого');
             }
         }
-        if($post->get('clear_logo')){
+        if($post->get('clear_no_img')){
             $this->saveCfg('NO_IMG', null);
         }
+        if($_FILES['stamp_img']['tmp_name']){
+            $fname=$this->cfg('STAMP_IMG');
+            if(move_uploaded_file($_FILES['stamp_img']['tmp_name'], ROOT.$fname)){
+                //$this->saveCfg('NO_IMG', $fname,'Лого');
+                
+                foreach (array('catalog','catalog/goods') as $dir){
+                    $dir_part=ROOT.'/storage/'.$dir.'/.thumbs';
+                    $dir_part_new=ROOT.'/storage/'.$dir.'/.thumbs'.  time();
+                    if(file_exists($dir_part)){
+                        rename($dir_part, $dir_part_new);
+                    }
+                }
+            }
+        }
+        
         
         echo printJSON(array('msg' => 'Данные обновлены'));
         exit;

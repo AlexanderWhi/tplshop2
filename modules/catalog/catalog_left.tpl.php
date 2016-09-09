@@ -39,7 +39,7 @@
                                     foreach ($node['children'] as $item) {
                                         $href = "/catalog/{$item['id']}/";
                                         if ($this->getUri() != '/') {
-                                            $href = $this->getUri(array('catalog' => (int) $item['id']));
+                                            $href = $this->getUri(array('catalog' => (int) $item['id'],'action'=>null));
                                         }
                                         if ($item['c'] || true) {
                                             ?><li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $item['name'] ?></a> <?= $item['c'] ?></li><?

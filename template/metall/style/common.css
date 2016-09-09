@@ -77,10 +77,10 @@ body { min-width: 940px;_height:100%;}
 #block-info {position:absolute;top:125px;left:57px;width:300px;z-index:1;color:#777;text-align:center}
 #block-info1 {font-size:12px;padding-left:26px;}
 
-#block-info-phone{position:absolute;top:6px;/*left:133px;*/left:0;font-size:11px}
+#block-info-phone{position:absolute;top:6px;/*left:133px;*/right:0px;font-size:20px}
 #block-info-phone div{}
-#block-info-phone strong{font-size:13px;color:#000000;font-weight:normal;}
-#block-info-phone p a{color:#a8a8a8;text-decoration:none;border-bottom:dotted 1px #a8a8a8;margin-left:15px}
+#block-info-phone strong{color:#000000;font-weight:normal;}
+#block-info-phone p a{color:#a8a8a8;text-decoration:none;border-bottom:dotted 1px #a8a8a8;}
 
 #block-info-work{position:absolute;top:15px;left:0px;font-size:14px;color:#808080}
 #block-info-work div{margin-bottom:15px;}
@@ -140,7 +140,7 @@ ul.left_menu li a.act{color:#000;text-decoration:none}
 #logo_footer{display:block;position:absolute;width:266px;height:139px;background:url(img/logo_footer.png);left:0;top:0px;}
 
 
-#footer-menu{width:460px;float:right;min-height:85px;}
+#footer-menu{width:460px;float:left;min-height:85px;}
 #footer-menu a{display:inline-block;width:230px}
 
 
@@ -177,7 +177,7 @@ ul.left_menu li a.act{color:#000;text-decoration:none}
 #copyrights{float:left}
 
 
-#block-info-footer{position:absolute;left:0px;top:30px;line-height:30px}
+#block-info-footer{position:absolute;right:0px;top:30px;line-height:30px}
 #block-info-footer strong{font-size:18px;font-weight:normal}
 
 
@@ -536,8 +536,8 @@ form.common .msg{color:#00F;display:none}
 #content.faq h1{color:#6eb435}
 #content.faq h2{color:#00582e}
 
-#search-bar {width:460px;height:42px;position:absolute;left:260px;top:25px;}
-#search-bar input{width:430px;height:17px;border:0;background:#fbfbfb;padding:8px 0px;padding-left:6px;color:#8f8f8f;vertical-align:top;box-shadow:inset 2px 2px 3px #dadada}
+#search-bar {width:360px;height:42px;position:absolute;left:360px;top:25px;}
+#search-bar input{width:330px;height:17px;border:0;background:#fbfbfb;padding:8px 0px;padding-left:6px;color:#8f8f8f;vertical-align:top;box-shadow:inset 2px 2px 3px #dadada}
 #search-bar button{width:37px;height:35px;border:none;background:url(img/search.png) center no-repeat;vertical-align:top;color:#fff;font-size:0;margin-left:-40px}
 
 #ceo-blk{background:#fff;border-radius:0 0 0px 5px;position:fixed;top:0px;right:0;z-index:200;box-shadow:0 4px 4px #ddd;padding:10px;}

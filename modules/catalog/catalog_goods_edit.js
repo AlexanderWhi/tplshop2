@@ -7,14 +7,14 @@ var cloneImg = function (img, i) {
         this.name = this.name.replace(/_$/, '[]');
     });
     return tpl;
-}
+};
 
 _upload = function (resp) {
     $('#preloader').hide();
     for (var i in resp.paths) {
         cloneImg(resp.paths[i]).appendTo('#img-list');
     }
-}
+};
 
 var acPropName = function () {
 
@@ -28,7 +28,7 @@ var acPropName = function () {
         },
         minLength: 1
     });
-}
+};
 
 
 
@@ -55,22 +55,27 @@ function addProp() {
     $('.remove', el).click(function () {
         $(this).parent().parent().remove();
         return false;
-    })
+    });
     el.appendTo($('#add_prop tbody'));
 
 }
 $(function () {
-
+    $("#tb").tabs();
     if (getCookie('TabsView') == 1) {
         $('#tabs_view').attr('checked', true);
     }
+    //var tab_init=false;
     var changeTabsView = function () {
         if ($('#tabs_view').is(':checked')) {
             $("#tb").tabs();
+            //tab_init=true
             setCookie('TabsView', 1);
         } else {
             setCookie('TabsView', 0);
-            $("#tb").tabs('destroy');
+            //if(tab_init){
+                $("#tb").tabs('destroy');
+            //}
+            
         }
     };
     $('#tabs_view').click(function () {
@@ -85,8 +90,8 @@ $(function () {
                 $('[name=id]').val(res.id);
                 $('#data_id').text(res.id);
             }
-            msg(res.msg)
-        }, 'json')
+            msg(res.msg);
+        }, 'json');
         return false;
     });
 
@@ -151,7 +156,7 @@ $(function () {
         var data = {
             type: $(this).val(),
             goods_id: $('[name=id]', this.form).val()
-        }
+        };
         $.post('?act=getRelation', data, function (res) {
             var html = '';
             for (var i in res) {
@@ -181,7 +186,7 @@ $(function () {
         return false;
     });
 
-    $("#tb").tabs();
+    
 
     $('[name^=upload]').upload({params: 'resize=false'});
 
