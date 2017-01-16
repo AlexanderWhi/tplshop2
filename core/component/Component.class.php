@@ -235,7 +235,7 @@ class Component extends BaseComponent {
     }
 
     function checkCapture($val, $nme = 'capture') {
-        if (defined('IMG_SECURITY') && (!Cookie::get(IMG_SECURITY . $nme) || (md5($val) != Cookie::get(IMG_SECURITY . $nme)))) {
+        if (defined('IMG_SECURITY') && (!Cookie::get(IMG_SECURITY . $nme) || (md5($val.SALT) != Cookie::get(IMG_SECURITY . $nme)))) {
             return false;
         }
         return true;
@@ -448,12 +448,15 @@ class Component extends BaseComponent {
         $path = "template/{$this->theme()}/pages/{$this->mod_module_name}/{$tpl_name}";
         $path1 = "template/{$this->theme()}/pages/{$tpl_name}";
         $path2 = "modules/{$this->mod_module_name}/{$tpl_name}";
+        $path3 = "modules/{$tpl_name}";
         if (file_exists($path)) {
             return $path;
         } elseif (file_exists($path1)) {
             return $path1;
         } elseif (file_exists($path2)) {
             return $path2;
+        } elseif (file_exists($path3)) {
+            return $path3;
         }
         return false;
     }
