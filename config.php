@@ -21,6 +21,7 @@ define("DB_HOST","localhost");
 define("DB_LOGIN","root");
 define("DB_PASSWORD","");
 define("DB_BASE","tpl_shop");
+define("SALT","skojfpiaewp84u5pqu 9q8435- q988qe iahsdg aksjdhgpoiuarh gpu4h");
 
 
 if(empty($_SERVER['HTTP_HOST'])){
@@ -33,9 +34,9 @@ define("FROM_SITE",HTTP_HOST);
 define('IMG_SECURITY','_IMG_SECURITY');
 global $CONFIG,$CORE;
 $CONFIG=array(
-	'COPYRIGHTS'=>'© Copyrights co-in.ru 2010-2015 ã.',
+	'COPYRIGHTS'=>'© Copyrights co-in.ru 2010-2017 ã.',
 	'TITLE'=>' - ',
-	'THEME'=>'standart',
+	'THEME'=>'standart2',
 	'DB'=>array(
 		'host'=>DB_HOST,
 		'login'=>DB_LOGIN,
