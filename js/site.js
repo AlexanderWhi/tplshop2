@@ -1,6 +1,6 @@
 var filter = function (href) {
     document.location.href = href;
-}
+};
 var debug = {
     append: function (msg) {
         var h = $('#debug').html();
@@ -10,31 +10,31 @@ var debug = {
     text: function (msg) {
         $('#debug').html(msg);
     }
-}
+};
 
 
 
 var alertBox = function (msg) {
     $('#alert_box').show().find('.msg').text(msg);
-}
+};
 var openLoginForm = function () {
     $('#login-form-bar').show();
     $('#block-guest').addClass('act');
 //	document.location.href='#login-form-bar'
-}
+};
 
 var goLogin = function () {
     $('#block-user input[name=login]').focus()
-}
+};
 
 var signup = function () {
     $('#login-box div.join').addClass('act');
     $('#login-box div.signup [name=name]').focus();
-}
+};
 var enter = function () {
     $('#login-box div.join').addClass('act');
     $('#login-box div.login [name=login]').focus();
-}
+};
 
 //function onChangeCity(id){
 //	$.post('?act=ChangeCity',{'id':id},function(res){
@@ -66,7 +66,39 @@ function showSearch() {
     }
 }
 $(function () {
+    $('.menu-mobile button[rel]').click(function () {
+        var b = this;
+        var rel = $(this).attr('rel');
 
+        $('.submenu-mobile').not('#' + rel).hide();
+        var el = $('#' + rel);
+        if (el.is(':hidden')) {
+            el.css('margin-top', '0px');
+            el.data('scroll', $(window).scrollTop());
+            //alert(el.data('scroll'));
+            el.slideDown(300);
+        } else {
+            el.slideUp(100);
+        }
+        $('a.close', el).click(function () {
+            $(b).click();
+            return false;
+        });
+        return false;
+    });
+    $(window).scroll(function () {
+        var el = $('.submenu-mobile').not(':hidden');
+        if (el.length > 0) {
+            var scr = el.data('scroll') - $(window).scrollTop();
+            //alert(scr);
+            if (scr > 0) {
+                scr = 0;
+                el.data('scroll', $(window).scrollTop());
+            }
+            el.css('margin-top', scr + 'px');
+        }
+
+    });
     $('#main-subscribe').submit(function () {
         $.post(this.action, $(this).serialize(), function (res) {
             if (res.err) {

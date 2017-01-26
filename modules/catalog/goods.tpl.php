@@ -63,7 +63,7 @@ function propList($prop, $lim = 0, $list = null) {
     <div class="left_bar">
         <div class="img_list">
             <? $img = ($img ? $img : $this->cfg('NO_IMG')) ?>
-            <a rel="gallery" href="<?= Img::scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
+            <a  itemprop="image" rel="gallery" href="<?= Img::scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
         </div>
 
 
@@ -91,7 +91,7 @@ function propList($prop, $lim = 0, $list = null) {
     
     
     
-    --><div class="right_bar">
+    --><div class="right_bar" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
         <?= $description ?>
         <? if ($product) { ?><div>Артикул: <?= $product ?></div><? } ?>
         <? if ($m_name) { ?><div>Производитель: <?= $m_name ?></div><? } ?>
@@ -112,7 +112,7 @@ function propList($prop, $lim = 0, $list = null) {
         <? if ($old_price) { ?>
             <span class="old_price"><strike><?= price($old_price, $unit) ?></strike></span>
         <? } ?>
-        <strong class="price"><?= price($price, $unit) ?></strong><br>
+        <strong class="price"  itemprop="price"><?= price($price, $unit) ?></strong><br>
 
 
 
@@ -150,7 +150,7 @@ function propList($prop, $lim = 0, $list = null) {
 
 
         <? if (!empty($data['html'])) { ?>
-            <div id="t1" class="tabs">
+            <div id="t1" class="tabs"  itemprop="description">
                 <?= $data['html'] ?>
             </div>
         <? } ?>
@@ -190,11 +190,7 @@ function propList($prop, $lim = 0, $list = null) {
 
       <?} */ ?>
 
-    <script src="/colorbox1.5.13/jquery.colorbox-min.js"></script>
-    <script type="text/javascript" src="/modules/catalog/goods.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('a[rel="gallery"]').colorbox();
-        });
-    </script>
+    <script defer src="/colorbox1.5.13/jquery.colorbox-min.js"></script>
+    <script defer type="text/javascript" src="/modules/catalog/goods.js"></script>
+    
     <? include('template/common/yametrica_goods.tpl.php') ?>

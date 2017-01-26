@@ -142,6 +142,6 @@ function encodestring($st){
                         )
              );
     // Возвращаем результат.
+    $st= trim(preg_replace('/_+/', '-', $st),'-');
     return $st;
 }
-?>

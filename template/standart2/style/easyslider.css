@@ -1,0 +1,16 @@
+.slider ul{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-padding-start:0}
+/* Easy Slider */
+.slider{position:relative;}
+.slider ul, .slider  ul li{margin:0;padding:0;list-style:none}
+
+.slider li{ overflow:hidden; list-style:none;}	
+
+.slider .prev,.slider .next{display:block;position:absolute;top:127px;z-index:1;}
+.slider .prev{left:30px;}
+.slider .next{right:30px;}
+
+.slider .next,.slider .prev{display:block;width:54px;height:54px}
+	
+/* numeric controls */	
+
+/* // Easy Slider */

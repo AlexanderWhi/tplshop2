@@ -231,11 +231,12 @@ class Component extends BaseComponent {
      * @param string $name
      */
     function capture($name = 'capture', $inp = true) {
+        if(ClosureCompile::isSpeedInsights()){return;}
         include("template/{$this->theme()}/pages/capture.tpl.php");
     }
 
     function checkCapture($val, $nme = 'capture') {
-        if (defined('IMG_SECURITY') && (!Cookie::get(IMG_SECURITY . $nme) || (md5($val.SALT) != Cookie::get(IMG_SECURITY . $nme)))) {
+        if (defined('IMG_SECURITY') && (!trim($val) || !Cookie::get(IMG_SECURITY . $nme) || (md5($val.SALT) != Cookie::get(IMG_SECURITY . $nme)))) {
             return false;
         }
         return true;

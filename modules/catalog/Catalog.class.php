@@ -7,7 +7,7 @@ function _recount_cat($item, $k = 'cm') {
     $res = $item[$k];
     if (isset($item['ch'])) {
         foreach ($item['ch'] as $i) {
-            $res+=_recount_cat($i, $k);
+            $res += _recount_cat($i, $k);
         }
     }
     return $res;
@@ -94,23 +94,23 @@ class Catalog extends Component {
 
 //		$condition="WHERE of.itemid=i.id AND i.price>=0 AND of.in_stock>0 AND of.region='{$this->getRegion()}'";/*Раздельное наличие*/
 
-        $condition.=" AND i.in_stock>-1"; //Не показывать удалённые
+        $condition .= " AND i.in_stock>-1"; //Не показывать удалённые
 //		$condition.=" AND i.category IN (SELECT id FROM sc_shop_catalog WHERE state>0)";
         if ($this->cfg('SHOP_GOODS_IN_STOCK_ONLY') == 'true') {//Настройка показывать только в наличии
-            $condition.=" AND i.in_stock>0";
+            $condition .= " AND i.in_stock>0";
         }
         if ($this->cfg('SHOP_GOODS_W_IMG_ONLY') == 'true') {//Настройка показывать только с картинками
-            $condition.=" AND i.img<>''";
+            $condition .= " AND i.img<>''";
         }
         if ($this->cfg('SHOP_GOODS_CHECKED_ONLY')) {//Настройка показывать только в подтверждённые
-            $condition.=" AND i.confirm=1";
+            $condition .= " AND i.confirm=1";
         }
         if (preg_match('/(\d*)\D*-(\d*)\D*/', $this->getURIVal('price'), $res)) {
             if ($res[1] > 0) {
-                $condition.=" AND i.price>={$res[1]}";
+                $condition .= " AND i.price>={$res[1]}";
             }
             if ($res[2] > 0) {
-                $condition.=" AND i.price<={$res[2]}";
+                $condition .= " AND i.price<={$res[2]}";
             }
         }
 
@@ -120,17 +120,17 @@ class Catalog extends Component {
 
         if ($this->getURIVal('catalog') == 'fav') {
             if ($arr = $this->getFavoriteData()) {
-                $condition.=" AND i.id IN('" . implode("','", $arr) . "')";
+                $condition .= " AND i.id IN('" . implode("','", $arr) . "')";
             }
         }
         if ($this->getURIVal('catalog') == 'new') {
 
-            $condition.=" AND i.sort3>0";
+            $condition .= " AND i.sort3>0";
             $this->setPageTitle('Новинки');
         }
         if ($this->getURIVal('catalog') == 'special') {
 
-            $condition.=" AND i.sort>0";
+            $condition .= " AND i.sort>0";
             $this->setPageTitle('СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ');
         }
 //		if($this->getURIVal('catalog')=='action'){
@@ -143,13 +143,13 @@ class Catalog extends Component {
             if ($rs->next()) {
                 $data['action'] = $rs->getRow();
                 $this->setPageTitle($rs->get('title'), "/catalog/action/$action/");
-                $condition.=" AND i.sort1=$action";
+                $condition .= " AND i.sort1=$action";
             }
 //			$this->setPageTitle('СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ');
         }
 
         if ($catIds) {
-            $condition.=" 
+            $condition .= " 
 			
 				AND (
 				EXISTS(SELECT id FROM sc_shop_catalog AS sc WHERE sort>-1 AND sc.id IN(" . trim(implode(",", $catIds), ',') . ") AND i.category=sc.id  )
@@ -167,13 +167,13 @@ class Catalog extends Component {
                 }
             }
             if ($p_c) {
-                $condition.=" AND (" . implode(' AND ', $p_c) . ")";
+                $condition .= " AND (" . implode(' AND ', $p_c) . ")";
             }
 //			$condition.=" AND EXISTS (SELECT item_id FROM sc_shop_prop_val WHERE prop_id={$prop} AND i.id=item_id)";
         }
 
         if (preg_match('/(\d+),(\d+)/', $this->getURIVal('rel'), $res)) {
-            $condition.=" AND EXISTS (SELECT ch FROM sc_shop_relation WHERE par={$res[1]} AND type={$res[2]} AND i.id=ch )";
+            $condition .= " AND EXISTS (SELECT ch FROM sc_shop_relation WHERE par={$res[1]} AND type={$res[2]} AND i.id=ch )";
         }
 
         $prop_condition = '';
@@ -202,8 +202,8 @@ class Catalog extends Component {
                     }
                 }
             }
-            $prop_condition.= implode('', $c3);
-            $prop2_condition.= implode('', $c4);
+            $prop_condition .= implode('', $c3);
+            $prop2_condition .= implode('', $c4);
         }
 
 //		if($prop=$get->getArray('p')){
@@ -243,30 +243,30 @@ class Catalog extends Component {
 
         $man_condition = '';
         if (($man = $this->getURIVal('man')) && $man = explode(',', $man)) {
-            $man_condition.=" AND i.manufacturer IN('" . trim(implode("','", $man), ',') . "')";
+            $man_condition .= " AND i.manufacturer IN('" . trim(implode("','", $man), ',') . "')";
         }
         if (($man = $this->getURIVal('manid')) && $man = explode(',', $man)) {
-            $man_condition.=" AND i.manufacturer_id IN('" . trim(implode("','", $man), ',') . "')";
+            $man_condition .= " AND i.manufacturer_id IN('" . trim(implode("','", $man), ',') . "')";
         }
 
         if ($man = $get->getArray('man')) {
             foreach ($man as &$m) {
                 $m = SQL::slashes($m);
             }
-            $man_condition.=" AND i.manufacturer IN('" . trim(implode("','", $man), ',') . "')";
+            $man_condition .= " AND i.manufacturer IN('" . trim(implode("','", $man), ',') . "')";
         }
         if ($man = $get->getArray('manid')) {
             foreach ($man as &$m) {
                 $m = SQL::slashes($m);
             }
-            $man_condition.=" AND i.manufacturer_id IN('" . trim(implode("','", $man), ',') . "')";
+            $man_condition .= " AND i.manufacturer_id IN('" . trim(implode("','", $man), ',') . "')";
         }
         $p_condition = '';
         if ($get->getInt('minp')) {
-            $p_condition.=" AND i.price >={$get->getInt('minp')}";
+            $p_condition .= " AND i.price >={$get->getInt('minp')}";
         }
         if ($get->getInt('maxp')) {
-            $p_condition.=" AND i.price <={$get->getInt('maxp')}";
+            $p_condition .= " AND i.price <={$get->getInt('maxp')}";
         }
 
         $sh_arr = array(
@@ -287,9 +287,9 @@ class Catalog extends Component {
                 foreach ($words as $w) {
                     $or[] = "i.name LIKE '%" . $w . "%'";
                 }
-                $condition.=" AND (" . implode(' OR ', $or) . ")";
+                $condition .= " AND (" . implode(' OR ', $or) . ")";
             } else {
-                $condition.=" AND (i.name LIKE '%" . SQL::slashes($q) . "%')";
+                $condition .= " AND (i.name LIKE '%" . SQL::slashes($q) . "%')";
             }
             //$condition.=" AND lower(i.name) LIKE '%" . $q . "%'";
         }
@@ -311,7 +311,7 @@ class Catalog extends Component {
         }
 //		$order.='sort DESC,name';
 //		$order.='category,views DESC,name';
-        $order.='sort DESC,name';
+        $order .= 'sort DESC,name';
 
         if ($this->getURIVal('price')) {
             $order = 'price DESC';
@@ -522,8 +522,8 @@ class Catalog extends Component {
 //				$data['min_max_price'][1]=$get->getInt('maxp');
 //			}
 
-        $this->tplLeftComponent = dirname(__FILE__) . "/catalog_left.tpl.php";
-        $this->display($data, dirname(__FILE__) . '/catalog.tpl.php');
+        $this->tplLeftComponent = $this->getTpl("catalog_left.tpl.php");
+        $this->display($data, $this->getTpl('catalog.tpl.php'));
     }
 
     protected $data = array();
@@ -540,10 +540,10 @@ class Catalog extends Component {
 
         $query = '';
         if ($prop) {
-            $query.='&val=' . implode(',', $prop);
+            $query .= '&val=' . implode(',', $prop);
         }
         if ($post->get('minp') || $post->get('maxp')) {
-            $query.='&pr=' . "{$post->get('minp')},{$post->get('maxp')}";
+            $query .= '&pr=' . "{$post->get('minp')},{$post->get('maxp')}";
             $params['pr'] = "{$post->get('minp')},{$post->get('maxp')}";
         }
         header("Location: " . $this->getURI(array(), $query));
@@ -738,20 +738,20 @@ class Catalog extends Component {
         $cond = "";
         $man_cond = "";
         if (($manid = $this->getURIVal('manid')) && $manid = explode(',', $manid)) {
-            $man_cond.=" AND manufacturer_id IN ('" . implode("','", $manid) . "')";
+            $man_cond .= " AND manufacturer_id IN ('" . implode("','", $manid) . "')";
         }
 
         $q = trim(strtolower(SQL::slashes(urldecode($get->get('search')))));
 
         if ($q) {
-            $man_cond.=" AND (lower(i.name) LIKE '%" . $q . "%')";
+            $man_cond .= " AND (lower(i.name) LIKE '%" . $q . "%')";
         }
         if ($action = $this->getURIIntVal('action')) {
-            $man_cond.=" AND i.sort1=$action";
+            $man_cond .= " AND i.sort1=$action";
 //			$this->setPageTitle('СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ');
         }
         if ($this->cfg('SHOP_GOODS_IN_STOCK_ONLY') == 'true') {//Настройка показывать только в наличии
-            $cond.=" AND i.in_stock>0";
+            $cond .= " AND i.in_stock>0";
         }
         $rs = $ST->select("SELECT name,img,parentid,id,c,cm FROM sc_shop_catalog cat
 			LEFT JOIN (SELECT COUNT(id) AS c, category FROM sc_shop_item i WHERE  in_stock>-1 $cond $man_cond GROUP BY category) AS cnt ON cnt.category=cat.id
@@ -809,7 +809,7 @@ class Catalog extends Component {
 		LEFT JOIN sc_manufacturer AS m ON m.id=i.manufacturer_id
 		WHERE i.price>=0 AND i.id=$id";
 
-        $units=$this->enum('sh_unit');
+        $units = $this->enum('sh_unit');
         $rs = $ST->select($q);
         if ($rs->next()) {
             $this->addLastView($id);
@@ -828,7 +828,7 @@ class Catalog extends Component {
             }
 
 
-            $field+=$this->getDeliveryCost($field['price']);
+            $field += $this->getDeliveryCost($field['price']);
 
             $field['parentid'] = 0;
 
@@ -877,11 +877,11 @@ class Catalog extends Component {
             }
 
             //Товары связанные
-            $field+=LibCatalog::getInstance()->getRelation($id);
+            $field += LibCatalog::getInstance()->getRelation($id);
 
             $field['rait'] = LibComment::getInstance()->getGoodsRait($field['id'], $field['category']);
 
-            $field+=LibComment::getInstance()->getGoodsCommentData($field['id']);
+            $field += LibComment::getInstance()->getGoodsCommentData($field['id']);
 
             $field['comment'] = LibComment::getInstance()->getGoodsComment($field['id'], $this->isAdmin());
 
@@ -922,7 +922,7 @@ class Catalog extends Component {
 //		}
         $key = 'id' . $id;
         if ($nmn) {
-            $key.="_" . $nmn;
+            $key .= "_" . $nmn;
         }
 
         if ($count == 0) {
@@ -1043,8 +1043,8 @@ class Catalog extends Component {
         $summ = 0;
         $count = 0;
         foreach ($basket as $item) {
-            $summ+=$item['sum'];
-            $count+=$item['count'];
+            $summ += $item['sum'];
+            $count += $item['count'];
         }
         $out['count'] = $count;
         $out['summ'] = $summ;
@@ -1070,7 +1070,7 @@ class Catalog extends Component {
             if (isset($count[$id])) {
                 $key = 'id' . $id;
                 if (!empty($unit_sale[$id])) {
-                    $key.='_' . $unit_sale[$id];
+                    $key .= '_' . $unit_sale[$id];
                 }
                 $basket[$key] = (float) $count[$id];
             }
@@ -1345,7 +1345,7 @@ class Catalog extends Component {
 //				$att[]=array('name'=>'Счёт.xls','file'=>$url."&access=allow");
             }
 
-            $data['ps_href'].="<br><span class='pay_status'>" . $this->enum('sh_pay_status', $data['pay_status']) . "</span>";
+            $data['ps_href'] .= "<br><span class='pay_status'>" . $this->enum('sh_pay_status', $data['pay_status']) . "</span>";
 
             $data['text'] = BaseComponent::getText('order_report_success');
             if (preg_match_all('/\{([\w\d]+)\}/U', $data['text'], $res)) {
@@ -1540,7 +1540,7 @@ class Catalog extends Component {
         //Если есть для города доставка
 //		$data+=$this->getDeliveryCost($bsk->getSum());
         //Если есть зоны доставка
-        $data+=$this->getDeliveryCostZone($bsk->getSum(), $delivery_zone);
+        $data += $this->getDeliveryCostZone($bsk->getSum(), $delivery_zone);
 
 //		$data['delivery']=0;
 //		$data['price_condition']=0;
@@ -1601,7 +1601,7 @@ class Catalog extends Component {
 
     function renderBasketContent($d = array()) {
         $data = $this->getBasketInfo($d);
-        return $this->render($data, dirname(__FILE__) . '/basket_content.tpl.php');
+        return $this->render($data, $this->getTpl('basket_content.tpl.php'));
     }
 
     function renderBasketContentContainer() {
@@ -1676,7 +1676,7 @@ class Catalog extends Component {
         }
         if ($this->cfg('SHOP_CHECK_DELIVERY_TIME') && time() > strtotime($args->get('date') . ' ' . $args->get('time') . ':00:00')) {
             $error['time'] = BaseComponent::getText('delivery_time_error_notice');
-            $error['time'].='<small style="color:#aaa">Текущее время ' . date('H:i:s') . '</small>';
+            $error['time'] .= '<small style="color:#aaa">Текущее время ' . date('H:i:s') . '</small>';
         }
         if (!trim($args->get('address'))) {
             $error['address'] = 'Введите адрес доставки';
@@ -1693,7 +1693,7 @@ class Catalog extends Component {
             $error['phone'] = 'Введите телефон';
         }
 
-        $error+=$this->checkDelivery($args);
+        $error += $this->checkDelivery($args);
 
 //		if($err=$this->checkMail($args->get('mail'),false))$error['mail']=$err;
 //		if($args->getInt('reg')==1 && !$args->exists('auto_pass')){//Хочет реги и не автопароль
@@ -1754,7 +1754,7 @@ class Catalog extends Component {
             //$out.=$rs->get('address');
             if (preg_match('/([^,]+), ([^\,]+)-([^\,]*),\D+(\d*),\D+(\d*)/', $rs->get('address'), $res)) {//Малышева, 111б-47, подъезд 4, этаж 2
                 $addr[] = array("{$res[1]}|{$res[2]}|{$res[3]}|{$res[4]}|{$res[5]}|", $rs->get('address'));
-                $out.='<a href="#" alt="' . "{$res[1]}|{$res[2]}|{$res[3]}|{$res[4]}|{$res[5]}" . '">' . $rs->get('address') . '</a>';
+                $out .= '<a href="#" alt="' . "{$res[1]}|{$res[2]}|{$res[3]}|{$res[4]}|{$res[5]}" . '">' . $rs->get('address') . '</a>';
             }
         }
         return $out;
@@ -1986,7 +1986,7 @@ class Catalog extends Component {
             $notice['NAME'] = $this->getUser('name');
 
             $notice['FROM_SITE'] = FROM_SITE;
-            $notice['basket'] = $this->render(array_merge($basket, array('is_order' => true, 'is_letter' => true)), dirname(__FILE__) . '/basket_content.tpl.php');
+            $notice['basket'] = $this->render(array_merge($basket, array('is_order' => true, 'is_letter' => true)), $this->getTpl('basket_content.tpl.php'));
 
             $notice['delivery_type'] = @$delivery_list[$notice['delivery_type']];
             $notice['pay_system'] = @$pay_system_list[$notice['pay_system']];
@@ -2160,7 +2160,7 @@ class Catalog extends Component {
             }
             $cat_arr[] = $cat;
 
-            $cond.=" AND i.category IN (" . implode(',', $cat_arr) . ")";
+            $cond .= " AND i.category IN (" . implode(',', $cat_arr) . ")";
         }
         $goods = array();
         $rs = $ST->select("SELECT *,i.price FROM sc_shop_item i,sc_shop_offer of $cond LIMIT 5");

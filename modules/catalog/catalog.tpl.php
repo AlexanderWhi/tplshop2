@@ -160,7 +160,7 @@ if($item['cr'] ){?>
 <?$this->displayPageNav($page)?>
 
 
-<?include('catalog_view_'.$this->getView().'.tpl.php')?>
+<?include($this->getTpl('catalog_view_'.$this->getView().'.tpl.php'))?>
 
 
 <?$this->displayPageNav($page)?>
@@ -168,7 +168,7 @@ if($item['cr'] ){?>
 <?if($catalog=$this->getLastView()){?>
 
 <h2>Вы смотрели</h2>
-<?include('catalog_view_'.$this->getView().'.tpl.php')?>
+<?include($this->getTpl('catalog_view_'.$this->getView().'.tpl.php'))?>
 <?}?>
 
 

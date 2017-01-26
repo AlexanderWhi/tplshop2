@@ -6,11 +6,11 @@
         <?= $this->getText('/basket/') ?>
 
         <div class="basket_content">
-            <? include('basket_content.tpl.php') ?>
+            <? include($this->getTpl('basket_content.tpl.php')) ?>
             <span class="error" id="error-basket" style="font-size:14pt"></span>
         </div>
-<?include($this->getTpl('catalog/order_form.tpl.php'))?>
-        <?/* include("order_form.tpl.php") */?>
+        <? include($this->getTpl('catalog/order_form.tpl.php')) ?>
+        <? /* include("order_form.tpl.php") */ ?>
 
     </form>
 
@@ -25,7 +25,7 @@
         <div id="catalog-content">
             <br><br><br>
             <h2>С этим товаром покупают</h2>
-            <? include('catalog_view_' . $this->getView() . '.tpl.php') ?>
+            <? include($this->getTpl('catalog_view_' . $this->getView() . '.tpl.php')) ?>
         </div>
     <? } ?>
     <div style="clear:both;height:50px"></div>
@@ -33,11 +33,11 @@
 <? } else { ?>
     <div>Ваша корзина заказов пуста</div>
 <? } ?>
-<script type="text/javascript" src="/datepicker/ui.datepicker.js"></script>
+<script defer type="text/javascript" src="/datepicker/ui.datepicker.js"></script>
 
 <script type="text/javascript">
     var CUR_TIME =<?= time() ?>;
 
 </script>
 
-<script type="text/javascript" src="/modules/catalog/basket.js"></script>
+<script defer type="text/javascript" src="/modules/catalog/basket.js"></script>

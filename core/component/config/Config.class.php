@@ -97,6 +97,7 @@ class Config extends AdminComponent {
         $path=dirname($this->cfg('NO_IMG'));
         if($_FILES['favicon']['tmp_name']){
             $fname=$path.'/favicon_'.time().".".file_ext($_FILES['favicon']['name']);
+            $fname='/favicon.ico';
             if(move_uploaded_file($_FILES['favicon']['tmp_name'], ROOT.$fname)){
                 $this->saveCfg('FAVICON_PATH', $fname,'Фавикон');
             }

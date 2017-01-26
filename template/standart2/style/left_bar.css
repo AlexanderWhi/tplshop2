@@ -1,0 +1,17 @@
+#left-bar{padding-bottom:20px;border:solid 1px #e6e6e6}
+#center-bar{padding-bottom:20px;min-height:600px;}
+
+
+#left-bar .block{border:solid 1px #fce879;padding:4px;margin-bottom:16px;border-radius:3px}
+#left-bar .block p{background:#fce879;font-size:14px;color:#000;margin:0;padding:25px;border-radius:3px}
+#left-bar .block p strong{font-size:18px;font-weight:normal;display:block;margin-bottom:10px;}
+#left-bar .block a{color:#000;}
+
+#left-bar #client-blk{border:solid 1px #d1e893;}
+#left-bar #client-blk p{background:#d1e893;}
+
+
+@media (min-width: 768px){
+    #left-bar{display:block;float:left;width:218px;}
+    #center-bar{margin-left:240px;}
+}

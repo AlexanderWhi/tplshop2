@@ -24,7 +24,7 @@
           <a href="<?=$this->getUri(array('manid'=>null),false)?>">показать&nbsp;все</a><br>
           <?} */ ?>
         <? if (!$this->getUriVal('goods')) { ?>
-            <div class="goods-menu">
+            <div class="goods-menu ">
                 <? if (false && isset($parentname)) { ?>
                     <h4><?= @$parentname ?></h4>
                 <? } ?>
@@ -39,7 +39,7 @@
                                     foreach ($node['children'] as $item) {
                                         $href = "/catalog/{$item['id']}/";
                                         if ($this->getUri() != '/') {
-                                            $href = $this->getUri(array('catalog' => (int) $item['id'],'action'=>null));
+                                            $href = $this->getUri(array('catalog' => (int) $item['id'], 'action' => null));
                                         }
                                         if ($item['c'] || true) {
                                             ?><li class="<? if ($this->getUriVal('catalog') == $item['id']) { ?>act<? } ?>" ><a href="<?= $href ?>"><?= $item['name'] ?></a> <?= $item['c'] ?></li><?
