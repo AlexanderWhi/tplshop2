@@ -533,7 +533,7 @@ class Component extends BaseComponent {
         ob_start();
         ob_implicit_flush(0);
 
-        echo $out;
+        echo ClosureCompile::html2minStr($out);
 
         global $begin_time, $query_count, $query_time, $query_report, $cache_time;
         $t = microtime(true) - $begin_time;

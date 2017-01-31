@@ -50,5 +50,7 @@
 
     </div>
 </div><!--/#footer-->
+
+<? include('popup.tpl.php') ?>
 <? include('script.tpl.php') ?>
 <? include('template/common/yametrica.tpl.php') ?>

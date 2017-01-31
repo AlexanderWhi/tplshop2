@@ -5,7 +5,7 @@
     </head>
     <body>
         <? include('modules/ceo/ceo.tpl.php') ?>
-        <? include('popup.tpl.php') ?>
+      
 
         <div id="wrap"><!--#wrap-->	
             <? include('header.tpl.php') ?>	

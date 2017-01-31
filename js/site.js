@@ -168,7 +168,7 @@ $(function () {
 //	$('.title').title();
 
     $('.image').image();
-    $('input.inptitle').inptitle();
+    //$('input.inptitle').inptitle();
     $('select.select').select();
     $('label[for]').custom();
     $('a.expand').expand();
@@ -180,7 +180,7 @@ $(function () {
         }
     });
 
-    $('#search-bar input,#search input').autocomplete('/autocomplete/autocomplete_search.php',
+    $('#search-bar input,#search input,#search-bar-mobile input').autocomplete('/autocomplete/autocomplete_search.php',
             {
                 width: 300,
                 selectFirst: false,

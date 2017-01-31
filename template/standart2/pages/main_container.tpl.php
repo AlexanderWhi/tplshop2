@@ -2,11 +2,10 @@
 <html>
     <head>
         <? include('head.tpl.php') ?>
-        <link rel="stylesheet" type="text/css" href="/template/<?= $this->theme() ?>/style/left_bar.css?<?= $no_cache ?>" />
-    </head>
+          </head>
     <body>
         <? include('modules/ceo/ceo.tpl.php') ?>
-        <? include('popup.tpl.php') ?>
+        
         <div id="wrap" >
             <? include('header.tpl.php') ?>
 
@@ -31,7 +30,7 @@
 
         <? include('footer.tpl.php') ?>
 
-        <div id="notice"></div>
-        <div id="debug"></div>
+<!--        <div id="notice"></div>
+        <div id="debug"></div>-->
     </body>
 </html>

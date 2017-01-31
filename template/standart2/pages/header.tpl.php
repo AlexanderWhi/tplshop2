@@ -59,7 +59,7 @@
         <? if ($this->cfg('SEARCH_FORM') == 'true') { ?>
             <!--search-->
             <form id="search-bar-mobile" action="/catalog/">
-                <input class="inptitle" name="search" title="<?= $this->cfg('SEARCH_TITLE') ?>" value="<?= isset($_GET['search']) ? my_htmlspecialchars(trim(urldecode($_GET['search']))) : '' ?>">
+                <input name="search" placeholder="<?= $this->cfg('SEARCH_TITLE') ?>" value="<?= isset($_GET['search']) ? my_htmlspecialchars(trim(urldecode($_GET['search']))) : '' ?>">
                 <button type="submit">Найти</button>
             </form>
         <? } ?>
