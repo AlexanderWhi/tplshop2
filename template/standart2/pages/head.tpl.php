@@ -16,7 +16,7 @@
 <? /* link rel="alternate" type="application/rss+xml" title="Подписка на события" href="http://<?=$_SERVER['HTTP_HOST']?>/action/rss/" */ ?>
 <? /* link rel="alternate" type="application/rss+xml" title="Подписка на отзывы" href="http://<?=$_SERVER['HTTP_HOST']?>/awards/rss/" / */ ?>
 
-<link type="text/css" href="/template/common/style/coin.css"  rel="stylesheet"  media="none" onload="media = 'all'">
+
 <? /*
 
   <link type="text/css" href="/template/<?= $this->theme() ?>/style/default.css"  rel="stylesheet">
@@ -37,6 +37,14 @@ $style=array("template/{$this->theme()}/style/default.css",
 
 <link type="text/css" href="/<?=ClosureCompile::css2min($style)?>"  rel="stylesheet">
 
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:800,400,400italic&subset=latin,cyrillic" rel="stylesheet" media="none" onload="media = 'all'">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,800,700&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" media="none" onload="media = 'all'">
+
+
+<link type="text/css" href="/template/common/style/coin.css"  rel="stylesheet"  media="none" onload="media = 'all'">
 <link type="text/css" href="/datepicker/datepicker.css" rel="stylesheet" media="none" onload="media = 'all'">
 <link type="text/css" href="/autocomplete/jquery.autocomplete.css" rel="stylesheet"  media="none" onload="media = 'all'">
 <link type="text/css" href="/template/<?= $this->theme() ?>/style/easyslider.css"  rel="stylesheet"  media="none" onload="media = 'all'">

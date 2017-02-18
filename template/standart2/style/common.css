@@ -1,9 +1,5 @@
-
 html { min-width: 940px;_height:100%;} 
 body { min-width: 940px;_height:100%;} 
-
-
-
 /*#goup{background:url(img/goup.png);position:fixed;_display:none;bottom:0;right:0;width:108px;height:21px;color:#fff;text-decoration:none;padding-left:30px;padding-top:8px;z-index:1}
 */
 #wrap{position:relative;z-index:2}

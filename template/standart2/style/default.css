@@ -3,10 +3,10 @@
 /*@import url(http://fonts.googleapis.com/css?family=PT+Sans:400italic,400&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,cyrillic);*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,800,700&subset=latin,cyrillic,cyrillic-ext);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,800,700&subset=latin,cyrillic,cyrillic-ext);
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:800,400,400italic&subset=latin,cyrillic);
-
+*/
 body {font-family:Open Sans,Roboto,Myriad Pro,Tahoma;font-size:14px;margin:0px;padding:0;color:#000;background:#fff;line-height:20px}
 td {}
 input{font-family:Open Sans,Roboto,Myriad Pro,Tahoma;font-size:14px;}

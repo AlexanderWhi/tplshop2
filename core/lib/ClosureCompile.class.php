@@ -86,8 +86,12 @@ class ClosureCompile {
     }
 
     static function html2minStr($str) {
-        $str = preg_replace('/[\n\r]/', '', $str);
-        $str = preg_replace('/\s+/', ' ', $str);
+        //$str = preg_replace('|//.*\n|U', '', $str);
+        $str = preg_replace('/[\r]/', '', $str);
+        //$str = preg_replace('/[\n\r]/', '', $str);
+        $str = preg_replace('/[ \t]+/', ' ', $str);
+        $str = preg_replace('/\n /', "\n", $str);
+        $str = preg_replace('/\n+/', "\n", $str);
         $str = preg_replace('/<!--.*-->/U', '', $str);
         //$str= preg_replace('/([:;\{\}])\s+/', '\1', $str);
         return $str;
