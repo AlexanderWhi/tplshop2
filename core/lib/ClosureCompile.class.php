@@ -1,4 +1,5 @@
 <?php
+
 /**
  * https://developers.google.com/speed/pagespeed/insights/
  */
@@ -8,7 +9,7 @@ class ClosureCompile {
         //return $js_file_path;
         $cache_path = 'cache/closure_compile';
         $cache_file = $cache_path . '/' . str_replace('/', '_', $js_file_path);
-        $cache_file= preg_replace('/\.js$/', '.min.js', $cache_file);
+        $cache_file = preg_replace('/\.js$/', '.min.js', $cache_file);
         if (empty($_GET['compile_js'])) {
             //return $cache_file;
         }
@@ -95,6 +96,42 @@ class ClosureCompile {
         $str = preg_replace('/<!--.*-->/U', '', $str);
         //$str= preg_replace('/([:;\{\}])\s+/', '\1', $str);
         return $str;
+    }
+
+    static function searchFile($dir, $name) {
+        $d = opendir($dir);
+        $dir_find = array();
+        while ($f = readdir($d)) {
+            if ($f != '.' && $f != '..' && is_dir($dir . '/' . $f)) {
+                $dir_find = array_merge($dir_find, self::searchFile($dir . '/' . $f, $name));
+            }
+            if ($f == $name) {
+                $dir_find[] = $dir;
+            }
+        }
+        return $dir_find;
+    }
+
+    static function imgReplace($from, $to) {
+        if (file_exists($from)) {
+            $d = opendir($from);
+            while ($f = readdir($d)) {
+                if (isImg($f)) {
+                    $dir_find = self::searchFile($to, $f);
+                    if ($dir_find) {
+                        foreach ($dir_find as $path) {
+                            if (file_exists($from . '/' . $f)) {
+                                if (md5_file($from . '/' . $f) !== md5_file($path . '/' . $f)) {
+                                    rename($path . '/' . $f, $path . '/' . $f . '_' . time());
+                                    rename($from . '/' . $f, $path . '/' . $f);
+                                    echo $path . '/' . $f . "\n ";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
