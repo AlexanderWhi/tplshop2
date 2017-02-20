@@ -63,7 +63,7 @@ function propList($prop, $lim = 0, $list = null) {
     <div class="left_bar">
         <div class="img_list">
             <? $img = ($img ? $img : $this->cfg('NO_IMG')) ?>
-            <a  itemprop="image" rel="gallery" href="<?= Img::scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))    ?>')"></a>
+            <a  itemprop="image" rel="gallery" href="<?= Img::scaleImg($img, 'w800') ?>" style="background-image:url('<?= Img::scaleBySize($img, $unit, array(620, 360)) ?><? //=(scaleImg($img,'w380h320'))      ?>')"></a>
         </div>
 
 
@@ -75,7 +75,7 @@ function propList($prop, $lim = 0, $list = null) {
                 <ul>
                     <? foreach ($rs as $n => $item) { ?>
                         <li>
-                            <a href="<?= scaleImg($item, 'w800') ?>" rel='<? if ($n) { ?>gallery<? } ?>' rel2="<?= Img::scaleBySize($item, $unit, array(620, 360)) ?><? //=scaleImg($item,'w400')   ?>" style="background-image:url(<?= Img::scaleBySize($item, $unit, array(110, 80)) ?><? //=scaleImg($item,'h80')   ?>)"></a>
+                            <a href="<?= scaleImg($item, 'w800') ?>" rel='<? if ($n) { ?>gallery<? } ?>' rel2="<?= Img::scaleBySize($item, $unit, array(620, 360)) ?><? //=scaleImg($item,'w400')     ?>" style="background-image:url(<?= Img::scaleBySize($item, $unit, array(110, 80)) ?><? //=scaleImg($item,'h80')     ?>)"></a>
                         </li>
                     <? } ?>
                 </ul>
@@ -139,6 +139,7 @@ function propList($prop, $lim = 0, $list = null) {
     <div id="tabs">
         <ul class="tabs">
             <? if (!empty($data['html'])) { ?><li><a href="#t1">Описание</a></li><? } ?>
+            <? if (!empty($data['html2'])) { ?><li><a href="#t10">Состав</a></li><? } ?>
             <? if (!empty($prop)) { ?><li><a href="#t2">Характеристики</a></li><? } ?>
             <? if (!empty($rel1)) { ?><li><a href="#t11">Аналоги</a></li><? } ?>
             <? if (!empty($rel2)) { ?><li><a href="#t12">Составные товары</a></li><? } ?>
@@ -152,6 +153,11 @@ function propList($prop, $lim = 0, $list = null) {
         <? if (!empty($data['html'])) { ?>
             <div id="t1" class="tabs"  itemprop="description">
                 <?= $data['html'] ?>
+            </div>
+        <? } ?>
+        <? if (!empty($data['html2'])) { ?>
+            <div id="t10" class="tabs"  >
+                <?= $data['html2'] ?>
             </div>
         <? } ?>
 
@@ -181,16 +187,17 @@ function propList($prop, $lim = 0, $list = null) {
             </div>
         <? } ?>
     </div>
+</div>
 
 
 
-    <? /* if(isset($rel1)){?>
-      <h2>Смотрите также:</h2>
-      <?=$this->render(array('catalog'=>$rel1),dirname(__FILE__)."/catalog_view_table.tpl.php")?>
+<? /* if(isset($rel1)){?>
+  <h2>Смотрите также:</h2>
+  <?=$this->render(array('catalog'=>$rel1),dirname(__FILE__)."/catalog_view_table.tpl.php")?>
 
-      <?} */ ?>
+  <?} */ ?>
 
-    <script defer src="/colorbox1.5.13/jquery.colorbox-min.js"></script>
-    <script defer type="text/javascript" src="/modules/catalog/goods.js"></script>
-    
-    <? include('template/common/yametrica_goods.tpl.php') ?>
+<script defer src="/colorbox1.5.13/jquery.colorbox-min.js"></script>
+<script defer type="text/javascript" src="/modules/catalog/goods.js"></script>
+
+<? include('template/common/yametrica_goods.tpl.php') ?>
