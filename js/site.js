@@ -24,7 +24,7 @@ var openLoginForm = function () {
 };
 
 var goLogin = function () {
-    $('#block-user input[name=login]').focus()
+    $('#block-user input[name=login]').focus();
 };
 
 var signup = function () {
@@ -106,21 +106,21 @@ $(function () {
             } else {
                 $.alert(res.msg);
             }
-        }, 'json')
+        }, 'json');
 
         return false;
     });
 
     $('#login-box div.join span.join').click(function () {
         if ($('#login-box div.join').hasClass('act')) {
-            $('#login-box div.join').removeClass('act')
+            $('#login-box div.join').removeClass('act');
         } else {
-            $('#login-box div.join').addClass('act')
+            $('#login-box div.join').addClass('act');
         }
         return false;
     });
     $('#login-box .close').click(function () {
-        $('#login-box div.join').removeClass('act')
+        $('#login-box div.join').removeClass('act');
         return false;
     });
 
@@ -161,7 +161,7 @@ $(function () {
     $('.notice .close').click(function () {
         $(this).parents('.notice').hide();
         return false;
-    })
+    });
 //	.each(function(){alert('')});
 
 
@@ -200,7 +200,7 @@ $(function () {
                     //alert("Выбрана запись с ID: " + sValue); 
                     return sValue;
                 }
-            })
+            });
 
 
 
@@ -227,7 +227,7 @@ $(function () {
                     $('#err-' + i, form).text(res.err[i]).show();
                 }
             } else {
-                alertBox(res.msg)
+                alertBox(res.msg);
 
 //				$(form).hide();
 //				$('#login-box .signup .confirm').show();
@@ -245,7 +245,7 @@ $(function () {
             } else {
                 $.alert(res.msg);
             }
-        }, 'json')
+        }, 'json');
 
         return false;
     });
