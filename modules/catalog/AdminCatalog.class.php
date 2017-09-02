@@ -1,6 +1,7 @@
 <?php
 include_once 'core/component/AdminListComponent.class.php';
 include_once('modules/catalog/CatalogConfig.class.php');
+
 class AdminCatalog extends AdminListComponent {
 
     function needAuth() {
@@ -420,7 +421,7 @@ class AdminCatalog extends AdminListComponent {
         $order = 'ORDER BY ';
         $ord = $this->getURIVal('ord') != 'asc' ? 'asc' : 'desc';
 
-        if (in_array($this->getURIVal('sort'), array('name', 'price', 'c_name', 'manufacturer', 'update_time', 'insert_time', 'm_name', 'img', 'sort', 'sort_main','sort1', 'sort2', 'sort3', 'in_stock', 'confirm', 'bonus'))) {
+        if (in_array($this->getURIVal('sort'), array('name', 'price', 'c_name', 'manufacturer', 'update_time', 'insert_time', 'm_name', 'img', 'sort', 'sort_main', 'sort1', 'sort2', 'sort3', 'in_stock', 'confirm', 'bonus'))) {
             $order.=$this->getURIVal('sort') . ' ' . $ord;
         } else {
             $order.='category ,i.name';
@@ -833,7 +834,6 @@ class AdminCatalog extends AdminListComponent {
             'old_price' => 0,
             'awards' => 0,
             'unit' => '',
-            
             'ext_id' => '',
             'in_stock' => 1,
             'weight_flg' => 0,
@@ -1063,8 +1063,8 @@ class AdminCatalog extends AdminListComponent {
             'old_price' => $post->getFloat('old_price'),
             'awards' => $post->getFloat('awards'),
             'in_stock' => $post->getInt('in_stock'),
-            'sort3' => $post->getInt('sort3'),//Новинки
-            'sort1' => $post->getInt('sort1'),//Акции
+            'sort3' => $post->getInt('sort3'), //Новинки
+            'sort1' => $post->getInt('sort1'), //Акции
             'ext_id' => $post->get('ext_id'),
             'img_format' => $post->get('img_format'), //Тип вставки изображения
             'unit' => $post->get('unit'), //Единица стоимости
@@ -1381,13 +1381,13 @@ class AdminCatalog extends AdminListComponent {
         $n = 0;
         ?><select class="input" name="catalog">
             <option style="<?= ($n++ % 2) ? 'background-color:#EEEEEE' : '' ?>" value="0">[раздел не указан]</option>
-                    <? $this->_displayCatalog($catalog, $selected, 0, $n); ?>
+            <? $this->_displayCatalog($catalog, $selected, 0, $n); ?>
         </select><?
-                }
+    }
 
-                function displayCatalogs($catalog, $selected = array()) {
-                    $n = 0;
-                    ?><select class="input" name="catalogs[]" multiple style="height:300px">
+    function displayCatalogs($catalog, $selected = array()) {
+        $n = 0;
+        ?><select class="input" name="catalogs[]" multiple style="height:300px">
         <? $this->_displayCatalog($catalog, $selected, 0, $n); ?>
         </select><?
     }
@@ -1396,17 +1396,19 @@ class AdminCatalog extends AdminListComponent {
         ?>
         <? foreach ($catalog as $item) { ?>
             <option style="<?= ($n++ % 2) ? 'background-color:#EEEEEE' : '' ?>" value="<?= $item['id'] ?>"
-                        <? if ((is_array($selected) && in_array($item['id'], $selected)) || $item['id'] == $selected) { ?>selected<? } ?> 
+                    <? if ((is_array($selected) && in_array($item['id'], $selected)) || $item['id'] == $selected) { ?>selected<? } ?> 
 
                     >
-            <?= str_repeat('&nbsp;&nbsp;&nbsp;|&nbsp;--&nbsp;', $deep) ?>
-            <?= $item['name'] ?>
+                        <?= str_repeat('&nbsp;&nbsp;&nbsp;|&nbsp;--&nbsp;', $deep) ?>
+                        <?= $item['name'] ?>
             </option>
-            <? if (!empty($item['children'])) {
+            <?
+            if (!empty($item['children'])) {
                 $this->_displayCatalog($item['children'], $selected, $deep + 1, $n);
-            } ?>
-                    <? } ?>	
-    <?
+            }
+            ?>
+        <? } ?>	
+        <?
     }
 
     function displayPageControl($filter = true) {
@@ -1417,7 +1419,7 @@ class AdminCatalog extends AdminListComponent {
             <tr>
 
                 <td>
-                    <? if ($this->getURIVal('catalog') != 'goodsPopup') { ?>
+        <? if ($this->getURIVal('catalog') != 'goodsPopup') { ?>
                         <a href="<?= $this->mod_uri ?>goodsEdit/<? if (!empty($_GET['category'])) { ?>?category=<?= $_GET['category'] ?><? } ?>"><img src="/img/pic/add_16.gif" title="Добавить" alt="Добавить"/>Добавить</a>
 
                         | <a href="<?= $this->getURI(array('offer' => $this->getURIBoolVal('offer') ? null : '1'), true) ?>">Расширенный вид</a>
@@ -1425,11 +1427,11 @@ class AdminCatalog extends AdminListComponent {
                         | <a href="/admin/catalog/prop/">Свойства товаров</a>
                         | <a href="?act=Manufacturer">Производитель</a>
                         | <a href="/admin/catalog/relation/">Связи</a>
-                    <? } ?>
+        <? } ?>
                 </td>
 
                 <td style="text-align:right">
-        <? $this->page->display(); ?> | Показать:<? $this->page->displayPageSize($this->getConfig('PAGE_SIZE_SELECT'), $this->pageSize); ?>
+            <? $this->page->display(); ?> | Показать:<? $this->page->displayPageSize($this->getConfig('PAGE_SIZE_SELECT'), $this->pageSize); ?>
                 </td>
             </tr>
         <? if ($filter) { ?>
@@ -1437,16 +1439,16 @@ class AdminCatalog extends AdminListComponent {
                     <td>
                         Товар: <input class="input-text" name="search" value="<?= htmlspecialchars($this->getSearch()) ?>" style="width:200px">
 
-            <?
-            if (isset($_GET['prop']) && $p = intval($_GET['prop'])) {
-                $rs = $ST->select("SELECT * FROM sc_shop_prop WHERE id=$p");
-                if ($rs->next()) {
-                    ?>Свойство <strong><?= $rs->get('name') ?></strong>: 
+                        <?
+                        if (isset($_GET['prop']) && $p = intval($_GET['prop'])) {
+                            $rs = $ST->select("SELECT * FROM sc_shop_prop WHERE id=$p");
+                            if ($rs->next()) {
+                                ?>Свойство <strong><?= $rs->get('name') ?></strong>: 
                                 <input class="input-text" name="prop_val" value="<?= @$_GET['prop_val'] ?>" style="width:200px">
-                    <?
-                }
-            }
-            ?>
+                                <?
+                            }
+                        }
+                        ?>
 
 
                         <button type="submit" name="find" class="button">Найти</button>
